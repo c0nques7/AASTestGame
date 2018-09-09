@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: VolClouds
+  m_Shader: {fileID: 4800000, guid: e4f42e9ccdd1844719ff985860145530, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailNormalMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailAlbedoMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _SrcBlend
+        second: 1
+      data:
+        first:
+          name: _DstBlend
+        second: 0
+      data:
+        first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
+          name: _Parallax
+        second: 0.02
+      data:
+        first:
+          name: _ZWrite
+        second: 1
+      data:
+        first:
+          name: _Glossiness
+        second: 0.5
+      data:
+        first:
+          name: _BumpScale
+        second: 1
+      data:
+        first:
+          name: _OcclusionStrength
+        second: 1
+      data:
+        first:
+          name: _DetailNormalMapScale
+        second: 1
+      data:
+        first:
+          name: _UVSec
+        second: 0
+      data:
+        first:
+          name: _Mode
+        second: 0
+      data:
+        first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
+          name: _Detail
+        second: 2.11
+      data:
+        first:
+          name: _CloudScale
+        second: 0.304
+      data:
+        first:
+          name: _CloudIntensity
+        second: 0.52
+      data:
+        first:
+          name: _CloudDistance
+        second: 0.051
+      data:
+        first:
+          name: _MaxDetail
+        second: 0.286
+      data:
+        first:
+          name: _CloudSubtract
+        second: 0.536
+      data:
+        first:
+          name: _CloudScattering
+        second: 1.49
+      data:
+        first:
+          name: _CloudAlpha
+        second: 0.564
+      data:
+        first:
+          name: _CloudLOD
+        second: 7.51
+      data:
+        first:
+          name: _CloudShadowStrength
+        second: 0.33
+      data:
+        first:
+          name: _CloudShadowStep
+        second: 7.74
+      data:
+        first:
+          name: _CloudHardness
+        second: 1
+      data:
+        first:
+          name: _CloudBrightness
+        second: 1.33
+      data:
+        first:
+          name: _SunGlare
+        second: 0.96
+      data:
+        first:
+          name: _CloudHeightScatter
+        second: 2.07
+      data:
+        first:
+          name: _XShift
+        second: 0
+      data:
+        first:
+          name: _YShift
+        second: 0
+      data:
+        first:
+          name: _ZShift
+        second: 0
+      data:
+        first:
+          name: _CloudTime
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _H
+        second: {r: 500, g: 1500, b: 0, a: 0}
+      data:
+        first:
+          name: _CloudColor
+        second: {r: 1, g: 1, b: 1, a: 1}

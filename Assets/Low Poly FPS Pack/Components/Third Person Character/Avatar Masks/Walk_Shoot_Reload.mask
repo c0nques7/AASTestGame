@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Walk_Shoot_Reload
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 1
+  - m_Path: Armature/IK_arm_L
+    m_Weight: 0
+  - m_Path: Armature/IK_arm_R
+    m_Weight: 0
+  - m_Path: Armature/IK_leg_L
+    m_Weight: 0
+  - m_Path: Armature/IK_leg_R
+    m_Weight: 0
+  - m_Path: Armature/mag_handgun
+    m_Weight: 1
+  - m_Path: Armature/pelvis
+    m_Weight: 0
+  - m_Path: Armature/pelvis/arm_pole_L
+    m_Weight: 0
+  - m_Path: Armature/pelvis/arm_pole_R
+    m_Weight: 0
+  - m_Path: Armature/pelvis/head_target
+    m_Weight: 1
+  - m_Path: Armature/pelvis/knee_target_L
+    m_Weight: 0
+  - m_Path: Armature/pelvis/knee_target_R
+    m_Weight: 0
+  - m_Path: Armature/pelvis/leg_L
+    m_Weight: 0
+  - m_Path: Armature/pelvis/leg_L/lower_leg_L
+    m_Weight: 0
+  - m_Path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+    m_Weight: 0
+  - m_Path: Armature/pelvis/leg_R
+    m_Weight: 0
+  - m_Path: Armature/pelvis/leg_R/lower_leg_R
+    m_Weight: 0
+  - m_Path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+    m_Weight: 0
+  - m_Path: Armature/pelvis/spine
+    m_Weight: 1
+  - m_Path: Armature/pelvis/spine/arm_L
+    m_Weight: 1
+  - m_Path: Armature/pelvis/spine/arm_L/lower_arm_L
+    m_Weight: 1
+  - m_Path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+    m_Weight: 1
+  - m_Path: Armature/pelvis/spine/arm_R
+    m_Weight: 1
+  - m_Path: Armature/pelvis/spine/arm_R/lower_arm_R
+    m_Weight: 1
+  - m_Path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+    m_Weight: 1
+  - m_Path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+    m_Weight: 1
+  - m_Path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+    m_Weight: 1
+  - m_Path: Armature/pelvis/spine/neck
+    m_Weight: 1
+  - m_Path: Armature/pelvis/spine/neck/head
+    m_Weight: 1
+  - m_Path: Armature/root
+    m_Weight: 0
+  - m_Path: backpack
+    m_Weight: 0
+  - m_Path: base_character
+    m_Weight: 0
+  - m_Path: handgun_main
+    m_Weight: 0
+  - m_Path: helmet
+    m_Weight: 0

@@ -1,0 +1,714 @@
+fileFormatVersion: 2
+guid: f3b4a665d9b436a408b4c539fcce3065
+timeCreated: 1494843773
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: arms_mesh
+    100006: bullet_1
+    100008: bullet_2
+    100010: bullet_3
+    100012: bullet_4
+    100014: bullet_5
+    100016: bullet_6
+    100018: bullet_holder
+    100020: grenade_launcher_main
+    100022: grip
+    100024: hand_L
+    100026: hand_R
+    100028: lower_arm_L
+    100030: lower_arm_R
+    100032: mag
+    100034: upper_arm_L
+    100036: upper_arm_R
+    100038: weapon
+    400000: Armature
+    400002: //RootNode
+    400004: arms_mesh
+    400006: bullet_1
+    400008: bullet_2
+    400010: bullet_3
+    400012: bullet_4
+    400014: bullet_5
+    400016: bullet_6
+    400018: bullet_holder
+    400020: grenade_launcher_main
+    400022: grip
+    400024: hand_L
+    400026: hand_R
+    400028: lower_arm_L
+    400030: lower_arm_R
+    400032: mag
+    400034: upper_arm_L
+    400036: upper_arm_R
+    400038: weapon
+    4300000: arms_mesh
+    4300002: grenade_launcher_main
+    7400000: aim@grenade_launcher
+    7400002: aim_fire@grenade_launcher
+    7400004: draw@grenade_launcher
+    7400006: fire@grenade_launcher
+    7400008: idle@grenade_launcher
+    7400010: jump@grenade_launcher
+    7400012: Armature|reference
+    7400014: reload@grenade_launcher
+    7400016: run@grenade_launcher
+    7400018: walk@grenade_launcher
+    9500000: //RootNode
+    13700000: arms_mesh
+    13700002: grenade_launcher_main
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: aim@grenade_launcher
+      takeName: Armature|aim@grenade_launcher
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/bullet_1
+        weight: 1
+      - path: Armature/bullet_2
+        weight: 1
+      - path: Armature/bullet_3
+        weight: 1
+      - path: Armature/bullet_4
+        weight: 1
+      - path: Armature/bullet_5
+        weight: 1
+      - path: Armature/bullet_6
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/mag
+        weight: 1
+      - path: Armature/weapon/mag/bullet_holder
+        weight: 1
+      - path: Armature/weapon/mag/grip
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: grenade_launcher_main
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: aim_fire@grenade_launcher
+      takeName: Armature|aim_fire@grenade_launcher
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/bullet_1
+        weight: 1
+      - path: Armature/bullet_2
+        weight: 1
+      - path: Armature/bullet_3
+        weight: 1
+      - path: Armature/bullet_4
+        weight: 1
+      - path: Armature/bullet_5
+        weight: 1
+      - path: Armature/bullet_6
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/mag
+        weight: 1
+      - path: Armature/weapon/mag/bullet_holder
+        weight: 1
+      - path: Armature/weapon/mag/grip
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: grenade_launcher_main
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: draw@grenade_launcher
+      takeName: Armature|draw@grenade_launcher
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/bullet_1
+        weight: 1
+      - path: Armature/bullet_2
+        weight: 1
+      - path: Armature/bullet_3
+        weight: 1
+      - path: Armature/bullet_4
+        weight: 1
+      - path: Armature/bullet_5
+        weight: 1
+      - path: Armature/bullet_6
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/mag
+        weight: 1
+      - path: Armature/weapon/mag/bullet_holder
+        weight: 1
+      - path: Armature/weapon/mag/grip
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: grenade_launcher_main
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: fire@grenade_launcher
+      takeName: Armature|fire@grenade_launcher
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/bullet_1
+        weight: 1
+      - path: Armature/bullet_2
+        weight: 1
+      - path: Armature/bullet_3
+        weight: 1
+      - path: Armature/bullet_4
+        weight: 1
+      - path: Armature/bullet_5
+        weight: 1
+      - path: Armature/bullet_6
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/mag
+        weight: 1
+      - path: Armature/weapon/mag/bullet_holder
+        weight: 1
+      - path: Armature/weapon/mag/grip
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: grenade_launcher_main
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle@grenade_launcher
+      takeName: Armature|idle@grenade_launcher
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/bullet_1
+        weight: 1
+      - path: Armature/bullet_2
+        weight: 1
+      - path: Armature/bullet_3
+        weight: 1
+      - path: Armature/bullet_4
+        weight: 1
+      - path: Armature/bullet_5
+        weight: 1
+      - path: Armature/bullet_6
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/mag
+        weight: 1
+      - path: Armature/weapon/mag/bullet_holder
+        weight: 1
+      - path: Armature/weapon/mag/grip
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: grenade_launcher_main
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jump@grenade_launcher
+      takeName: Armature|jump@grenade_launcher
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/bullet_1
+        weight: 1
+      - path: Armature/bullet_2
+        weight: 1
+      - path: Armature/bullet_3
+        weight: 1
+      - path: Armature/bullet_4
+        weight: 1
+      - path: Armature/bullet_5
+        weight: 1
+      - path: Armature/bullet_6
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/mag
+        weight: 1
+      - path: Armature/weapon/mag/bullet_holder
+        weight: 1
+      - path: Armature/weapon/mag/grip
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: grenade_launcher_main
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: reload@grenade_launcher
+      takeName: Armature|reload@grenade_launcher
+      firstFrame: 0
+      lastFrame: 455
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/bullet_1
+        weight: 1
+      - path: Armature/bullet_2
+        weight: 1
+      - path: Armature/bullet_3
+        weight: 1
+      - path: Armature/bullet_4
+        weight: 1
+      - path: Armature/bullet_5
+        weight: 1
+      - path: Armature/bullet_6
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/mag
+        weight: 1
+      - path: Armature/weapon/mag/bullet_holder
+        weight: 1
+      - path: Armature/weapon/mag/grip
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: grenade_launcher_main
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run@grenade_launcher
+      takeName: Armature|run@grenade_launcher
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/bullet_1
+        weight: 1
+      - path: Armature/bullet_2
+        weight: 1
+      - path: Armature/bullet_3
+        weight: 1
+      - path: Armature/bullet_4
+        weight: 1
+      - path: Armature/bullet_5
+        weight: 1
+      - path: Armature/bullet_6
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/mag
+        weight: 1
+      - path: Armature/weapon/mag/bullet_holder
+        weight: 1
+      - path: Armature/weapon/mag/grip
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: grenade_launcher_main
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk@grenade_launcher
+      takeName: Armature|walk@grenade_launcher
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/bullet_1
+        weight: 1
+      - path: Armature/bullet_2
+        weight: 1
+      - path: Armature/bullet_3
+        weight: 1
+      - path: Armature/bullet_4
+        weight: 1
+      - path: Armature/bullet_5
+        weight: 1
+      - path: Armature/bullet_6
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/mag
+        weight: 1
+      - path: Armature/weapon/mag/bullet_holder
+        weight: 1
+      - path: Armature/weapon/mag/grip
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: grenade_launcher_main
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,900 @@
+fileFormatVersion: 2
+guid: 59b574ade499f624cb184e381abefffa
+timeCreated: 1494836505
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: arms_mesh
+    100006: arrow
+    100008: arrow 1
+    100010: bottom_ik
+    100012: bottom_ik_2
+    100014: bottom_limit
+    100016: bow
+    100018: bow_1
+    100020: bow_10
+    100022: bow_11
+    100024: bow_12
+    100026: bow_13
+    100028: bow_14
+    100030: bow_2
+    100032: bow_3
+    100034: bow_4
+    100036: bow_5
+    100038: bow_6
+    100040: bow_7
+    100042: bow_8
+    100044: bow_9
+    100046: hand_L
+    100048: hand_R
+    100050: lower_arm_L
+    100052: lower_arm_R
+    100054: string
+    100056: top_ik
+    100058: top_ik_2
+    100060: top_limit
+    100062: upper_arm_L
+    100064: upper_arm_R
+    100066: weapon
+    400000: Armature
+    400002: //RootNode
+    400004: arms_mesh
+    400006: arrow
+    400008: arrow 1
+    400010: bottom_ik
+    400012: bottom_ik_2
+    400014: bottom_limit
+    400016: bow
+    400018: bow_1
+    400020: bow_10
+    400022: bow_11
+    400024: bow_12
+    400026: bow_13
+    400028: bow_14
+    400030: bow_2
+    400032: bow_3
+    400034: bow_4
+    400036: bow_5
+    400038: bow_6
+    400040: bow_7
+    400042: bow_8
+    400044: bow_9
+    400046: hand_L
+    400048: hand_R
+    400050: lower_arm_L
+    400052: lower_arm_R
+    400054: string
+    400056: top_ik
+    400058: top_ik_2
+    400060: top_limit
+    400062: upper_arm_L
+    400064: upper_arm_R
+    400066: weapon
+    4300000: arrow
+    4300002: arms_mesh
+    4300004: bow
+    7400000: draw@bow
+    7400002: draw_arrow@bow
+    7400004: hold@bow
+    7400006: idle@bow
+    7400008: jump@bow
+    7400010: release@bow
+    7400012: run@bow
+    7400014: unhold@bow
+    9500000: //RootNode
+    13700000: arms_mesh
+    13700002: arrow
+    13700004: bow
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: draw@bow
+      takeName: Armature|draw@bow
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/arrow 1
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2/bottom_ik
+        weight: 1
+      - path: Armature/weapon/bottom_limit
+        weight: 1
+      - path: Armature/weapon/bow_1
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6/bow_7
+        weight: 1
+      - path: Armature/weapon/bow_8
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13/bow_14
+        weight: 1
+      - path: Armature/weapon/string
+        weight: 1
+      - path: Armature/weapon/top_ik_2
+        weight: 1
+      - path: Armature/weapon/top_ik_2/top_ik
+        weight: 1
+      - path: Armature/weapon/top_limit
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: arrow
+        weight: 1
+      - path: bow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: draw_arrow@bow
+      takeName: Armature|draw_arrow@bow
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/arrow 1
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2/bottom_ik
+        weight: 1
+      - path: Armature/weapon/bottom_limit
+        weight: 1
+      - path: Armature/weapon/bow_1
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6/bow_7
+        weight: 1
+      - path: Armature/weapon/bow_8
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13/bow_14
+        weight: 1
+      - path: Armature/weapon/string
+        weight: 1
+      - path: Armature/weapon/top_ik_2
+        weight: 1
+      - path: Armature/weapon/top_ik_2/top_ik
+        weight: 1
+      - path: Armature/weapon/top_limit
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: arrow
+        weight: 1
+      - path: bow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hold@bow
+      takeName: Armature|hold@bow
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/arrow 1
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2/bottom_ik
+        weight: 1
+      - path: Armature/weapon/bottom_limit
+        weight: 1
+      - path: Armature/weapon/bow_1
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6/bow_7
+        weight: 1
+      - path: Armature/weapon/bow_8
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13/bow_14
+        weight: 1
+      - path: Armature/weapon/string
+        weight: 1
+      - path: Armature/weapon/top_ik_2
+        weight: 1
+      - path: Armature/weapon/top_ik_2/top_ik
+        weight: 1
+      - path: Armature/weapon/top_limit
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: arrow
+        weight: 1
+      - path: bow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle@bow
+      takeName: Armature|idle@bow
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/arrow 1
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2/bottom_ik
+        weight: 1
+      - path: Armature/weapon/bottom_limit
+        weight: 1
+      - path: Armature/weapon/bow_1
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6/bow_7
+        weight: 1
+      - path: Armature/weapon/bow_8
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13/bow_14
+        weight: 1
+      - path: Armature/weapon/string
+        weight: 1
+      - path: Armature/weapon/top_ik_2
+        weight: 1
+      - path: Armature/weapon/top_ik_2/top_ik
+        weight: 1
+      - path: Armature/weapon/top_limit
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: arrow
+        weight: 1
+      - path: bow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jump@bow
+      takeName: Armature|jump@bow
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/arrow 1
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2/bottom_ik
+        weight: 1
+      - path: Armature/weapon/bottom_limit
+        weight: 1
+      - path: Armature/weapon/bow_1
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6/bow_7
+        weight: 1
+      - path: Armature/weapon/bow_8
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13/bow_14
+        weight: 1
+      - path: Armature/weapon/string
+        weight: 1
+      - path: Armature/weapon/top_ik_2
+        weight: 1
+      - path: Armature/weapon/top_ik_2/top_ik
+        weight: 1
+      - path: Armature/weapon/top_limit
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: arrow
+        weight: 1
+      - path: bow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: release@bow
+      takeName: Armature|release@bow
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/arrow 1
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2/bottom_ik
+        weight: 1
+      - path: Armature/weapon/bottom_limit
+        weight: 1
+      - path: Armature/weapon/bow_1
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6/bow_7
+        weight: 1
+      - path: Armature/weapon/bow_8
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13/bow_14
+        weight: 1
+      - path: Armature/weapon/string
+        weight: 1
+      - path: Armature/weapon/top_ik_2
+        weight: 1
+      - path: Armature/weapon/top_ik_2/top_ik
+        weight: 1
+      - path: Armature/weapon/top_limit
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: arrow
+        weight: 1
+      - path: bow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run@bow
+      takeName: Armature|run@bow
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/arrow 1
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2/bottom_ik
+        weight: 1
+      - path: Armature/weapon/bottom_limit
+        weight: 1
+      - path: Armature/weapon/bow_1
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6/bow_7
+        weight: 1
+      - path: Armature/weapon/bow_8
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13/bow_14
+        weight: 1
+      - path: Armature/weapon/string
+        weight: 1
+      - path: Armature/weapon/top_ik_2
+        weight: 1
+      - path: Armature/weapon/top_ik_2/top_ik
+        weight: 1
+      - path: Armature/weapon/top_limit
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: arrow
+        weight: 1
+      - path: bow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: unhold@bow
+      takeName: Armature|unhold@bow
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/arrow 1
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2
+        weight: 1
+      - path: Armature/weapon/bottom_ik_2/bottom_ik
+        weight: 1
+      - path: Armature/weapon/bottom_limit
+        weight: 1
+      - path: Armature/weapon/bow_1
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6
+        weight: 1
+      - path: Armature/weapon/bow_1/bow_2/bow_3/bow_4/bow_5/bow_6/bow_7
+        weight: 1
+      - path: Armature/weapon/bow_8
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13
+        weight: 1
+      - path: Armature/weapon/bow_8/bow_9/bow_10/bow_11/bow_12/bow_13/bow_14
+        weight: 1
+      - path: Armature/weapon/string
+        weight: 1
+      - path: Armature/weapon/top_ik_2
+        weight: 1
+      - path: Armature/weapon/top_ik_2/top_ik
+        weight: 1
+      - path: Armature/weapon/top_limit
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: arrow
+        weight: 1
+      - path: bow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

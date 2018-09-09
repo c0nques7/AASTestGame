@@ -1,0 +1,117 @@
+fileFormatVersion: 2
+guid: 4da30619fe3ef1041af42d2f7c70e8fb
+timeCreated: 1484754293
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: grenade_launcher_eject
+    100004: grenade_launcher_mag
+    100006: grenade_launcher_main
+    100008: grenade_launcher_shell_1
+    100010: grenade_launcher_shell_2
+    100012: grenade_launcher_shell_3
+    100014: grenade_launcher_shell_4
+    100016: grenade_launcher_shell_5
+    100018: grenade_launcher_shell_6
+    100020: grenade_launcher_trigger
+    400000: //RootNode
+    400002: grenade_launcher_eject
+    400004: grenade_launcher_mag
+    400006: grenade_launcher_main
+    400008: grenade_launcher_shell_1
+    400010: grenade_launcher_shell_2
+    400012: grenade_launcher_shell_3
+    400014: grenade_launcher_shell_4
+    400016: grenade_launcher_shell_5
+    400018: grenade_launcher_shell_6
+    400020: grenade_launcher_trigger
+    2300000: grenade_launcher_eject
+    2300002: grenade_launcher_mag
+    2300004: grenade_launcher_main
+    2300006: grenade_launcher_shell_1
+    2300008: grenade_launcher_shell_2
+    2300010: grenade_launcher_shell_3
+    2300012: grenade_launcher_shell_4
+    2300014: grenade_launcher_shell_5
+    2300016: grenade_launcher_shell_6
+    2300018: grenade_launcher_trigger
+    3300000: grenade_launcher_eject
+    3300002: grenade_launcher_mag
+    3300004: grenade_launcher_main
+    3300006: grenade_launcher_shell_1
+    3300008: grenade_launcher_shell_2
+    3300010: grenade_launcher_shell_3
+    3300012: grenade_launcher_shell_4
+    3300014: grenade_launcher_shell_5
+    3300016: grenade_launcher_shell_6
+    3300018: grenade_launcher_trigger
+    4300000: grenade_launcher_mag
+    4300002: grenade_launcher_main
+    4300004: grenade_launcher_eject
+    4300006: grenade_launcher_shell_1
+    4300008: grenade_launcher_shell_2
+    4300010: grenade_launcher_shell_3
+    4300012: grenade_launcher_shell_4
+    4300014: grenade_launcher_shell_5
+    4300016: grenade_launcher_shell_6
+    4300018: grenade_launcher_trigger
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,575 @@
+fileFormatVersion: 2
+guid: 685d4271cff58a74b97e586c9e9582c3
+timeCreated: 1484571442
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: arms_mesh
+    100006: hand_L
+    100008: hand_R
+    100010: lower_arm_L
+    100012: lower_arm_R
+    100014: projectile
+    100016: rpg_main
+    100018: rpg_projectile
+    100020: upper_arm_L
+    100022: upper_arm_R
+    100024: weapon
+    400000: Armature
+    400002: //RootNode
+    400004: arms_mesh
+    400006: hand_L
+    400008: hand_R
+    400010: lower_arm_L
+    400012: lower_arm_R
+    400014: projectile
+    400016: rpg_main
+    400018: rpg_projectile
+    400020: upper_arm_L
+    400022: upper_arm_R
+    400024: weapon
+    4300000: arms_mesh
+    4300002: rpg_main
+    4300004: rpg_projectile
+    7400000: aim@RPG
+    7400002: aim_fire@RPG
+    7400004: draw@RPG
+    7400006: fire@RPG
+    7400008: idle@RPG
+    7400010: jump@RPG
+    7400012: reload@RPG
+    7400014: run@RPG
+    7400016: walk@RPG
+    9500000: //RootNode
+    13700000: arms_mesh
+    13700002: rpg_main
+    13700004: rpg_projectile
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: aim@RPG
+      takeName: Armature|aim@RPG
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/projectile
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: rpg_main
+        weight: 1
+      - path: rpg_projectile
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: aim_fire@RPG
+      takeName: Armature|aim_fire@RPG
+      firstFrame: 0
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/projectile
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: rpg_main
+        weight: 1
+      - path: rpg_projectile
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: draw@RPG
+      takeName: Armature|draw@RPG
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/projectile
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: rpg_main
+        weight: 1
+      - path: rpg_projectile
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: fire@RPG
+      takeName: Armature|fire@RPG
+      firstFrame: 0
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/projectile
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: rpg_main
+        weight: 1
+      - path: rpg_projectile
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle@RPG
+      takeName: Armature|idle@RPG
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/projectile
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: rpg_main
+        weight: 1
+      - path: rpg_projectile
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jump@RPG
+      takeName: Armature|jump@RPG
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/projectile
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: rpg_main
+        weight: 1
+      - path: rpg_projectile
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: reload@RPG
+      takeName: Armature|reload@RPG
+      firstFrame: 0
+      lastFrame: 132
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/projectile
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: rpg_main
+        weight: 1
+      - path: rpg_projectile
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run@RPG
+      takeName: Armature|run@RPG
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/projectile
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: rpg_main
+        weight: 1
+      - path: rpg_projectile
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk@RPG
+      takeName: Armature|walk@RPG
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hand_L
+        weight: 1
+      - path: Armature/hand_R
+        weight: 1
+      - path: Armature/projectile
+        weight: 1
+      - path: Armature/upper_arm_L
+        weight: 1
+      - path: Armature/upper_arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/upper_arm_R
+        weight: 1
+      - path: Armature/upper_arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/weapon
+        weight: 1
+      - path: arms_mesh
+        weight: 1
+      - path: rpg_main
+        weight: 1
+      - path: rpg_projectile
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

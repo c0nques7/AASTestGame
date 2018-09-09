@@ -1,0 +1,117 @@
+fileFormatVersion: 2
+guid: 06edd06f961813d48a5c0548c4586aa7
+timeCreated: 1484754439
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: revolver_2_bullet_1
+    100004: revolver_2_bullet_2
+    100006: revolver_2_bullet_3
+    100008: revolver_2_bullet_4
+    100010: revolver_2_bullet_5
+    100012: revolver_2_bullet_6
+    100014: revolver_2_chamber
+    100016: revolver_2_chamber_holder
+    100018: revolver_2_main
+    100020: revolver_2_trigger
+    400000: //RootNode
+    400002: revolver_2_bullet_1
+    400004: revolver_2_bullet_2
+    400006: revolver_2_bullet_3
+    400008: revolver_2_bullet_4
+    400010: revolver_2_bullet_5
+    400012: revolver_2_bullet_6
+    400014: revolver_2_chamber
+    400016: revolver_2_chamber_holder
+    400018: revolver_2_main
+    400020: revolver_2_trigger
+    2300000: revolver_2_bullet_1
+    2300002: revolver_2_bullet_2
+    2300004: revolver_2_bullet_3
+    2300006: revolver_2_bullet_4
+    2300008: revolver_2_bullet_5
+    2300010: revolver_2_bullet_6
+    2300012: revolver_2_chamber
+    2300014: revolver_2_chamber_holder
+    2300016: revolver_2_main
+    2300018: revolver_2_trigger
+    3300000: revolver_2_bullet_1
+    3300002: revolver_2_bullet_2
+    3300004: revolver_2_bullet_3
+    3300006: revolver_2_bullet_4
+    3300008: revolver_2_bullet_5
+    3300010: revolver_2_bullet_6
+    3300012: revolver_2_chamber
+    3300014: revolver_2_chamber_holder
+    3300016: revolver_2_main
+    3300018: revolver_2_trigger
+    4300000: revolver_2_chamber
+    4300002: revolver_2_main
+    4300004: revolver_2_chamber_holder
+    4300006: revolver_2_bullet_1
+    4300008: revolver_2_bullet_2
+    4300010: revolver_2_bullet_3
+    4300012: revolver_2_bullet_4
+    4300014: revolver_2_bullet_5
+    4300016: revolver_2_bullet_6
+    4300018: revolver_2_trigger
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

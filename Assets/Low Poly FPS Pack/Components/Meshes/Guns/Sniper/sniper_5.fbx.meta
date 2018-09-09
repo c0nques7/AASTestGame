@@ -1,0 +1,92 @@
+fileFormatVersion: 2
+guid: 6aef2666d03abaa4fad3bfb5bf235c86
+timeCreated: 1484754527
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: sniper_5_mag
+    100004: sniper_5_main
+    100006: sniper_5_scope
+    100008: sniper_5_slider
+    100010: sniper_5_trigger
+    400000: //RootNode
+    400002: sniper_5_mag
+    400004: sniper_5_main
+    400006: sniper_5_scope
+    400008: sniper_5_slider
+    400010: sniper_5_trigger
+    2300000: sniper_5_mag
+    2300002: sniper_5_main
+    2300004: sniper_5_scope
+    2300006: sniper_5_slider
+    2300008: sniper_5_trigger
+    3300000: sniper_5_mag
+    3300002: sniper_5_main
+    3300004: sniper_5_scope
+    3300006: sniper_5_slider
+    3300008: sniper_5_trigger
+    4300000: sniper_5_scope
+    4300002: sniper_5_main
+    4300004: sniper_5_mag
+    4300006: sniper_5_slider
+    4300008: sniper_5_trigger
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,3152 @@
+fileFormatVersion: 2
+guid: 4b0a3e9eb53089b4fa2eda2ad64ef338
+timeCreated: 1535028668
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: arm_L
+    100002: arm_pole_L
+    100004: arm_pole_R
+    100006: arm_R
+    100008: Armature
+    100010: backpack
+    100012: base_character
+    100014: foot_L
+    100016: foot_R
+    100018: hand_L
+    100020: hand_R
+    100022: handgun_main
+    100024: head
+    100026: head_target
+    100028: helmet
+    100030: IK_arm_L
+    100032: IK_arm_R
+    100034: IK_leg_L
+    100036: IK_leg_R
+    100038: knee_target_L
+    100040: knee_target_R
+    100042: leg_L
+    100044: leg_R
+    100046: lower_arm_L
+    100048: lower_arm_R
+    100050: lower_leg_L
+    100052: lower_leg_R
+    100054: mag_handgun
+    100056: neck
+    100058: pelvis
+    100060: root
+    100062: slider_handgun
+    100064: spine
+    100066: //RootNode
+    100068: weapon_handgun
+    400000: arm_L
+    400002: arm_pole_L
+    400004: arm_pole_R
+    400006: arm_R
+    400008: Armature
+    400010: backpack
+    400012: base_character
+    400014: foot_L
+    400016: foot_R
+    400018: hand_L
+    400020: hand_R
+    400022: handgun_main
+    400024: head
+    400026: head_target
+    400028: helmet
+    400030: IK_arm_L
+    400032: IK_arm_R
+    400034: IK_leg_L
+    400036: IK_leg_R
+    400038: knee_target_L
+    400040: knee_target_R
+    400042: leg_L
+    400044: leg_R
+    400046: lower_arm_L
+    400048: lower_arm_R
+    400050: lower_leg_L
+    400052: lower_leg_R
+    400054: mag_handgun
+    400056: neck
+    400058: pelvis
+    400060: root
+    400062: slider_handgun
+    400064: spine
+    400066: //RootNode
+    400068: weapon_handgun
+    4300000: base_character
+    4300002: backpack
+    4300004: handgun_main
+    4300006: helmet
+    7400000: crouch@handgun_1_tpc
+    7400002: crouch_strafe_left@handgun_1_tpc
+    7400004: crouch_strafe_right@handgun_1_tpc
+    7400006: crouch_up@handgun_1_tpc
+    7400008: crouch_walk@handgun_1_tpc
+    7400010: crouch_walk_aim@handgun_1_tpc
+    7400012: crouch_walk_backwards@handgun_1_tpc
+    7400014: crouch_walk_backwards_aim@handgun_1_tpc
+    7400016: falling@handgun_1_tpc
+    7400018: fire@handgun_1_tpc
+    7400020: idle@handgun_1_tpc
+    7400022: jump_pose@handgun_1_tpc
+    7400024: Armature|pose_ref
+    7400026: jump_still@handgun_1_tpc
+    7400028: prone_crawl@handgun_1_tpc
+    7400030: prone_crawl_backwards@handgun_1_tpc
+    7400032: prone_down@handgun_1_tpc
+    7400034: prone_strafe_left@handgun_1_tpc
+    7400036: prone_strafe_right@handgun_1_tpc
+    7400038: prone_up@handgun_1_tpc
+    7400040: reload@handgun_1_tpc
+    7400042: reload_mag_constraint@handgun_1_tpc
+    7400044: run@handgun_1_tpc
+    7400046: run_aim@handgun_1_tpc
+    7400048: run_backwards_aim@handgun_1_tpc
+    7400050: run_hold_gun@handgun_1_tpc
+    7400052: run_strafe_left@handgun_1_tpc
+    7400054: run_strafe_right@handgun_1_tpc
+    7400056: walk@handgun_1_tpc
+    7400058: walk_backwards@handgun_1_tpc
+    7400060: walk_strafe_left@handgun_1_tpc
+    7400062: walk_strafe_right@handgun_1_tpc
+    9500000: //RootNode
+    13700000: backpack
+    13700002: base_character
+    13700004: handgun_main
+    13700006: helmet
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: crouch@handgun_1_tpc
+      takeName: Armature|crouch
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: crouch_strafe_left@handgun_1_tpc
+      takeName: Armature|crouch_strafe_left
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: crouch_strafe_right@handgun_1_tpc
+      takeName: Armature|crouch_strafe_right
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: crouch_up@handgun_1_tpc
+      takeName: Armature|crouch_up
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: crouch_walk@handgun_1_tpc
+      takeName: Armature|crouch_walk
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: crouch_walk_aim@handgun_1_tpc
+      takeName: Armature|crouch_walk_aim
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: crouch_walk_backwards@handgun_1_tpc
+      takeName: Armature|crouch_walk_backwards
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: crouch_walk_backwards_aim@handgun_1_tpc
+      takeName: Armature|crouch_walk_backwards_aim
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: falling@handgun_1_tpc
+      takeName: Armature|falling
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: fire@handgun_1_tpc
+      takeName: Armature|fire
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle@handgun_1_tpc
+      takeName: Armature|idle
+      firstFrame: 3
+      lastFrame: 57
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jump_pose@handgun_1_tpc
+      takeName: Armature|jump_pose
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jump_still@handgun_1_tpc
+      takeName: Armature|jump_still
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: prone_crawl@handgun_1_tpc
+      takeName: Armature|prone_crawl
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: prone_crawl_backwards@handgun_1_tpc
+      takeName: Armature|prone_crawl_backwards
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: prone_down@handgun_1_tpc
+      takeName: Armature|prone_down
+      firstFrame: 0
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: prone_strafe_left@handgun_1_tpc
+      takeName: Armature|prone_strafe_left
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: prone_strafe_right@handgun_1_tpc
+      takeName: Armature|prone_strafe_right
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: prone_up@handgun_1_tpc
+      takeName: Armature|prone_up
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: reload@handgun_1_tpc
+      takeName: Armature|reload
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: reload_mag_constraint@handgun_1_tpc
+      takeName: Armature|reload_mag_constraint
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run@handgun_1_tpc
+      takeName: Armature|run
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run_aim@handgun_1_tpc
+      takeName: Armature|run_aim
+      firstFrame: 0
+      lastFrame: 23.6499996
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run_backwards_aim@handgun_1_tpc
+      takeName: Armature|run_backwards_aim
+      firstFrame: 0
+      lastFrame: 23.6499996
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run_hold_gun@handgun_1_tpc
+      takeName: Armature|run_hold_gun
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run_strafe_left@handgun_1_tpc
+      takeName: Armature|run_strafe_left
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run_strafe_right@handgun_1_tpc
+      takeName: Armature|run_strafe_right
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk@handgun_1_tpc
+      takeName: Armature|walk
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk_backwards@handgun_1_tpc
+      takeName: Armature|walk_backwards
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk_strafe_left@handgun_1_tpc
+      takeName: Armature|walk_strafe_left
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk_strafe_right@handgun_1_tpc
+      takeName: Armature|walk_strafe_right
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/IK_arm_L
+        weight: 1
+      - path: Armature/IK_arm_R
+        weight: 1
+      - path: Armature/IK_leg_L
+        weight: 1
+      - path: Armature/IK_leg_R
+        weight: 1
+      - path: Armature/mag_handgun
+        weight: 1
+      - path: Armature/pelvis
+        weight: 1
+      - path: Armature/pelvis/arm_pole_L
+        weight: 1
+      - path: Armature/pelvis/arm_pole_R
+        weight: 1
+      - path: Armature/pelvis/head_target
+        weight: 1
+      - path: Armature/pelvis/knee_target_L
+        weight: 1
+      - path: Armature/pelvis/knee_target_R
+        weight: 1
+      - path: Armature/pelvis/leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L
+        weight: 1
+      - path: Armature/pelvis/leg_L/lower_leg_L/foot_L
+        weight: 1
+      - path: Armature/pelvis/leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R
+        weight: 1
+      - path: Armature/pelvis/leg_R/lower_leg_R/foot_R
+        weight: 1
+      - path: Armature/pelvis/spine
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_L/lower_arm_L/hand_L
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/arm_R/lower_arm_R/hand_R/weapon_handgun/slider_handgun
+        weight: 1
+      - path: Armature/pelvis/spine/neck
+        weight: 1
+      - path: Armature/pelvis/spine/neck/head
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: backpack
+        weight: 1
+      - path: base_character
+        weight: 1
+      - path: handgun_main
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
