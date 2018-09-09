@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isArrow: 1
+  arrowDamage: 100
   explosionMetalPrefab: {fileID: 400004, guid: 0444d53c1d23d13478b977e94447b08d, type: 2}
   explosionConcretePrefab: {fileID: 400002, guid: 7e4f47530ea204b4b979969e82485eb4,
     type: 2}

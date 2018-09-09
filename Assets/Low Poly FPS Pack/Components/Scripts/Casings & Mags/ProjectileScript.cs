@@ -6,6 +6,8 @@ public class ProjectileScript : MonoBehaviour {
 	//Used for the arrow projectile
 	public bool isArrow;
 
+	public int arrowDamage;
+
 	[Header("Explosion Prefabs")]
 	//All explosion prefabs
 	public Transform explosionMetalPrefab;
@@ -59,6 +61,20 @@ public class ProjectileScript : MonoBehaviour {
 
 	//If the projectile collides with anything
 	void OnCollisionEnter (Collision collision) {
+
+		if (collision.gameObject.tag == "Enemy")
+		{
+                		//Try and find a ZombieHealth Script
+                		ZombieHealth zombieHealth = collision.gameObject.GetComponent<ZombieHealth>();
+
+                		//If it exists...
+                		if(zombieHealth != null)
+                			{
+                    		//Zombie Takes Damage Reflective to arrow damage
+                    		zombieHealth.TakeDamage(arrowDamage);
+                			}
+
+            			}
 
 		//********** USED IN THE DEMO SCENES **********
 		//If the projectile hit the tag "Target", and if "isHit" is false

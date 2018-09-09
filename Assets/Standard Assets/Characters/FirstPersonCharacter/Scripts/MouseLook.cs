@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -63,6 +64,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }
+            else if(Time.timeScale == 0.0F)
+            {
+                m_cursorIsLocked = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
         }
 
         public void UpdateCursorLock()
@@ -78,6 +85,18 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_cursorIsLocked = false;
             }
+
+            else if(Input.GetKeyUp(KeyCode.I))
+            {
+                m_cursorIsLocked = false;
+            }
+            else if(Input.GetKeyDown(KeyCode.I) && m_cursorIsLocked != true)
+            {
+                m_cursorIsLocked = true;
+                Cursor.visible = false;
+                Debug.Log("Cursor should disable.");
+            }
+
             else if(Input.GetMouseButtonUp(0))
             {
                 m_cursorIsLocked = true;

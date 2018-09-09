@@ -798,7 +798,7 @@ public class ArmControllerScript : MonoBehaviour {
                 		if(zombieHealth != null)
                 			{
                     		//Zombie Takes Damage Reflective to weapon settings
-                    		zombieHealth.TakeDamage(ShootSettings.damagePerShot, hit.point);
+                    		zombieHealth.TakeDamage(ShootSettings.damagePerShot);
                 			}
 
             			}

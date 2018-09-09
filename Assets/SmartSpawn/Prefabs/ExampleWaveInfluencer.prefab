@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &159772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 442258}
+  - component: {fileID: 11497078}
+  - component: {fileID: 11484620}
+  - component: {fileID: 11454716}
+  m_Layer: 0
+  m_Name: ExampleWaveInfluencer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &442258
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.36, y: 4.08, z: 1.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11454716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88cdb913cb332ec428d455d9789380f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentInfluenceModifier: 2
+  influenceSpawnObject: {fileID: 11400000, guid: 054387aab5e1d7942b0464d74cfe75e2,
+    type: 2}
+  influenceUpdateRate: -1
+  performInfluenceOnWaveReset: 1
+  waveToPerformInfluenceOn: 4
+  waveTimeMultiplier: 0.5
+  waveTimeAddition: 0
+  startInfluenceImmediately: 0
+  allSpawnScripts:
+  - {fileID: 0}
+  influenceRange: 8.61
+  influenceAllSmartSpawners: 1
+  attemptSpawnOnInfluence: 0
+  spawnTimeMultiplier: 1
+  spawnTimeAddition: 0
+--- !u!114 &11484620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88cdb913cb332ec428d455d9789380f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentInfluenceModifier: 2
+  influenceSpawnObject: {fileID: 11400000, guid: c0115b18067eb36429ee8a50d35ed980,
+    type: 2}
+  influenceUpdateRate: -1
+  performInfluenceOnWaveReset: 1
+  waveToPerformInfluenceOn: 3
+  waveTimeMultiplier: 1
+  waveTimeAddition: 4
+  startInfluenceImmediately: 0
+  allSpawnScripts:
+  - {fileID: 0}
+  influenceRange: 8.61
+  influenceAllSmartSpawners: 1
+  attemptSpawnOnInfluence: 0
+  spawnTimeMultiplier: 1
+  spawnTimeAddition: 0
+--- !u!114 &11497078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88cdb913cb332ec428d455d9789380f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentInfluenceModifier: 2
+  influenceSpawnObject: {fileID: 11400000, guid: 7ee4f788204453347a235234c3840f6e,
+    type: 2}
+  influenceUpdateRate: -1
+  performInfluenceOnWaveReset: 1
+  waveToPerformInfluenceOn: 2
+  waveTimeMultiplier: 1
+  waveTimeAddition: -2
+  startInfluenceImmediately: 0
+  allSpawnScripts:
+  - {fileID: 0}
+  influenceRange: 8.61
+  influenceAllSmartSpawners: 1
+  attemptSpawnOnInfluence: 0
+  spawnTimeMultiplier: 1
+  spawnTimeAddition: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 159772}
+  m_IsPrefabAsset: 1

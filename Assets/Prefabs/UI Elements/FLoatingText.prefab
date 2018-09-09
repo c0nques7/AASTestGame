@@ -95,7 +95,7 @@ TextMesh:
   m_OffsetZ: 0
   m_CharacterSize: 4
   m_LineSpacing: 1
-  m_Anchor: 4
+  m_Anchor: 1
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 33
@@ -117,8 +117,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DestroyTime: 3
-  Offset: {x: 0, y: 2, z: 0}
-  RandomizeIntensity: {x: 0.5, y: 0, z: 0}
+  Offset: {x: 0, y: 0, z: 0}
+  RandomizeIntensity: {x: 1.18, y: 0, z: 0}
 --- !u!222 &222356950203916690
 CanvasRenderer:
   m_ObjectHideFlags: 1

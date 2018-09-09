@@ -7,10 +7,21 @@ public class PointCounter : MonoBehaviour {
     public Text score;
     public GUISkin guiSkin = null;
     public static int points;
+    Animator anim;
+
+    void Start()
+    {
+        points = 0;
+        anim = GetComponent<Animator>();
+    }
 
     private void Update()
     {
         SetCountText();
+        if (points == 50){
+            Debug.Log("SuperBow Ready!");
+            anim.SetTrigger("Bow");
+        }
     }
 
     /*private void OnGUI()
@@ -20,7 +31,10 @@ public class PointCounter : MonoBehaviour {
         GUI.skin = null;
     }*/
 
-    
+    void SuperBow()
+    {
+        
+    }
 
     public void SetCountText()
     {

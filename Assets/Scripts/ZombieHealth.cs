@@ -47,7 +47,7 @@ public class ZombieHealth : MonoBehaviour
     }
 
 
-    public void TakeDamage(int amount, Vector3 hitPoint)
+    public void TakeDamage(int amount)
     {
         // If the enemy is dead...
         if (isDead)
@@ -97,7 +97,7 @@ public class ZombieHealth : MonoBehaviour
         isDead = true;
 
         // Turn the collider into a trigger so shots can pass through it.
-        capsuleCollider.isTrigger = true;
+        //capsuleCollider.isTrigger = true;
 
         // Increase the score by the enemy's score value.
         PointCounter.points += scoreValue;
