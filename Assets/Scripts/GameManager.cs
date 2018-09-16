@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+	public static int minDamage;
+	public static int maxDamage;
+	public static int weaponRarity;
+
+	public static int zombiePoints; 
+	
+	public ArmControllerScript armControllerScript;
+
+
 	float currentAmount = 0f;
 	float maxAmount = 10f;
 
+	public GameObject player;
 	public GameObject bow;
 	public GameObject primary;
 	Animator anim;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
+		armControllerScript = player.GetComponentInChildren<ArmControllerScript>();
 	}
 	
 	// Update is called once per frame
@@ -43,11 +54,18 @@ public class GameManager : MonoBehaviour {
 			
 
         }
+
+		if (bow.tag == "CommonRifle")
+		{
+			weaponRarity = 1;
+		}
+
+		//Check to see if the timescale has been modified
 		if (Time.timeScale == 0.7f)
 		{
 			currentAmount += Time.deltaTime;
 		}
-
+		//When currentAmount is greater than maxAmount, return the timescale to 1.0
 		if (currentAmount > maxAmount){
 			currentAmount = 0f;
 			Time.timeScale = 1.0f;
@@ -63,4 +81,4 @@ public class GameManager : MonoBehaviour {
 
 }
 
-		
+		//xjuice

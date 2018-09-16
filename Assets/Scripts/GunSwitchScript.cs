@@ -50,15 +50,53 @@ public class GunSwitchScript : MonoBehaviour {
 
 		//Start the tutorial text timer
 		StartCoroutine (TutorialTextTimer ());
+
+		
+	
 	}
 
 	void Update () {
+
+			//If E key is pressed...
+		if(Input.GetKeyDown(KeyCode.E))
+		{	
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hit;
+				//...Cast a ray from the mouse position...
+			        if(Physics.Raycast (ray, out hit))
+					   {
+						//Then check for a weaponManager script
+						WeaponManager weaponManager = hit.collider.GetComponent<WeaponManager>();
+
+                		//If it exists, and the weapon is a SCAR...
+                			if(weaponManager != null && hit.collider.tag == "SCAR")
+                			{
+								
+								Debug.Log("This is a gun");
+
+								Destroy(hit.collider.gameObject);
+
+								changeGun(2);
+								totalAmmoText.text = guns[2].GetComponent
+								<ArmControllerScript>().ShootSettings.ammo.ToString();
+								//Set the currentGunObject to the current gun
+								currentGunObject = guns[2];
+								//Set the current gun text
+								currentGunText.text = gun3Text;
+								//Set the damage
+								//ArmControllerScript.damage = WeaponManager.newDamage;
+
+                			}
+					   }   		
+
+        }
 
 		//Get the ammo left from the current gun
 		//and show it as a text
 		ammoLeftText.text = currentGunObject.GetComponent
 			<ArmControllerScript>().currentAmmo.ToString();
-
+		
+				
 		//If key 1 is pressed, and noSwitch is false in GunScript.cs
 		if(Input.GetKeyDown(KeyCode.Alpha1) && 
 		   currentGunObject.GetComponent<ArmControllerScript>().noSwitch == false) {
@@ -123,10 +161,15 @@ public class GunSwitchScript : MonoBehaviour {
 			//Set the current gun text
 			currentGunText.text = gun5Text;
 		}
+		
+
 	}
+
+	
 
 	//Activates the current gun from the array
 	void changeGun(int num) {
+
 		currentGun = num;
 		for(int i = 0; i < guns.Length; i++) {
 			if(i == num)

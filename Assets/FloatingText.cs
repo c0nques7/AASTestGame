@@ -16,5 +16,12 @@ public class FloatingText : MonoBehaviour {
 												Random.Range(-RandomizeIntensity.y, RandomizeIntensity.y),
 												Random.Range(-RandomizeIntensity.z, RandomizeIntensity.z));
 	}
-	
+	void Update () {
+		Vector3 camPos = Camera.main.transform.position;
+
+		transform.LookAt(
+			new Vector3(-camPos.x, -transform.position.y, -camPos.z)
+		);
+		
+	}
 }
