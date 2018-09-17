@@ -6,6 +6,7 @@ public class ZombieHealth : MonoBehaviour
 {
 
     public GameObject FlaotingTextPrefab;
+    public GameObject deathAnimation;
     public int startingHealth = 100;            // The amount of health the enemy starts the game with.
     public int currentHealth;                   // The current health the enemy has.
     public float sinkSpeed = 2.5f;              // The speed at which the enemy sinks through the floor when dead.
@@ -97,7 +98,7 @@ public class ZombieHealth : MonoBehaviour
         isDead = true;
 
         // Turn the collider into a trigger so shots can pass through it.
-        //capsuleCollider.isTrigger = true;
+        capsuleCollider.isTrigger = true;
 
         // Increase the score by the enemy's score value.
         PointCounter.points += scoreValue;
@@ -109,8 +110,13 @@ public class ZombieHealth : MonoBehaviour
         // enemyAudio.clip = deathClip;
         // enemyAudio.Play();
 
-        //
         
+
+        Instantiate(deathAnimation, gameObject.transform.position, gameObject.transform.rotation);
+
+        //Begin the sinking process
+        StartSinking();
+
         Debug.Log("Zombie Killed!");
     }
 
@@ -118,13 +124,13 @@ public class ZombieHealth : MonoBehaviour
     public void StartSinking()
     {
         // Find and disable the Nav Mesh Agent.
-        //GetComponent<NavMeshAgent>().enabled = false;
+        GetComponent<NavMeshAgent>().enabled = false;
 
         // Find the rigidbody component and make it kinematic (since we use Translate to sink the enemy).
-        //GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<Rigidbody>().isKinematic = true;
 
-        // The enemy should no sink.
-        //isSinking = true;
+        // The enemy should now sink.
+        isSinking = true;
 
         
 
