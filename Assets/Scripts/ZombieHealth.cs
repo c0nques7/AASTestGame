@@ -89,7 +89,7 @@ public class ZombieHealth : MonoBehaviour
     
     }
 
-   
+    
 
     void Death()
     {
@@ -110,7 +110,7 @@ public class ZombieHealth : MonoBehaviour
         // enemyAudio.Play();
 
         //
-
+        
         Debug.Log("Zombie Killed!");
     }
 

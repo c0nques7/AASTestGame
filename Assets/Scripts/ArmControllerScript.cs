@@ -2,7 +2,11 @@
 using System.Collections;
 
 public class ArmControllerScript : MonoBehaviour {
+
+	public static int damage;
 	
+	public GameObject FloatingTextPrefab;
+
 	public GameObject Bullet;
 
 	public float Bullet_Velocity;
@@ -72,7 +76,7 @@ public class ArmControllerScript : MonoBehaviour {
 		//by the bullet raycast
 		public float bulletForce = 500.0f;
 		//How much damage the shot does to an item with the tag "Shootable"
-		public int damagePerShot;
+		public int damagePerShot = damage;
 		
 		[Header("Shotgun Settings")]
 		public bool useShotgunSpread;
@@ -274,6 +278,7 @@ public class ArmControllerScript : MonoBehaviour {
 	
 	void Update () {
 
+		
 		//Generate random number to choose which melee attack animation to play
 		//If using a melee weapon
 		if (MeleeSettings.isMeleeWeapon == true) {

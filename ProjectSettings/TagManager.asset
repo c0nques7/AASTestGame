@@ -20,6 +20,7 @@ TagManager:
   - MainInventory
   - Timer
   - Enemy
+  - SCAR
   layers:
   - Default
   - TransparentFX
@@ -31,8 +32,8 @@ TagManager:
   - 
   - 
   - Shootable
+  - Gun
   - PostProcessing
-  - 
   - 
   - 
   - 

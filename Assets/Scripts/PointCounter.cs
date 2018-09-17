@@ -18,10 +18,10 @@ public class PointCounter : MonoBehaviour {
     private void Update()
     {
         SetCountText();
-        if (points == 50){
-            Debug.Log("SuperBow Ready!");
-            anim.SetTrigger("Bow");
-        }
+        //if (points == 50){
+            //Debug.Log("SuperBow Ready!");
+            //anim.SetTrigger("Bow");
+        //}
     }
 
     /*private void OnGUI()
