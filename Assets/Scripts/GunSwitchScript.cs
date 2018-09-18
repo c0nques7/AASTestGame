@@ -69,11 +69,11 @@ public class GunSwitchScript : MonoBehaviour {
 						WeaponManager weaponManager = hit.collider.GetComponent<WeaponManager>();
 
                 		//If it exists, and the weapon is a SCAR...
-                			if(weaponManager != null && hit.collider.tag == "SCAR")
+                			if(weaponManager != null && hit.collider.tag == "CommonRifle")
                 			{
-								
+                                //Set the gameobject tag
+                                guns[2].tag = "CommonRifle";
 								Debug.Log("This is a gun");
-
 								Destroy(hit.collider.gameObject);
 
 								changeGun(2);
@@ -83,11 +83,107 @@ public class GunSwitchScript : MonoBehaviour {
 								currentGunObject = guns[2];
 								//Set the current gun text
 								currentGunText.text = gun3Text;
-								//Set the damage
-								//ArmControllerScript.damage = WeaponManager.newDamage;
+                                
+                                
+								
 
                 			}
-					   }   		
+                            if (weaponManager != null && hit.collider.tag == "UncommonRifle")
+                            {
+                            //Set the gameobject tag
+                            guns[2].tag = "UncommonRifle";
+                                Debug.Log("This is a gun");
+                                Destroy(hit.collider.gameObject);
+
+                                changeGun(2);
+                                totalAmmoText.text = guns[2].GetComponent
+                                <ArmControllerScript>().ShootSettings.ammo.ToString();
+                                //Set the currentGunObject to the current gun
+                                currentGunObject = guns[2];
+                                //Set the current gun text
+                                currentGunText.text = gun3Text;
+
+
+
+
+                            }
+                            if (weaponManager != null && hit.collider.tag == "RareRifle")
+                            {
+                                //Set the gameobject tag
+                                guns[2].tag = "RareRifle";
+                                Debug.Log("This is a gun");
+                                Destroy(hit.collider.gameObject);
+
+                                changeGun(2);
+                                totalAmmoText.text = guns[2].GetComponent
+                                <ArmControllerScript>().ShootSettings.ammo.ToString();
+                                //Set the currentGunObject to the current gun
+                                currentGunObject = guns[2];
+                                //Set the current gun text
+                                currentGunText.text = gun3Text;
+
+
+
+
+                            }
+                            if (weaponManager != null && hit.collider.tag == "UltraRareRifle")
+                            {
+                                //Set the gameobject tag
+                                guns[2].tag = "UltraRareRifle";
+                                Debug.Log("This is a gun");
+                                Destroy(hit.collider.gameObject);
+
+                                changeGun(2);
+                                totalAmmoText.text = guns[2].GetComponent
+                                <ArmControllerScript>().ShootSettings.ammo.ToString();
+                                //Set the currentGunObject to the current gun
+                                currentGunObject = guns[2];
+                                //Set the current gun text
+                                currentGunText.text = gun3Text;
+
+
+
+
+                            }
+                            if (weaponManager != null && hit.collider.tag == "OmegaRareRifle")
+                            {
+                                //Set the gameobject tag
+                                guns[2].tag = "OmegaRareRifle";
+                                Debug.Log("This is a gun");
+                                Destroy(hit.collider.gameObject);
+
+                                changeGun(2);
+                                totalAmmoText.text = guns[2].GetComponent
+                                <ArmControllerScript>().ShootSettings.ammo.ToString();
+                                //Set the currentGunObject to the current gun
+                                currentGunObject = guns[2];
+                                //Set the current gun text
+                                currentGunText.text = gun3Text;
+
+
+
+
+                            }
+                            if (weaponManager != null && hit.collider.tag == "DeveloperRifle")
+                            {
+                                //Set the gameobject tag
+                                guns[2].tag = "DeveloperRifle";
+                                Debug.Log("This is a gun");
+                                Destroy(hit.collider.gameObject);
+
+                                changeGun(2);
+                                totalAmmoText.text = guns[2].GetComponent
+                                <ArmControllerScript>().ShootSettings.ammo.ToString();
+                                //Set the currentGunObject to the current gun
+                                currentGunObject = guns[2];
+                                //Set the current gun text
+                                currentGunText.text = gun3Text;
+
+
+
+
+                            }
+            }   		
 
         }
 

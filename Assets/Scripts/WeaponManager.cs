@@ -13,14 +13,14 @@ public class WeaponManager : MonoBehaviour {
 	public string weaponName;								//The Name of the weapon
 	public int maxDamage;							//Maximum damage of the weapon
 	public int minDamage;							//Minimum damage of the weapon
-	public int newDamage;
+	public static int newDamage;
 	public int fireRate;							//The rate of fire of the weapon
 
 	public float weaponRarity;  //The Rarity of the weapon
 
 	// Use this for initialization
 	void Start () {
-		weaponRarity = 0;
+		weaponRarity = Random.Range(0, 5);
 
 
 		
@@ -36,83 +36,44 @@ public class WeaponManager : MonoBehaviour {
 	{
 		if (textstatus == "off")
 		{
+            //Common Weapons
 			if(weaponRarity == 0){
+                gameObject.tag = "CommonRifle";
 			weaponinfotext.GetComponent<TextMesh>().text = "Common Weapon";
 			weaponinfotext.GetComponent<TextMesh>().color = Color.grey;
-			Debug.Log("Common Weapon");
-			minDamage = 20;
-			maxDamage = 35;
-			
-			newDamage = Random.Range(minDamage, maxDamage);
-			Debug.Log(newDamage);
-			ArmControllerScript.damage = newDamage;
 			}
-		
+		    
+            //Uncommon Weapons
 			if(weaponRarity == 1){
-			weaponinfotext.GetComponent<TextMesh>().text = "Uncommon Weapon";
+                gameObject.tag = "UnommonRifle";
+                weaponinfotext.GetComponent<TextMesh>().text = "Uncommon Weapon";
 			weaponinfotext.GetComponent<TextMesh>().color = Color.green;
-			Debug.Log("Uncommon Weapon");
-
-			minDamage = 35;
-			maxDamage = 50;
-			
-			newDamage = Random.Range(minDamage, maxDamage);
-			Debug.Log(newDamage);
-			ArmControllerScript.damage = newDamage;
-
 			}
 
+            //Rare Rifles
 			if(weaponRarity == 2){
-			weaponinfotext.GetComponent<TextMesh>().text = "Rare Weapon";
-			weaponinfotext.GetComponent<TextMesh>().color = Color.blue;
-			Debug.Log("Rare Weapon");
-
-			minDamage = 50;
-			maxDamage = 65;
-			
-			int newDamage = Random.Range(minDamage, maxDamage);
-			Debug.Log(newDamage);
-			ArmControllerScript.damage = newDamage;
+                gameObject.tag = "RareRifle";
+                weaponinfotext.GetComponent<TextMesh>().text = "Rare Weapon";
+			weaponinfotext.GetComponent<TextMesh>().color = Color.blue;	
 			}
 
-
+            //Ultra Rare Rifles
 			if(weaponRarity == 3){
+                gameObject.tag = "UltraRareRifle";
 			weaponinfotext.GetComponent<TextMesh>().text = "Ultra Rare Weapon";
 			weaponinfotext.GetComponent<TextMesh>().color = Color.magenta;
-			Debug.Log("Ultra Rare Weapon");
-
-			minDamage = 65;
-			maxDamage = 80;
-			
-			int newDamage = Random.Range(minDamage, maxDamage);
-			Debug.Log(newDamage);
-			ArmControllerScript.damage = newDamage;
 			}
-
+            //Omega Rare Rifle
 			if(weaponRarity == 4){
+                gameObject.tag = "OmegaRareRifle";
 			weaponinfotext.GetComponent<TextMesh>().text = "Omega Rare Weapon";
-			weaponinfotext.GetComponent<TextMesh>().color = Color.magenta;
-			Debug.Log("Omega Rare Weapon");
-
-			minDamage = 80;
-			maxDamage = 95;
-			
-			int newDamage = Random.Range(minDamage, maxDamage);
-			Debug.Log(newDamage);
-			ArmControllerScript.damage = newDamage;
+			weaponinfotext.GetComponent<TextMesh>().color = Color.yellow;
 			}
-
+            //Weapon of the Developers
 			if(weaponRarity == 5){
+                gameObject.tag = "DeveloperRifle";
 			weaponinfotext.GetComponent<TextMesh>().text = "Weapon of The Developers";
-			weaponinfotext.GetComponent<TextMesh>().color = Color.magenta;
-			Debug.Log("Weapon of The Developers");
-
-			minDamage = 95;
-			maxDamage = 110;
-			
-			int newDamage = Random.Range(minDamage, maxDamage);
-			Debug.Log(newDamage);
-			ArmControllerScript.damage = newDamage;
+			weaponinfotext.GetComponent<TextMesh>().color = Color.red;
 			}
 			
 			textstatus="on";

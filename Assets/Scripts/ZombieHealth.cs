@@ -5,7 +5,10 @@ using UnityEngine.UI;
 public class ZombieHealth : MonoBehaviour
 {
 
+    public GameObject[] loot;
+
     public GameObject FlaotingTextPrefab;
+    public GameObject FloatingScorePrefab;
     public GameObject deathAnimation;
     public int startingHealth = 100;            // The amount of health the enemy starts the game with.
     public int currentHealth;                   // The current health the enemy has.
@@ -90,7 +93,14 @@ public class ZombieHealth : MonoBehaviour
     
     }
 
-    
+    void ShowFloatingScore()
+    {
+        var go = Instantiate(FloatingScorePrefab, transform.position, Quaternion.identity, transform);
+        go.GetComponent<TextMesh>().text = scoreValue.ToString();
+
+    }
+
+
 
     void Death()
     {
@@ -110,14 +120,27 @@ public class ZombieHealth : MonoBehaviour
         // enemyAudio.clip = deathClip;
         // enemyAudio.Play();
 
-        
+        LootDrop();
 
         Instantiate(deathAnimation, gameObject.transform.position, gameObject.transform.rotation);
 
-        //Begin the sinking process
-        StartSinking();
 
         Debug.Log("Zombie Killed!");
+
+        if (FloatingScorePrefab != null)
+        {
+            ShowFloatingScore();
+
+        }
+    }
+
+    void LootDrop()
+    {
+        foreach (GameObject i in loot)
+        {
+            Instantiate(i, transform.position, transform.rotation);
+        }
+            
     }
 
 

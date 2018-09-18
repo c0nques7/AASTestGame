@@ -818,7 +818,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb2fa380b9633249a34f273ccff759d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loot:
+  - {fileID: 1103361371506668, guid: 66d486eae9178b848ac89aa7d44f283d, type: 2}
   FlaotingTextPrefab: {fileID: 1697274913223764, guid: 6a42eb9566725cf408f06e505c293f20,
+    type: 2}
+  FloatingScorePrefab: {fileID: 1697274913223764, guid: 8c1fe6088bf3f914bae0bbb0ae4ab118,
     type: 2}
   deathAnimation: {fileID: 119968, guid: e73000b12fb76244cbffd6abbf8bb6e4, type: 2}
   startingHealth: 100

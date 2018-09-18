@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ArmControllerScript : MonoBehaviour {
-
-	public static int damage;
-	
+        	
 	public GameObject FloatingTextPrefab;
 
 	public GameObject Bullet;
@@ -67,16 +66,18 @@ public class ArmControllerScript : MonoBehaviour {
 		[Header("Fire Rate & Bullet Settings")]
 		public bool automaticFire;
 		public float fireRate;
-		
-		[Space(10)]
-		
+
+        [Space(10)]
+
+        //Weapon Rarity
+        
 		//How far the raycast will reach
 		public float bulletDistance = 500.0f;
 		//How much force will be applied to rigidbodies 
 		//by the bullet raycast
 		public float bulletForce = 500.0f;
 		//How much damage the shot does to an item with the tag "Shootable"
-		public int damagePerShot = damage;
+		public int damagePerShot;
 		
 		[Header("Shotgun Settings")]
 		public bool useShotgunSpread;
@@ -249,9 +250,40 @@ public class ArmControllerScript : MonoBehaviour {
 		
 		//Set the ammo count
 		RefillAmmo ();
-		
-		//Hide muzzleflash and light at start, disable for projectile, grenade, melee weapons, grenade launcher and flamethrower
-		if (!ShootSettings.projectileWeapon && !MeleeSettings.isMeleeWeapon && !ShootSettings.grenade && !ShootSettings.grenadeLauncher && !ShootSettings.flamethrower) {
+
+        if(gameObject.tag == "CommonRifle" && ShootSettings.damagePerShot == 0)
+        {
+            ShootSettings.damagePerShot = Random.Range(20, 35);
+            Debug.Log("Pew pew");
+        }
+        if (gameObject.tag == "UncommonRifle" && ShootSettings.damagePerShot == 0)
+        {
+            ShootSettings.damagePerShot = Random.Range(35, 50);
+            Debug.Log("Pew pew");
+        }
+        if (gameObject.tag == "RareRifle" && ShootSettings.damagePerShot == 0)
+        {
+            ShootSettings.damagePerShot = Random.Range(50, 65);
+            Debug.Log("Pew pew");
+        }
+        if (gameObject.tag == "UltraRareRifle" && ShootSettings.damagePerShot == 0)
+        {
+            ShootSettings.damagePerShot = Random.Range(65, 70);
+            Debug.Log("Pew pew");
+        }
+        if (gameObject.tag == "OmegaRareRifle" && ShootSettings.damagePerShot == 0)
+        {
+            ShootSettings.damagePerShot = Random.Range(75, 90);
+            Debug.Log("Pew pew");
+        }
+        if (gameObject.tag == "DeveloperRifle" && ShootSettings.damagePerShot == 0)
+        {
+            ShootSettings.damagePerShot = Random.Range(100, 135);
+            Debug.Log("Pew pew");
+        }
+
+        //Hide muzzleflash and light at start, disable for projectile, grenade, melee weapons, grenade launcher and flamethrower
+        if (!ShootSettings.projectileWeapon && !MeleeSettings.isMeleeWeapon && !ShootSettings.grenade && !ShootSettings.grenadeLauncher && !ShootSettings.flamethrower) {
 			
 			Components.sideMuzzle.GetComponent<SpriteRenderer> ().enabled = false;
 			Components.topMuzzle.GetComponent<SpriteRenderer> ().enabled = false;

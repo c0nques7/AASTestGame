@@ -21,6 +21,12 @@ TagManager:
   - Timer
   - Enemy
   - SCAR
+  - CommonRifle
+  - UncommonRifle
+  - RareRifle
+  - UltraRareRifle
+  - OmegaRareRifle
+  - DeveloperRifle
   layers:
   - Default
   - TransparentFX
@@ -30,7 +36,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Ground
   - Shootable
   - Gun
   - PostProcessing
