@@ -88,9 +88,11 @@ public class ZombieHealth : MonoBehaviour
 
     void ShowFloatingText()
     {
-        var go = Instantiate(FlaotingTextPrefab, transform.position, Quaternion.identity, transform);
-        go.GetComponent<TextMesh>().text = currentHealth.ToString();
-    
+        if (currentHealth >= 0)
+        {
+            var go = Instantiate(FlaotingTextPrefab, transform.position, Quaternion.identity, transform);
+            go.GetComponent<TextMesh>().text = currentHealth.ToString();
+        }
     }
 
     void ShowFloatingScore()
@@ -139,6 +141,8 @@ public class ZombieHealth : MonoBehaviour
         foreach (GameObject i in loot)
         {
             Instantiate(i, transform.position, transform.rotation);
+            Destroy(gameObject, 10f);
+            
         }
             
     }

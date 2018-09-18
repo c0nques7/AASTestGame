@@ -72,9 +72,11 @@ public class ProjectileScript : MonoBehaviour {
                 			{
                     		//Zombie Takes Damage Reflective to arrow damage
                     		zombieHealth.TakeDamage(arrowDamage);
-                			}
+                            GetComponent<Rigidbody>().isKinematic = true;
 
-            			}
+            }
+
+        }
 
 		//********** USED IN THE DEMO SCENES **********
 		//If the projectile hit the tag "Target", and if "isHit" is false

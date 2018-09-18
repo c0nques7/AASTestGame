@@ -22,13 +22,14 @@ public class WeaponManager : MonoBehaviour {
 	void Start () {
 		weaponRarity = Random.Range(0, 5);
 
+        
 
-		
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
+        
 		
 	}
 
@@ -41,40 +42,46 @@ public class WeaponManager : MonoBehaviour {
                 gameObject.tag = "CommonRifle";
 			weaponinfotext.GetComponent<TextMesh>().text = "Common Weapon";
 			weaponinfotext.GetComponent<TextMesh>().color = Color.grey;
-			}
+                Destroy(gameObject, 10f);
+            }
 		    
             //Uncommon Weapons
 			if(weaponRarity == 1){
                 gameObject.tag = "UnommonRifle";
                 weaponinfotext.GetComponent<TextMesh>().text = "Uncommon Weapon";
 			weaponinfotext.GetComponent<TextMesh>().color = Color.green;
-			}
+                Destroy(gameObject, 10f);
+            }
 
             //Rare Rifles
 			if(weaponRarity == 2){
                 gameObject.tag = "RareRifle";
                 weaponinfotext.GetComponent<TextMesh>().text = "Rare Weapon";
-			weaponinfotext.GetComponent<TextMesh>().color = Color.blue;	
-			}
+			weaponinfotext.GetComponent<TextMesh>().color = Color.blue;
+                Destroy(gameObject, 10f);
+            }
 
             //Ultra Rare Rifles
 			if(weaponRarity == 3){
                 gameObject.tag = "UltraRareRifle";
 			weaponinfotext.GetComponent<TextMesh>().text = "Ultra Rare Weapon";
 			weaponinfotext.GetComponent<TextMesh>().color = Color.magenta;
-			}
+                Destroy(gameObject, 10f);
+            }
             //Omega Rare Rifle
 			if(weaponRarity == 4){
                 gameObject.tag = "OmegaRareRifle";
 			weaponinfotext.GetComponent<TextMesh>().text = "Omega Rare Weapon";
 			weaponinfotext.GetComponent<TextMesh>().color = Color.yellow;
-			}
+                Destroy(gameObject, 10f);
+            }
             //Weapon of the Developers
 			if(weaponRarity == 5){
                 gameObject.tag = "DeveloperRifle";
 			weaponinfotext.GetComponent<TextMesh>().text = "Weapon of The Developers";
 			weaponinfotext.GetComponent<TextMesh>().color = Color.red;
-			}
+                Destroy(gameObject, 10f);
+            }
 			
 			textstatus="on";
 			Instantiate (weaponinfotext, new Vector3(transform.position.x, transform.position.y), weaponinfotext.rotation);
@@ -88,4 +95,6 @@ public class WeaponManager : MonoBehaviour {
 			textstatus = "off";
 		}
 	}
+
+
 }
