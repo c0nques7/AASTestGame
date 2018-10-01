@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour {
 			{
 				primary.SetActive(false);
 				bow.SetActive(true);
-				PointCounter.points = 0;
+				
 			}
 			
 
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour {
 
 		if (PointCounter.points >= 100){
             Debug.Log("SlowMo Ready!");
-            //anim.SetTrigger("Bow");
+            anim.SetTrigger("Bow");
 
 			if (Input.GetKeyDown(KeyCode.Z))
 			{
@@ -74,8 +74,7 @@ public class GameManager : MonoBehaviour {
 
 	void SlowMoPower()
 	{
-		Time.timeScale = 0.7F;
-		PointCounter.points = 0;
+        Time.timeScale = 0.7F;
 		
 	}
 

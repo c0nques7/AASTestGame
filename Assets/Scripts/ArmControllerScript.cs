@@ -76,7 +76,7 @@ public class ArmControllerScript : MonoBehaviour {
 		//How much force will be applied to rigidbodies 
 		//by the bullet raycast
 		public float bulletForce = 500.0f;
-		//How much damage the shot does to an item with the tag "Shootable"
+		//How much damage the shot does to anything in the "Shootable" layer
 		public int damagePerShot;
 		
 		[Header("Shotgun Settings")]
