@@ -73,7 +73,7 @@ TextMesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1956456453228396}
-  m_Text: Ultra Rare Weapon
+  m_Text: Uncommon Weapon
   m_OffsetZ: 12
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -86,7 +86,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: a0d4944f417f02e42989124f676a2a8a, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4294902015
+    rgba: 4278255360
 --- !u!114 &114506573597441324
 MonoBehaviour:
   m_ObjectHideFlags: 1

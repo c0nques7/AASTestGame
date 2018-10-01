@@ -318,6 +318,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armControllerScript: {fileID: 0}
+  speed: 1
+  timerText: {fileID: 0}
   player: {fileID: 0}
   bow: {fileID: 0}
   primary: {fileID: 0}
@@ -522,8 +524,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae94c2be5948d4042980f5ef97c0104a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   playerHealth: {fileID: 0}
   restartDelay: 5
+  pointCounter: {fileID: 0}
+  timerText: {fileID: 0}
+  roundWon: {fileID: 0}
 --- !u!114 &114442984932180560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -596,7 +602,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 114551233068645384}
-  guiSkin: {fileID: 0}
 --- !u!114 &114516838737292312
 MonoBehaviour:
   m_ObjectHideFlags: 1

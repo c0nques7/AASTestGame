@@ -27,6 +27,7 @@ TagManager:
   - UltraRareRifle
   - OmegaRareRifle
   - DeveloperRifle
+  - FinishLine
   layers:
   - Default
   - TransparentFX

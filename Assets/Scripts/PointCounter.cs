@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class PointCounter : MonoBehaviour {
     public Text score;
-    public GUISkin guiSkin = null;
     public static int points;
     Animator anim;
 
@@ -23,13 +22,6 @@ public class PointCounter : MonoBehaviour {
             //anim.SetTrigger("Bow");
         //}
     }
-
-    /*private void OnGUI()
-    {
-        GUI.skin = guiSkin;
-        GUI.Label(new Rect(0.0f, 0.0f, 128f, 32.0f), "Zombies Killed:" + points.ToString());
-        GUI.skin = null;
-    }*/
 
     void SuperBow()
     {

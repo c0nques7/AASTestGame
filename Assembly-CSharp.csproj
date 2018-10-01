@@ -187,6 +187,7 @@
     <Compile Include="Assets\RipcordDevelopment\LootMaker\Scripts\C#\TextBehaviour.cs" />
     <Compile Include="Assets\RipcordDevelopment\LootMaker\Scripts\Demo\DEMO_LootGenerator.cs" />
     <Compile Include="Assets\RipcordDevelopment\LootMaker\Scripts\Demo\LootGenerator.cs" />
+    <Compile Include="Assets\RoundWon.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -251,6 +252,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\Timer.cs" />
     <Compile Include="Assets\VolClouds\Scripts\MainScene.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
