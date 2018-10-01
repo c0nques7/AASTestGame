@@ -2,9 +2,12 @@
 
 public class GameOverManager : MonoBehaviour
 {
+    public GameObject player;
     public PlayerHealth playerHealth;       // Reference to the player's health.
     public float restartDelay = 5f;         // Time to wait before restarting the level
-
+    public PointCounter pointCounter;
+    public Timer timerText;
+    public RoundWon roundWon;
 
     Animator anim;                          // Reference to the animator component.
     float restartTimer;                     // Timer to count up to restarting the level
@@ -35,5 +38,6 @@ public class GameOverManager : MonoBehaviour
                 Application.LoadLevel(Application.loadedLevel);
             }
         }
+
     }
 }

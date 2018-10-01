@@ -47,7 +47,7 @@ public class WeaponManager : MonoBehaviour {
 		    
             //Uncommon Weapons
 			if(weaponRarity == 1){
-                gameObject.tag = "UnommonRifle";
+                gameObject.tag = "UncommonRifle";
                 weaponinfotext.GetComponent<TextMesh>().text = "Uncommon Weapon";
 			weaponinfotext.GetComponent<TextMesh>().color = Color.green;
                 Destroy(gameObject, 10f);
