@@ -318,7 +318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armControllerScript: {fileID: 0}
-  speed: 1
   timerText: {fileID: 0}
   player: {fileID: 0}
   bow: {fileID: 0}
@@ -602,6 +601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 114551233068645384}
+  highScore: {fileID: 0}
 --- !u!114 &114516838737292312
 MonoBehaviour:
   m_ObjectHideFlags: 1

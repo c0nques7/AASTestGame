@@ -79,7 +79,6 @@
     <Compile Include="Assets\Epic Toon FX\Scripts\ETFXLightFade.cs" />
     <Compile Include="Assets\Epic Toon FX\Scripts\ETFXPitchRandomizer.cs" />
     <Compile Include="Assets\Epic Toon FX\Scripts\ETFXRotation.cs" />
-    <Compile Include="Assets\FloatingText.cs" />
     <Compile Include="Assets\InventoryMaster\Scripts\CraftSystem\Blueprint.cs" />
     <Compile Include="Assets\InventoryMaster\Scripts\CraftSystem\BlueprintDatabase.cs" />
     <Compile Include="Assets\InventoryMaster\Scripts\CraftSystem\CraftResultSlot.cs" />
@@ -187,7 +186,6 @@
     <Compile Include="Assets\RipcordDevelopment\LootMaker\Scripts\C#\TextBehaviour.cs" />
     <Compile Include="Assets\RipcordDevelopment\LootMaker\Scripts\Demo\DEMO_LootGenerator.cs" />
     <Compile Include="Assets\RipcordDevelopment\LootMaker\Scripts\Demo\LootGenerator.cs" />
-    <Compile Include="Assets\RoundWon.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -197,12 +195,16 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\ArmControllerScript.cs" />
+    <Compile Include="Assets\Scripts\FloatingText.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\GunSwitchScript.cs" />
+    <Compile Include="Assets\Scripts\LevelRestart.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\PointCounter.cs" />
+    <Compile Include="Assets\Scripts\RoundWon.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\WeaponInfoText.cs" />
     <Compile Include="Assets\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\WorldInteraction.cs" />
@@ -252,7 +254,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\Timer.cs" />
     <Compile Include="Assets\VolClouds\Scripts\MainScene.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
