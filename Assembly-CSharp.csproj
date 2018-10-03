@@ -200,6 +200,7 @@
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\GunSwitchScript.cs" />
     <Compile Include="Assets\Scripts\LevelRestart.cs" />
+    <Compile Include="Assets\Scripts\PathFollow.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\PointCounter.cs" />

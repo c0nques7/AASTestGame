@@ -21,6 +21,11 @@ public class LevelRestart : MonoBehaviour {
         roundWonCanvas.gameObject.SetActive(false);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 	// Use this for initialization
 	void Start () {
         

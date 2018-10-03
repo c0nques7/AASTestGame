@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPrefab:
   - {fileID: 1759397212370012, guid: 117ba7227a284c64585c3d04ebec6f58, type: 2}
-  - {fileID: 1759397212370012, guid: 117ba7227a284c64585c3d04ebec6f58, type: 2}
-  - {fileID: 1759397212370012, guid: 117ba7227a284c64585c3d04ebec6f58, type: 2}
-  - {fileID: 1759397212370012, guid: 117ba7227a284c64585c3d04ebec6f58, type: 2}
+  - {fileID: 1553432859544738, guid: e86a496779aaf08478359b0ca4df93d0, type: 2}
+  - {fileID: 1679627840382470, guid: 38429241e95bfe34c81f7800ac03852c, type: 2}
+  - {fileID: 1813870386284578, guid: 009d0d805d64dc3489d95dae15704ae9, type: 2}
   - {fileID: 1759397212370012, guid: 117ba7227a284c64585c3d04ebec6f58, type: 2}
   spawnChance: 0100000001000000010000000100000001000000
