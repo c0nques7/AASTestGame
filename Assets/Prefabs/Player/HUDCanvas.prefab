@@ -317,8 +317,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12f9581510dc37e4980bebfb3f886283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waves: []
+  timeBetweenWaves: 5
+  waveCountdown: 0
+  weaponManager: {fileID: 0}
   armControllerScript: {fileID: 0}
-  timerText: {fileID: 0}
   player: {fileID: 0}
   bow: {fileID: 0}
   primary: {fileID: 0}

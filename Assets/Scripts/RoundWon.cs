@@ -42,6 +42,7 @@ public class RoundWon : MonoBehaviour {
         player.gameObject.SetActive(false);
         HudCanvas.gameObject.SetActive(false);
         RoundWonCamera.gameObject.SetActive(true);
+        roundWonCanvas.gameObject.SetActive(true);
         Time.timeScale = 0.5f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;

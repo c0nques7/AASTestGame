@@ -1,14 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
+	public enum SpawnState  { spawning, waiting, counting };
+
+	[System.Serializable]
+	public class Wave{
+		public string name;
+		public Transform enemy;
+		public int count;
+		public float rate;
+	}
+
+	public Wave[] waves;
+	private int nextWave = 0;
+
+	public float timeBetweenWaves = 5f;
+	public float waveCountdown;
+	private SpawnState state = SpawnState.counting;
+
+
+	public WeaponManager weaponManager; 
+
 	public static int minDamage;
 	public static int maxDamage;
-	public static int weaponRarity;
-
 	public static int zombiePoints; 
 	
 	public ArmControllerScript armControllerScript;
@@ -16,9 +34,6 @@ public class GameManager : MonoBehaviour {
 
 	float currentAmount = 0f;
 	float maxAmount = 10f;
-    bool playing;
-
-    public Text timerText;
 
 	public GameObject player;
 	public GameObject bow;
@@ -26,17 +41,29 @@ public class GameManager : MonoBehaviour {
 	Animator anim;
 	// Use this for initialization
 	void Start () {
-
-
-        timerText = GetComponent<Text>();
 		anim = GetComponent<Animator>();
 		armControllerScript = player.GetComponentInChildren<ArmControllerScript>();
+		waveCountdown = timeBetweenWaves;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        anim.SetTrigger("Start");
+		if (waveCountdown <= 0)
+		{
+			if (state != SpawnState.spawning)
+			{
+				StartCoroutine(SpawnWave ( waves[nextWave] ) );
+			}
+		}
+		else
+		{
+			waveCountdown -= Time.deltaTime;
+		}
+
+		
+
+		
 
 		if (PointCounter.points >= 50){
             Debug.Log("SuperBow Ready!");
@@ -46,7 +73,7 @@ public class GameManager : MonoBehaviour {
 			{
 				primary.SetActive(false);
 				bow.SetActive(true);
-				
+				PointCounter.points = 0;
 			}
 			
 
@@ -54,7 +81,7 @@ public class GameManager : MonoBehaviour {
 
 		if (PointCounter.points >= 100){
             Debug.Log("SlowMo Ready!");
-            anim.SetTrigger("Bow");
+            //anim.SetTrigger("Bow");
 
 			if (Input.GetKeyDown(KeyCode.Z))
 			{
@@ -63,11 +90,6 @@ public class GameManager : MonoBehaviour {
 			
 
         }
-
-		if (bow.tag == "CommonRifle")
-		{
-			weaponRarity = 1;
-		}
 
 		//Check to see if the timescale has been modified
 		if (Time.timeScale == 0.7f)
@@ -81,21 +103,31 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	void SpawnEnemy(Transform _enemy)
+		{
+			//Spawn Enemy
+			Debug.Log("Spawning Enemy: " + _enemy.name);
+		}
+
+		IEnumerator SpawnWave(Wave _wave)
+		{
+			state = SpawnState.spawning;
+
+			for (int i = 0; i < _wave.count; i++)
+			{
+				SpawnEnemy(_wave.enemy);
+				yield return new WaitForSeconds( 1f/_wave.rate);
+			}
+			state = SpawnState.waiting;
+			yield break;
+		}
+
 	void SlowMoPower()
 	{
-        Time.timeScale = 0.7F;
+		Time.timeScale = 0.7F;
+		PointCounter.points = 0;
 		
 	}
-
-    void timerStart()
-    {
-        playing = true;
-    }
-
-    void timerStop()
-    {
-        playing = false;
-    }
 
 }
 
