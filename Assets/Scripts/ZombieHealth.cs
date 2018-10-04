@@ -15,10 +15,11 @@ public class ZombieHealth : MonoBehaviour
     public float sinkSpeed = 2.5f;              // The speed at which the enemy sinks through the floor when dead.
     public int scoreValue = 10;                      // The amount added to the player's score when the enemy dies.
     public AudioClip deathClip;                 // The sound to play when the enemy dies.
+    public AudioClip damagedClip;
 
 
      Animator anim;                              // Reference to the animator.
-    // AudioSource enemyAudio;                     // Reference to the audio source.
+    AudioSource enemyAudio;                     // Reference to the audio source.
     ParticleSystem hitParticles;                // Reference to the particle system that plays when the enemy is damaged.
     CapsuleCollider capsuleCollider;            // Reference to the capsule collider.
     bool isDead;                                // Whether the enemy is dead.
@@ -29,7 +30,7 @@ public class ZombieHealth : MonoBehaviour
     {
         // Setting up the references.
         anim = GetComponent<Animator>();
-        // enemyAudio = GetComponent<AudioSource>();
+        enemyAudio = GetComponent<AudioSource>();
         // hitParticles = GetComponentInChildren<ParticleSystem>();
         capsuleCollider = GetComponent<CapsuleCollider>();
         
@@ -59,7 +60,8 @@ public class ZombieHealth : MonoBehaviour
             return;
 
         // Play the hurt sound effect.
-        //enemyAudio.Play();
+        enemyAudio.clip = damagedClip;
+        enemyAudio.Play();
 
         // Reduce the current health by the amount of damage sustained.
         currentHealth -= amount;

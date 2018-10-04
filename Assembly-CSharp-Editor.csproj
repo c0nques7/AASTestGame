@@ -106,6 +106,10 @@
     <Compile Include="Assets\SmartSpawn\Scripts\Editor\SmartSpawnEditor.cs" />
     <Compile Include="Assets\SmartSpawn\Scripts\Editor\SmartSpawnNetworkEditor.cs" />
     <Compile Include="Assets\SmartSpawn\Scripts\Editor\SmartSpawnScritableObjectEditor.cs" />
+    <Compile Include="Assets\WS_MenuKit\Editor\LanguageControlEditor.cs" />
+    <Compile Include="Assets\WS_MenuKit\Editor\MenuControlEditor.cs" />
+    <Compile Include="Assets\WS_MenuKit\Editor\OptionsControlEditor.cs" />
+    <Compile Include="Assets\WS_MenuKit\Editor\PanelOptionsEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/jjwade/Documents/GitHub/AASTestGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
