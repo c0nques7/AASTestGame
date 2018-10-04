@@ -34,8 +34,20 @@ public class PlayerHealth : MonoBehaviour
         // Set the initial health of the player.
         currentHealth = startingHealth;
 
-
         
+
+    }
+
+    private void Start()
+    {
+        StartCoroutine(WaitForGo());
+    }
+
+    IEnumerator WaitForGo()
+    {
+        firstPersonController.enabled = false;
+        yield return new WaitForSeconds(5);
+        firstPersonController.enabled = true;
     }
 
 

@@ -36,6 +36,8 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        anim.SetTrigger("Start");
+
 		if (PointCounter.points >= 50){
             Debug.Log("SuperBow Ready!");
             anim.SetTrigger("Bow");

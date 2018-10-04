@@ -776,7 +776,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.76
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -924,7 +924,7 @@ MonoBehaviour:
   currentHealth: 0
   sinkSpeed: 5
   scoreValue: 10
-  deathClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: b60d4d186119ff341ad674aea9bd8c6d, type: 3}
   damagedClip: {fileID: 8300000, guid: fda97e4be59b392459eacf284fd6cfb5, type: 3}
 --- !u!114 &114760751952639348
 MonoBehaviour:

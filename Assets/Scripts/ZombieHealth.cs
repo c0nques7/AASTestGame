@@ -100,7 +100,7 @@ public class ZombieHealth : MonoBehaviour
     void ShowFloatingScore()
     {
         var go = Instantiate(FloatingScorePrefab, transform.position, Quaternion.identity, transform);
-        go.GetComponent<TextMesh>().text = scoreValue.ToString();
+        go.GetComponent<TextMesh>().text = "+" + scoreValue.ToString();
 
     }
 
@@ -121,8 +121,8 @@ public class ZombieHealth : MonoBehaviour
          anim.SetTrigger("Dead");
 
         // Change the audio clip of the audio source to the death clip and play it (this will stop the hurt clip playing).
-        // enemyAudio.clip = deathClip;
-        // enemyAudio.Play();
+        enemyAudio.clip = deathClip;
+        enemyAudio.Play();
 
         LootDrop();
 
