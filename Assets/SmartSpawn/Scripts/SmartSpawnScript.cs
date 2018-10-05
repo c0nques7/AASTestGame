@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -17,8 +18,8 @@ namespace SmartSpawn {
 	
 	
 	public class SmartSpawnScript : MonoBehaviour {
-		
-		//Variables start ==========================================
+
+        //Variables start ==========================================
 		
 		public delegate void SpawnAction();
 		/// <summary>
@@ -122,6 +123,7 @@ namespace SmartSpawn {
 		/// Determines whether we can be influenced by the SmartSpawnInfluenceMap
 		/// </summary>
 		public bool allowInfluence = true;
+
 		//Variables end=============================================
 		
 		// Use this for initialization

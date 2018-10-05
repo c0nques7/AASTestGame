@@ -16,6 +16,7 @@ public class ZombieHealth : MonoBehaviour
     public int scoreValue = 10;                      // The amount added to the player's score when the enemy dies.
     public AudioClip deathClip;                 // The sound to play when the enemy dies.
     public AudioClip damagedClip;
+    
 
 
      Animator anim;                              // Reference to the animator.
@@ -25,6 +26,10 @@ public class ZombieHealth : MonoBehaviour
     bool isDead;                                // Whether the enemy is dead.
     bool isSinking;                             // Whether the enemy has started sinking through the floor.
 
+    private void Start()
+    {
+        PointCounter.enemies += 1;
+    }
 
     void Awake()
     {
@@ -37,6 +42,7 @@ public class ZombieHealth : MonoBehaviour
 
         // Setting the current health when the enemy first spawns.
         currentHealth = startingHealth;
+        
     }
 
     void Update()
@@ -51,6 +57,7 @@ public class ZombieHealth : MonoBehaviour
         }
     }
 
+   
 
     public void TakeDamage(int amount)
     {
@@ -117,14 +124,17 @@ public class ZombieHealth : MonoBehaviour
         // Increase the score by the enemy's score value.
         PointCounter.points += scoreValue;
 
+        PointCounter.enemies += -1;
+
         // Tell the animator that the enemy is dead.
-         anim.SetTrigger("Dead");
+        anim.SetTrigger("Dead");
 
         // Change the audio clip of the audio source to the death clip and play it (this will stop the hurt clip playing).
         enemyAudio.clip = deathClip;
         enemyAudio.Play();
 
         LootDrop();
+        StartSinking();
 
         Instantiate(deathAnimation, gameObject.transform.position, gameObject.transform.rotation);
 

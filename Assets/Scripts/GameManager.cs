@@ -19,15 +19,19 @@ public class GameManager : MonoBehaviour {
 	private int nextWave = 0;
 
 	public float timeBetweenWaves = 5f;
-	public float waveCountdown;
+	private float waveCountdown;
 	private SpawnState state = SpawnState.counting;
+
+    private float searchCountdown = 1f;
+
+    public Transform[] spawnPoints;
 
 
 	public WeaponManager weaponManager; 
 
 	public static int minDamage;
 	public static int maxDamage;
-	public static int zombiePoints; 
+    public static int zombieKills;
 	
 	public ArmControllerScript armControllerScript;
 
@@ -41,13 +45,32 @@ public class GameManager : MonoBehaviour {
 	Animator anim;
 	// Use this for initialization
 	void Start () {
-		anim = GetComponent<Animator>();
+
+        if (spawnPoints.Length == 0)
+        {
+            Debug.LogError("No Spawn Points Referenced");
+        }
+        anim = GetComponent<Animator>();
 		armControllerScript = player.GetComponentInChildren<ArmControllerScript>();
 		waveCountdown = timeBetweenWaves;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        if(state == SpawnState.waiting)
+        {
+            //Check if enemies are still alive
+            if (!EnemyIsAlive())
+            {
+                WaveCompleted();
+                PointCounter.wave += 1;
+            }
+            else
+            {
+                return;
+            }
+        }
 
 		if (waveCountdown <= 0)
 		{
@@ -73,7 +96,6 @@ public class GameManager : MonoBehaviour {
 			{
 				primary.SetActive(false);
 				bow.SetActive(true);
-				PointCounter.points = 0;
 			}
 			
 
@@ -105,10 +127,45 @@ public class GameManager : MonoBehaviour {
 
 	void SpawnEnemy(Transform _enemy)
 		{
-			//Spawn Enemy
-			Debug.Log("Spawning Enemy: " + _enemy.name);
+        //Spawn Enemy
+        if (spawnPoints.Length == 0)
+        {
+            Debug.LogError("No Spawn Points Referenced");
+        }
+        Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
+        Instantiate(_enemy, _sp.position, _sp.rotation);
+        //Debug.Log("Spawning Enemy: " + _enemy.name);
+
 		}
 
+    void WaveCompleted()
+    {
+        state = SpawnState.counting;
+        waveCountdown = timeBetweenWaves;
+
+        if (nextWave + 1 > waves.Length - 1)
+        {
+            nextWave = 0;
+            Debug.Log("You win!");
+        }
+
+        nextWave++;
+    }
+
+    bool EnemyIsAlive()
+    {
+        searchCountdown -= Time.deltaTime;
+        if (searchCountdown <= 0f)
+        {
+            searchCountdown = 1f;
+            if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+            {
+                return false;
+            }
+        }
+        
+        return true;
+    }
 		IEnumerator SpawnWave(Wave _wave)
 		{
 			state = SpawnState.spawning;
@@ -119,6 +176,7 @@ public class GameManager : MonoBehaviour {
 				yield return new WaitForSeconds( 1f/_wave.rate);
 			}
 			state = SpawnState.waiting;
+
 			yield break;
 		}
 

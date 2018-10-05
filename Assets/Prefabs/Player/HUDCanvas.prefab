@@ -319,7 +319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves: []
   timeBetweenWaves: 5
-  waveCountdown: 0
+  spawnPoints: []
   weaponManager: {fileID: 0}
   armControllerScript: {fileID: 0}
   player: {fileID: 0}
@@ -605,6 +605,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 114551233068645384}
   highScore: {fileID: 0}
+  enemiesLeft: {fileID: 0}
+  currentWave: {fileID: 0}
 --- !u!114 &114516838737292312
 MonoBehaviour:
   m_ObjectHideFlags: 1
