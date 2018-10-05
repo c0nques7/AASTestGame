@@ -8,6 +8,7 @@ public class LevelRestart : MonoBehaviour {
     public GameObject roundWonCamera;
     public GameObject roundWonCanvas;
     public GameObject hudCanvas;
+    public GameObject pauseMenuCanvas;
     public GameObject player;
 
     
@@ -26,6 +27,15 @@ public class LevelRestart : MonoBehaviour {
         Application.Quit();
     }
 
+    public void ResumeGame()
+    {
+        hudCanvas.gameObject.SetActive(true);
+        pauseMenuCanvas.gameObject.SetActive(false);
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
 	// Use this for initialization
 	void Start () {
         
@@ -33,6 +43,16 @@ public class LevelRestart : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            hudCanvas.gameObject.SetActive(false);
+            pauseMenuCanvas.gameObject.SetActive(true);
+            Time.timeScale = 0f;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+
         
     }
 }

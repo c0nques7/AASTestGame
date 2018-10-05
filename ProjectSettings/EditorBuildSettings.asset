@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/FirstArena.unity
+    guid: df8dae1aca7343040b8a613fbefaa5d7
   m_configObjects: {}
