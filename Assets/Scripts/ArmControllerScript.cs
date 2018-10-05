@@ -1032,9 +1032,18 @@ public class ArmControllerScript : MonoBehaviour {
 			isDrawing = false;
 		}
 
-		//Check if finsihed reloading when using "insert" style reload
-		//Used for bolt action sniper and pump shotgun for example
-		if (ReloadSettings.usesInsert == true && 
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Examine"))
+        {
+            isDrawing = true;
+        }
+        else
+        {
+            isDrawing = false;
+        }
+
+        //Check if finsihed reloading when using "insert" style reload
+        //Used for bolt action sniper and pump shotgun for example
+        if (ReloadSettings.usesInsert == true && 
 		    anim.GetCurrentAnimatorStateInfo (0).IsName ("Idle")) {
 			isReloading = false;
 			//Used in the demo scnes
