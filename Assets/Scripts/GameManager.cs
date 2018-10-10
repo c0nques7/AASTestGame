@@ -27,7 +27,10 @@ public class GameManager : MonoBehaviour {
     public Transform[] spawnPoints;
 
 
-	public WeaponManager weaponManager; 
+	public WeaponManager weaponManager;
+
+	public GameObject endPortal; 
+	public GameObject spawnPortal;
 
 	public static int minDamage;
 	public static int maxDamage;
@@ -133,8 +136,9 @@ public class GameManager : MonoBehaviour {
             Debug.LogError("No Spawn Points Referenced");
         }
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
+		Instantiate(spawnPortal, _sp.position, _sp.rotation);
         Instantiate(_enemy, _sp.position, _sp.rotation);
-        //Debug.Log("Spawning Enemy: " + _enemy.name);
+		//Debug.Log("Spawning Enemy: " + _enemy.name);
 
 		}
 
@@ -146,9 +150,9 @@ public class GameManager : MonoBehaviour {
         if (nextWave + 1 > waves.Length - 1)
         {
             nextWave = 0;
+			endPortal.SetActive(true);
             Debug.Log("You win!");
         }
-
         nextWave++;
     }
 

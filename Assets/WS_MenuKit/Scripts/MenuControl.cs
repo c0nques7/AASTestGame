@@ -255,7 +255,8 @@ public class MenuControl : CustomInput {
 	// Play Button
 	public void StartGame(){
 		if (playsType == PlaysType.Direct) {
-			fadeInEffect ();														// Load Level Game
+			fadeInEffect ();
+			loadLevelGame ();														// Load Level Game
 		} else if (playsType == PlaysType.LevelIsIncomplete) {
 			setLevelScreen (true);													// The level screen is active
 		} else if (playsType == PlaysType.Modes) {

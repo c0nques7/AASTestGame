@@ -321,6 +321,8 @@ MonoBehaviour:
   timeBetweenWaves: 5
   spawnPoints: []
   weaponManager: {fileID: 0}
+  endPortal: {fileID: 0}
+  spawnPortal: {fileID: 0}
   armControllerScript: {fileID: 0}
   player: {fileID: 0}
   bow: {fileID: 0}

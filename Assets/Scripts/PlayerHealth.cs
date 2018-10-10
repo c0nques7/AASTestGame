@@ -6,6 +6,12 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class PlayerHealth : MonoBehaviour
 {
     
+    public Image healthFill;
+    public int startingSheild = 100;
+    public int currentShield;
+
+    public Slider shieldSlider;
+
     public int startingHealth = 100;                            // The amount of health the player starts the game with.
     public int currentHealth;                                   // The current health the player has.
     
@@ -33,14 +39,17 @@ public class PlayerHealth : MonoBehaviour
 
         // Set the initial health of the player.
         currentHealth = startingHealth;
+        currentShield = startingSheild;
 
-        
+        SetHealthText();
 
     }
 
     private void Start()
     {
         StartCoroutine(WaitForGo());
+        currentHealth = startingHealth;
+        SetHealthText();
     }
 
     IEnumerator WaitForGo()
@@ -121,6 +130,6 @@ public class PlayerHealth : MonoBehaviour
 
     void SetHealthText()
     {
-       health.text = "Health: " + currentHealth.ToString();
+       health.text = currentHealth.ToString() + "/" + startingHealth;
     }
 }

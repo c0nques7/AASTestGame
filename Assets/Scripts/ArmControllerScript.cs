@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -244,6 +245,8 @@ public class ArmControllerScript : MonoBehaviour {
 	public bool noSwitch = false;
 	
 	void Awake () {
+
+		
 		
 		//Set the animator component
 		anim = GetComponent<Animator>();
