@@ -109,7 +109,8 @@ public class GunSwitchScript : MonoBehaviour {
 			slot[0].GetComponent<Outline>().enabled = true;
 			//Disable outline on inactive slots
 			slot[1].GetComponent<Outline>().enabled = false;
-			slot[2].GetComponent<Outline>().enabled = false;   	
+			slot[2].GetComponent<Outline>().enabled = false; 
+            //Change the active gun to weapon 0
 			changeGun(0);
 			totalAmmoText.text = guns[0].GetComponent
 				<ArmControllerScript>().ShootSettings.ammo.ToString();
