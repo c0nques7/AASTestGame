@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/LevelSelect.unity
+- path: Assets/FirstArena.unity
   isLoaded: 1
   isActive: 1

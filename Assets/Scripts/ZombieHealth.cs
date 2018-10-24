@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
+using System.Collections;
 
 public class ZombieHealth : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class ZombieHealth : MonoBehaviour
     public int scoreValue = 10;                      // The amount added to the player's score when the enemy dies.
     public AudioClip deathClip;                 // The sound to play when the enemy dies.
     public AudioClip damagedClip;
+
+    public GameObject thePlayer;
+
+    private int gunDamage;
     
 
 
@@ -25,6 +30,7 @@ public class ZombieHealth : MonoBehaviour
     CapsuleCollider capsuleCollider;            // Reference to the capsule collider.
     bool isDead;                                // Whether the enemy is dead.
     bool isSinking;                             // Whether the enemy has started sinking through the floor.
+    
 
     private void Start()
     {
@@ -42,6 +48,8 @@ public class ZombieHealth : MonoBehaviour
 
         // Setting the current health when the enemy first spawns.
         currentHealth = startingHealth;
+
+        gunDamage = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<ArmControllerScript>().ShootSettings.damagePerShot;
         
     }
 
@@ -97,10 +105,12 @@ public class ZombieHealth : MonoBehaviour
 
     void ShowFloatingText()
     {
+        
+
         if (currentHealth >= 0)
         {
             var go = Instantiate(FlaotingTextPrefab, transform.position, Quaternion.identity, transform);
-            go.GetComponent<TextMesh>().text = currentHealth.ToString();
+            go.GetComponent<TextMesh>().text = gunDamage.ToString();
         }
     }
 
