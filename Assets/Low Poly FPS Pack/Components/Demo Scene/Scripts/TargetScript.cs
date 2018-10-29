@@ -18,10 +18,12 @@ public class TargetScript : MonoBehaviour {
 	[Header("Audio")]
 	public AudioClip upSound;
 	public AudioClip downSound;
+    public AudioClip hitSound;
 
 	public AudioSource audioSource;
-	
-	void Update () {
+
+
+    void Update () {
 		
 		//Generate random time based on min and max time values
 		randomTime = Random.Range (minTime, maxTime);
@@ -29,11 +31,14 @@ public class TargetScript : MonoBehaviour {
 		//If the target is hit
 		if (isHit == true) {
 			if (routineStarted == false) {
+
+                PointCounter.enemies += -1;
 				//Animate the target "down"
 				gameObject.GetComponent<Animation> ().Play("target_down");
 
 				//Set the downSound as current sound, and play it
 				audioSource.GetComponent<AudioSource>().clip = downSound;
+                audioSource.GetComponent<AudioSource>().clip = hitSound;
 				audioSource.Play();
 
 				//Start the timer
@@ -54,7 +59,7 @@ public class TargetScript : MonoBehaviour {
 		audioSource.GetComponent<AudioSource>().clip = upSound;
 		audioSource.Play();
 
-		//Target is no longer hit
+        //Target is no longer hit
 		isHit = false;
 		routineStarted = false;
 	}

@@ -11,13 +11,14 @@ public class PointCounter : MonoBehaviour {
     public static int points;
     public static int enemies;
     public static float wave;
+    private GameObject[] targets;
     Animator anim;
 
     void Start()
     {
-        
+        targets = GameObject.FindGameObjectsWithTag("Target");
         points = 0;
-        enemies = 0;
+        enemies = targets.Length;
         wave = 1;
         
         anim = GetComponent<Animator>();

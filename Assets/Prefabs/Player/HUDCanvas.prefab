@@ -327,6 +327,7 @@ MonoBehaviour:
   player: {fileID: 0}
   bow: {fileID: 0}
   primary: {fileID: 0}
+  targets: []
 --- !u!114 &114119636524411240
 MonoBehaviour:
   m_ObjectHideFlags: 1

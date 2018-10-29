@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour {
 		public float rate;
 	}
 
+
 	public Wave[] waves;
 	private int nextWave = 0;
 
@@ -31,13 +32,14 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject endPortal; 
 	public GameObject spawnPortal;
+    
 
-	public static int minDamage;
+    public static int minDamage;
 	public static int maxDamage;
     public static int zombieKills;
 	
 	public ArmControllerScript armControllerScript;
-
+    private TargetScript[] targetScript;
 
 	float currentAmount = 0f;
 	float maxAmount = 10f;
@@ -46,8 +48,14 @@ public class GameManager : MonoBehaviour {
 	public GameObject bow;
 	public GameObject primary;
 	Animator anim;
-	// Use this for initialization
-	void Start () {
+
+    public GameObject[] targets;
+
+    // Use this for initialization
+    void Start () {
+
+        targets = GameObject.FindGameObjectsWithTag("Target");
+        
 
         if (spawnPoints.Length == 0)
         {
@@ -55,13 +63,14 @@ public class GameManager : MonoBehaviour {
         }
         anim = GetComponent<Animator>();
 		armControllerScript = player.GetComponentInChildren<ArmControllerScript>();
-		waveCountdown = timeBetweenWaves;
+        waveCountdown = timeBetweenWaves;
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-        if(state == SpawnState.waiting)
+    // Update is called once per frame
+    void Update () {
+             
+
+        if (state == SpawnState.waiting)
         {
             //Check if enemies are still alive
             if (!EnemyIsAlive())
