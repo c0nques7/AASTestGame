@@ -14,8 +14,10 @@ public class TargetScript : MonoBehaviour {
 	public float minTime;
 	//Maximum time before the target goes back up
 	public float maxTime;
+    //Floating text prefab reference
+    public GameObject FloatingHitPrefab;
 
-	[Header("Audio")]
+    [Header("Audio")]
 	public AudioClip upSound;
 	public AudioClip downSound;
     public AudioClip hitSound;
@@ -38,18 +40,33 @@ public class TargetScript : MonoBehaviour {
 
 				//Set the downSound as current sound, and play it
 				audioSource.GetComponent<AudioSource>().clip = downSound;
+                //Also play the hitSound
                 audioSource.GetComponent<AudioSource>().clip = hitSound;
 				audioSource.Play();
 
-				//Start the timer
-				StartCoroutine(DelayTimer());
+                //Instantiate the hit text prefab
+                if (FloatingHitPrefab != null)
+                {
+                    ShowFloatingScore();
+
+                }
+
+                //Start the timer
+                StartCoroutine(DelayTimer());
 				routineStarted = true;
 			} 
 		}
 	}
 
-	//Time before the target pops back up
-	IEnumerator DelayTimer () {
+    void ShowFloatingScore()
+    {
+        var go = Instantiate(FloatingHitPrefab, transform.position, transform.rotation);
+        go.GetComponent<TextMesh>().text = "HIT!";
+
+    }
+
+    //Time before the target pops back up
+    IEnumerator DelayTimer () {
 		//Wait for random amount of time
 		yield return new WaitForSeconds(randomTime);
 		//Animate the target "up" 

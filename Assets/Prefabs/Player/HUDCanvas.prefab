@@ -320,14 +320,12 @@ MonoBehaviour:
   waves: []
   timeBetweenWaves: 5
   spawnPoints: []
-  weaponManager: {fileID: 0}
   endPortal: {fileID: 0}
   spawnPortal: {fileID: 0}
-  armControllerScript: {fileID: 0}
   player: {fileID: 0}
   bow: {fileID: 0}
   primary: {fileID: 0}
-  targets: []
+  celebration: {fileID: 0}
 --- !u!114 &114119636524411240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -530,7 +528,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  playerHealth: {fileID: 0}
   restartDelay: 5
   pointCounter: {fileID: 0}
   timerText: {fileID: 0}

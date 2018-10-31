@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour {
 		public float rate;
 	}
 
-
+    [Header("Wave Controls")]
 	public Wave[] waves;
 	private int nextWave = 0;
 
@@ -25,50 +25,40 @@ public class GameManager : MonoBehaviour {
 
     private float searchCountdown = 1f;
 
+    [Header("Spawnpoint Controls")]
     public Transform[] spawnPoints;
 
 
-	public WeaponManager weaponManager;
-
-	public GameObject endPortal; 
+    [Header("Entry and Exit Portals")]
+    public GameObject endPortal; 
 	public GameObject spawnPortal;
-    
 
-    public static int minDamage;
-	public static int maxDamage;
-    public static int zombieKills;
-	
-	public ArmControllerScript armControllerScript;
-    private TargetScript[] targetScript;
+    //Floats used to modify game speed
+    float currentAmount = 0f;
+    float maxAmount = 10f;
 
-	float currentAmount = 0f;
-	float maxAmount = 10f;
-
-	public GameObject player;
+    [Header("Misc References")]
+    public GameObject player;
 	public GameObject bow;
 	public GameObject primary;
+    public GameObject celebration;
 	Animator anim;
-
-    public GameObject[] targets;
 
     // Use this for initialization
     void Start () {
 
-        targets = GameObject.FindGameObjectsWithTag("Target");
-        
+        player = GameObject.FindGameObjectWithTag("Player");
 
         if (spawnPoints.Length == 0)
         {
             Debug.LogError("No Spawn Points Referenced");
         }
         anim = GetComponent<Animator>();
-		armControllerScript = player.GetComponentInChildren<ArmControllerScript>();
         waveCountdown = timeBetweenWaves;
 	}
 
     // Update is called once per frame
     void Update () {
-             
 
         if (state == SpawnState.waiting)
         {
@@ -136,6 +126,11 @@ public class GameManager : MonoBehaviour {
 			Time.timeScale = 1.0f;
 		}
 	}
+
+    public void GameOver()
+    {
+        celebration.SetActive(true);
+    }
 
 	void SpawnEnemy(Transform _enemy)
 		{

@@ -9,6 +9,9 @@ public class PlayerHealth : MonoBehaviour
     public Image healthFill;
     public int startingSheild = 100;
     public int currentShield;
+    public GameObject celebration;
+    public GameManager gameManager;
+    public GameObject gameOverCamera;
 
     public Slider shieldSlider;
 
@@ -80,6 +83,21 @@ public class PlayerHealth : MonoBehaviour
         damaged = false;
     }
 
+    //Set up trigger events
+    void OnTriggerEnter(Collider collider)
+    {
+        Debug.Log("Collision Detected" + collider.gameObject.tag);
+
+        if (collider.gameObject.tag == "FinishLine" /*&& PointCounter.enemies == 0*/) 
+        {
+            Debug.Log("Game Over Event Triggered!");
+            Time.timeScale = 0.5f;
+            celebration.SetActive(true);
+            gameOverCamera.SetActive(true);
+
+            //gameManager.GameOver();
+        }
+    }
 
     public void TakeDamage(int amount)
     {

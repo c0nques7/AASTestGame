@@ -106,6 +106,12 @@
     <Compile Include="Assets\SmartSpawn\Scripts\Editor\SmartSpawnEditor.cs" />
     <Compile Include="Assets\SmartSpawn\Scripts\Editor\SmartSpawnNetworkEditor.cs" />
     <Compile Include="Assets\SmartSpawn\Scripts\Editor\SmartSpawnScritableObjectEditor.cs" />
+    <Compile Include="Assets\UIController\Editor\UIControllerInspector.cs" />
+    <Compile Include="Assets\UIController\Editor\UIControllerSettings.cs" />
+    <Compile Include="Assets\UIController\OverrideControllerTools\Editor\AnimatorOverrideControllerExtensions.cs" />
+    <Compile Include="Assets\UIController\OverrideControllerTools\Editor\AnimatorOverrideControllerInspector.cs" />
+    <Compile Include="Assets\UIController\OverrideControllerTools\Editor\DecoratorEditor.cs" />
+    <Compile Include="Assets\UIController\OverrideControllerTools\Editor\OverrideControllerToolsSettings.cs" />
     <Compile Include="Assets\WS_MenuKit\Editor\LanguageControlEditor.cs" />
     <Compile Include="Assets\WS_MenuKit\Editor\MenuControlEditor.cs" />
     <Compile Include="Assets\WS_MenuKit\Editor\OptionsControlEditor.cs" />
