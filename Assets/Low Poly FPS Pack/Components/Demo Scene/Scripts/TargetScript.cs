@@ -17,12 +17,21 @@ public class TargetScript : MonoBehaviour {
     //Floating text prefab reference
     public GameObject FloatingHitPrefab;
 
+	Animator anim;
+
     [Header("Audio")]
 	public AudioClip upSound;
 	public AudioClip downSound;
     public AudioClip hitSound;
 
+	public NewTimer newTimer;
+
 	public AudioSource audioSource;
+
+	void Start()
+	{
+		isHit = false;
+	}
 
 
     void Update () {
@@ -37,6 +46,7 @@ public class TargetScript : MonoBehaviour {
                 PointCounter.enemies += -1;
 				//Animate the target "down"
 				gameObject.GetComponent<Animation> ().Play("target_down");
+				//anim.SetBool("down", true);
 
 				//Set the downSound as current sound, and play it
 				audioSource.GetComponent<AudioSource>().clip = downSound;
@@ -71,6 +81,7 @@ public class TargetScript : MonoBehaviour {
 		yield return new WaitForSeconds(randomTime);
 		//Animate the target "up" 
 		gameObject.GetComponent<Animation> ().Play ("target_up");
+		//anim.SetBool("up", true);
 
 		//Set the upSound as current sound, and play it
 		audioSource.GetComponent<AudioSource>().clip = upSound;

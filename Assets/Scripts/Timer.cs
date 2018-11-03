@@ -4,16 +4,19 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Timer : MonoBehaviour {
 
     public Text timerText;
     public Text fastestTime;
     private float startTime;
     private bool finished = false;
-    private Animator anim;
+    public Animator anim;
     private bool mouseOver;
     private Renderer rend;
     public bool timerOn = false;
+
+    
 
 	// Use this for initialization
 	void Start () {
@@ -28,9 +31,16 @@ public class Timer : MonoBehaviour {
 	void Update () {
         if (mouseOver == true && Input.GetKeyUp(KeyCode.E))
         {
+            OnMouseOver();
             timerOn = true;
+            
         }
-        if (timerOn == true)
+        if (mouseOver == true && timerOn == true && Input.GetKeyUp(KeyCode.E))
+        {
+            Finished();
+        }
+
+         if (timerOn == true)
         {
             if (finished)
                 return;
@@ -51,10 +61,12 @@ public class Timer : MonoBehaviour {
 
     }
 
-    private void OnMouseEnter()
+
+
+    private void OnMouseOver()
     {
         mouseOver = true;
-        anim.SetBool("MouseOver", true);
+        anim.SetTrigger("MouseOver");
         Debug.Log("Your mouse is over the proper timer trigger.");
 
     }
@@ -62,13 +74,9 @@ public class Timer : MonoBehaviour {
     private void OnMouseExit()
     {
         mouseOver = false;
-        anim.SetBool("MouseOver", false);
+        anim.SetTrigger("MouseNotOver");
     }
 
-    public void StopWatch()
-    {
-
-    }
 
     public void Finished()
     {

@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\Joe DESKTOP\\Documents\\GitHub\\AASTestGame\\Assembly-CSharp-Editor-firstpass.csproj",
+  "TargetFramework": "v3.5",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
