@@ -28,6 +28,8 @@ TagManager:
   - OmegaRareRifle
   - DeveloperRifle
   - FinishLine
+  - Target
+  - Controller
   layers:
   - Default
   - TransparentFX

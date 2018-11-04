@@ -5,6 +5,8 @@
  public class NewTimer : MonoBehaviour {
  
      private static NewTimer _instance ;
+
+     public bool gameStarted = false;
  
      public Text timerLabel;
      public bool pauseTimer = true;
@@ -14,7 +16,7 @@
 
      public Canvas hudCanvas;
 
-     public TargetScript targetScript;
+     public NewTargetScript newTargetScript;
 
 	 Animator anim;
      Animator hudAnim;
@@ -25,18 +27,21 @@
 
 		 MeshRenderer m_Renderer;
  
-     void Awake()
+     public void Awake()
      {
+        newTargetScript = GameObject.FindWithTag("Target").GetComponent<NewTargetScript>();
         hudAnim = hudCanvas.GetComponent<Animator>();
 		anim = GetComponentInChildren<Animator>();
 		m_Renderer = GetComponent<MeshRenderer>();
 		m_OriginalColor = m_Renderer.material.color;
         pauseTimer = false;
         resetTriggered = false;
+        gameStarted = false;
      }
      
      
-     void Update() { 
+     public void Update() {
+
          if(pauseTimer == true)
          time += Time.deltaTime;
  
@@ -91,7 +96,6 @@
      public void StartGame()
      {
          StartTimer();
-         ;
      }
  
      //Reset Timer
@@ -117,6 +121,8 @@
          hudAnim.SetBool("Start", false);
 		 anim.SetBool("TimerStarted", true);
          Debug.Log("Timer Started");
+         newTargetScript.partyOn = true;
+         gameStarted = true;
      }
  }
  

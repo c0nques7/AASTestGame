@@ -11,7 +11,7 @@ public class NewTargetScript : MonoBehaviour {
 	//Used to check if the target has been hit
 	public bool isHit;
 
-	public bool gameStarted;
+	public bool partyOn;
 
 	[Header("Customizable Options")]
 	//Minimum time before the target goes back up
@@ -30,23 +30,26 @@ public class NewTargetScript : MonoBehaviour {
 
 	public AudioSource audioSource;
 
-	NewTimer newTimer;
+	public NewTimer newTimer;
+
+	public GameObject timerConsole;
 
 
-	void Start()
+	public void Start()
 	{
-		
-		gameStarted = false;
 		gameObject.transform.rotation = Quaternion.Euler(90, 0, 0);
+		newTimer = timerConsole.GetComponent<NewTimer>();
 	}
 
 
-    void Update () {
-		gameTime = newTimer.time;
+    public void Update () {
+
+
+		
 		//Generate random time based on min and max time values
 		randomTime = Random.Range (minTime, maxTime);
 
-		if (gameTime > 0)
+		if (newTimer.gameStarted == true)
 		{
 			Debug.Log("aweeee yeahhhhh");
 		}
