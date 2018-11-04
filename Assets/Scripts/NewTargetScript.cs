@@ -37,7 +37,7 @@ public class NewTargetScript : MonoBehaviour {
 
 	public void Start()
 	{
-		gameObject.transform.rotation = Quaternion.Euler(90, 0, 0);
+	//	gameObject.transform.rotation = Quaternion.Euler(90, 0, 0);
 		newTimer = timerConsole.GetComponent<NewTimer>();
 	}
 

@@ -18,6 +18,8 @@
 
      public NewTargetScript newTargetScript;
 
+     public GameObject gameTarget;
+
 	 Animator anim;
      Animator hudAnim;
 
@@ -29,7 +31,7 @@
  
      public void Awake()
      {
-        newTargetScript = GameObject.FindWithTag("Target").GetComponent<NewTargetScript>();
+        
         hudAnim = hudCanvas.GetComponent<Animator>();
 		anim = GetComponentInChildren<Animator>();
 		m_Renderer = GetComponent<MeshRenderer>();
@@ -45,6 +47,7 @@
          if(pauseTimer == true)
          time += Time.deltaTime;
  
+         
          var minutes = Mathf.Floor(time / 60);
          var seconds = time % 60;//Use the euclidean division for the seconds.
          var fraction = (time * 100) % 100;
@@ -104,6 +107,7 @@
          anim.SetBool("TimerStarted", false);
          Debug.Log("Timer Reset");
          resetTriggered = true;
+         gameStarted = false;
      }
  
      //Stop Timer
@@ -116,12 +120,12 @@
  
      //Start Timer
      public void  StartTimer(){
+
          //Start Timer Here
          pauseTimer = true;
          hudAnim.SetBool("Start", false);
 		 anim.SetBool("TimerStarted", true);
          Debug.Log("Timer Started");
-         newTargetScript.partyOn = true;
          gameStarted = true;
      }
  }
