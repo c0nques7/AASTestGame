@@ -28,13 +28,13 @@ public class TargetScript : MonoBehaviour {
 
 	public AudioSource audioSource;
 
-	void Start()
+	public void Start()
 	{
 		isHit = false;
 	}
 
 
-    void Update () {
+    public void Update () {
 		
 		//Generate random time based on min and max time values
 		randomTime = Random.Range (minTime, maxTime);

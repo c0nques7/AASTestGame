@@ -23,7 +23,7 @@
 	 Animator anim;
      Animator hudAnim;
 
-	 	 Color m_MouseOverColor = Color.white;
+	 	 Color m_MouseOverColor = Color.red;
 
 		 Color m_OriginalColor;
 
@@ -37,7 +37,6 @@
 		m_Renderer = GetComponent<MeshRenderer>();
 		m_OriginalColor = m_Renderer.material.color;
         pauseTimer = false;
-        resetTriggered = false;
         gameStarted = false;
      }
      
