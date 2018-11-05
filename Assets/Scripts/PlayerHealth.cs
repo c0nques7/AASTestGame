@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject celebration;
     public GameManager gameManager;
     public GameObject gameOverCamera;
+    NewTimer newTimer;
 
     public Slider shieldSlider;
 
@@ -35,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Awake()
     {
+        newTimer = GameObject.FindGameObjectWithTag("Controller").GetComponent<NewTimer>();
         // Setting up the references.
         anim = GetComponent<Animator>();
         //playerAudio = GetComponent<AudioSource>();
@@ -94,6 +96,7 @@ public class PlayerHealth : MonoBehaviour
             Time.timeScale = 0.5f;
             celebration.SetActive(true);
             gameOverCamera.SetActive(true);
+            newTimer.StopTimer();
 
             //gameManager.GameOver();
         }

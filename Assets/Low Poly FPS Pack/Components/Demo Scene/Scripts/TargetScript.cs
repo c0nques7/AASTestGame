@@ -6,6 +6,9 @@ public class TargetScript : MonoBehaviour {
 	float randomTime;
 	bool routineStarted = false;
 
+    //Party on Wayne
+    bool partyOn;
+
 	//Used to check if the target has been hit
 	public bool isHit = false;
 
@@ -17,6 +20,7 @@ public class TargetScript : MonoBehaviour {
     //Floating text prefab reference
     public GameObject FloatingHitPrefab;
 
+
 	Animator anim;
 
     [Header("Audio")]
@@ -24,23 +28,70 @@ public class TargetScript : MonoBehaviour {
 	public AudioClip downSound;
     public AudioClip hitSound;
 
-	public NewTimer newTimer;
+	NewTimer newTimer;
 
 	public AudioSource audioSource;
 
 	void Start()
 	{
-		isHit = false;
-	}
+        
+        partyOn = false;
+        newTimer = GameObject.FindGameObjectWithTag("Controller").GetComponent<NewTimer>();
+    }
 
 
     void Update () {
-		
-		//Generate random time based on min and max time values
-		randomTime = Random.Range (minTime, maxTime);
+        Renderer rend = GetComponent<Renderer>();
+
+        if (newTimer.gameStarted == true && partyOn == true)
+        {
+            gameObject.GetComponent<Animation>().Play("target_up");
+            //Set the upSound as current sound, and play it
+            audioSource.pitch = 1;
+            audioSource.GetComponent<AudioSource>().clip = upSound;
+            audioSource.Play();
+            partyOn = false;
+            rend.material.color = Color.red;
+
+        }
+        if (newTimer.gameStarted == false && partyOn == false)
+        {
+            //Animate the target "down"
+            gameObject.GetComponent<Animation>().Play("target_down");
+            partyOn = true;
+        }
+
+        //Generate random time based on min and max time values
+        randomTime = Random.Range (minTime, maxTime);
 
 		//If the target is hit
-		if (isHit == true) {
+
+        if (isHit == true && partyOn == false)
+        {
+            PointCounter.enemies += -1;
+            //Animate the target "down"
+            gameObject.GetComponent<Animation>().Play("target_down");
+            //anim.SetBool("down", true);
+
+            //Set the audiosource to .5 pitch
+            audioSource.pitch = 0.5f;
+            //Set the downSound as current sound, and play it
+            audioSource.GetComponent<AudioSource>().clip = downSound;
+            //Also play the hitSound
+            audioSource.GetComponent<AudioSource>().clip = hitSound;
+            audioSource.Play();
+
+            //Instantiate the hit text prefab
+            if (FloatingHitPrefab != null)
+            {
+                ShowFloatingScore();
+
+            }
+            rend.material.color = Color.green;
+            isHit = false;
+        }
+
+        /*if (isHit == true) {
 			if (routineStarted == false) {
 
                 PointCounter.enemies += -1;
@@ -64,9 +115,9 @@ public class TargetScript : MonoBehaviour {
                 //Start the timer
                 StartCoroutine(DelayTimer());
 				routineStarted = true;
-			} 
-		}
-	}
+			}
+		}*/
+    }
 
     void ShowFloatingScore()
     {
