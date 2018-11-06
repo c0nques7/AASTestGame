@@ -22,9 +22,6 @@ public class NewTimer : MonoBehaviour {
     bool playedSound;
 
     public float time;
-    public float bestTime;
-    public float currentTime;
-    
 
     public Canvas hudCanvas;
 
@@ -52,7 +49,6 @@ public class NewTimer : MonoBehaviour {
  
      public void Awake()
      {
-        
         playedSound = false;
         playSound1 = false;
         playSound2 = false;
@@ -73,8 +69,6 @@ public class NewTimer : MonoBehaviour {
      
      
      public void Update() {
-        
-
         hudText = GameObject.Find("HUDObject").GetComponentsInChildren<Text>();
   
         if (hudText[9].color.a >= 0.95 && playedSound == false && playSound1 == false)
@@ -128,8 +122,6 @@ public class NewTimer : MonoBehaviour {
          
          //update the label value
          timerLabel.text = string.Format ("{0:00} : {1:00} : {2:00}", minutes, seconds, fraction);
-
-
      }
 
 	 void OnMouseOver()
@@ -185,26 +177,15 @@ public class NewTimer : MonoBehaviour {
          Debug.Log("Timer Reset");
          resetTriggered = true;
          gameStarted = false;
-        //PlayerPrefs.DeleteKey("BestTime");
-        //Debug.Log("The best time has been reset");
      }
-
-    //Stop Timer
-    public void StopTimer()
-    {
-        float currentTime = time;
-        //Stop Timer Here
-        anim.SetBool("TimerStarted", false);
-        pauseTimer = false;
-        Debug.Log("Timer Stopped");
-        //Debug.Log("The fastest time is: " + PlayerPrefs.GetFloat("BestTime"));
-        if (currentTime < PlayerPrefs.GetFloat("BestTime", 0))
-        {
-            PlayerPrefs.SetFloat("BestTime", currentTime);
-            Debug.Log("");
-        }
-
-    }
+ 
+     //Stop Timer
+     public void  StopTimer(){
+         //Stop Timer Here
+         anim.SetBool("TimerStarted", false);
+         pauseTimer = false;
+         Debug.Log("Timer Stopped");
+     }
  
      //Start Timer
      public void  StartTimer(){
@@ -214,7 +195,7 @@ public class NewTimer : MonoBehaviour {
          hudAnim.SetBool("Start", false);
 		 anim.SetBool("TimerStarted", true);
          Debug.Log("Timer Started");
-         //gameStarted = true;
+         gameStarted = true;
      }
  }
  
