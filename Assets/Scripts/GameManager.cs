@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour {
 		public float rate;
 	}
 
+    Color targetColor = Color.red;
+    Renderer rend;
 
     [Header("Timer and Target")]
     public NewTargetScript newTargetScript;
@@ -55,6 +57,8 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        rend = GetComponent<Renderer>();
+        rend.material.color = targetColor;
         newTimer = GameObject.FindGameObjectWithTag("Controller").GetComponent<NewTimer>();
         newTargetScript = GameObject.FindGameObjectWithTag("Target").GetComponent<NewTargetScript>();
         gameTarget = GameObject.FindGameObjectWithTag("Target");
@@ -71,7 +75,7 @@ public class GameManager : MonoBehaviour {
 	}
 
     // Update is called once per frame
-    public void Update () {
+    void Update () {
 
         if (newTimer.gameStarted == true)
         {
@@ -79,7 +83,8 @@ public class GameManager : MonoBehaviour {
         }
         if (newTimer.gameStarted == false)
         {
-            newTargetScript.isHit = true;
+            gameObject.gameTarget.rend.material.color = targetColor;
+            Debug.Log("Game has not started.");
         }
 
         if (state == SpawnState.waiting)
