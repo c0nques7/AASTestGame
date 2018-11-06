@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour {
 
         if (newTimer.gameStarted == true)
         {
-            Debug.Log("Game started.");
+            //Debug.Log("Game started.");
         }
         if (newTimer.gameStarted == false)
         {

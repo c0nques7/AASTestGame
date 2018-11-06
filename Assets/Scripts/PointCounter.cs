@@ -20,11 +20,9 @@ public class PointCounter : MonoBehaviour {
         points = 0;
         enemies = targets.Length;
         wave = 1;
-        
         anim = GetComponent<Animator>();
-        highScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
+        highScore.text = PlayerPrefs.GetFloat("BestTime").ToString("Fastest Time: " + "0:00.00");
         
-
     }
 
     private void Update()

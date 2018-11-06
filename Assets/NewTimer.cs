@@ -11,8 +11,10 @@ public class NewTimer : MonoBehaviour {
     public bool countdownStarted = false;
 
     public Text timerLabel;
+    public Text highScore;
     public bool pauseTimer = true;
     public bool resetTriggered;
+    bool hScore;
 
     bool playSound1;
     bool playSound2;
@@ -29,8 +31,7 @@ public class NewTimer : MonoBehaviour {
     public Canvas hudCanvas;
 
     public NewTargetScript newTargetScript;
-
-    public GameObject gameTarget;
+    PointCounter pointCounter;
 
     //The Audio Source
     public AudioSource chimeSource;
@@ -49,10 +50,15 @@ public class NewTimer : MonoBehaviour {
 		 Color m_OriginalColor;
 
 		 MeshRenderer m_Renderer;
- 
-     public void Awake()
-     {
+
+    public void Start()
+    {
         
+    }
+
+    public void Awake()
+     {
+        hScore = false;
         playedSound = false;
         playSound1 = false;
         playSound2 = false;
@@ -69,9 +75,10 @@ public class NewTimer : MonoBehaviour {
      
      
      public void Update() {
-        
+
 
         hudText = GameObject.Find("HUDObject").GetComponentsInChildren<Text>();
+        pointCounter = GameObject.Find("HUDObject").GetComponentInChildren<PointCounter>();
   
         if (hudText[9].color.a >= 0.95 && playedSound == false && playSound1 == false)
         {
@@ -124,6 +131,8 @@ public class NewTimer : MonoBehaviour {
          
          //update the label value
          timerLabel.text = string.Format ("{0:00} : {1:00} : {2:00}", minutes, seconds, fraction);
+
+        
 
 
      }
@@ -181,24 +190,39 @@ public class NewTimer : MonoBehaviour {
          Debug.Log("Timer Reset");
          resetTriggered = true;
          gameStarted = false;
-        //PlayerPrefs.DeleteKey("BestTime");
-        //Debug.Log("The best time has been reset");
+         PlayerPrefs.DeleteKey("BestTime");
+         //Debug.Log("The best time has been reset");
      }
 
     //Stop Timer
     public void StopTimer()
     {
         float currentTime = time;
+        hudAnim.SetBool("EndGame", true);
+        Debug.Log("The current time is: " + currentTime);
+
+        if (currentTime <= PlayerPrefs.GetFloat("BestTime", currentTime))
+        {
+            hScore = true;
+            PlayerPrefs.SetFloat("BestTime", currentTime);
+            pointCounter.highScore.text = PlayerPrefs.GetFloat("BestTime").ToString("Fastest Time: " + "0:00.00");
+            Debug.Log("The best time is: " + PlayerPrefs.GetFloat("BestTime"));
+        }
+        
+            
+        if(hScore == true)
+        {
+            hudAnim.SetBool("HighScore", true);
+            hScore = false;
+        }
+              
+        Debug.Log("Timer Stopped");
         //Stop Timer Here
         anim.SetBool("TimerStarted", false);
         pauseTimer = false;
-        Debug.Log("Timer Stopped");
-        //Debug.Log("The fastest time is: " + PlayerPrefs.GetFloat("BestTime"));
-        if (currentTime < PlayerPrefs.GetFloat("BestTime", 0))
-        {
-            PlayerPrefs.SetFloat("BestTime", currentTime);
-            Debug.Log("");
-        }
+        
+        
+        
 
     }
  
@@ -210,7 +234,7 @@ public class NewTimer : MonoBehaviour {
          hudAnim.SetBool("Start", false);
 		 anim.SetBool("TimerStarted", true);
          Debug.Log("Timer Started");
-         //gameStarted = true;
+         gameStarted = true;
      }
  }
  
