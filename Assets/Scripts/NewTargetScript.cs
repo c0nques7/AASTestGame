@@ -6,7 +6,7 @@ public class NewTargetScript : MonoBehaviour {
 	float randomTime;
 	bool routineStarted = false;
 
-	float gameTime;
+	
 
 	//Used to check if the target has been hit
 	public bool isHit;
@@ -30,16 +30,16 @@ public class NewTargetScript : MonoBehaviour {
 
 	public AudioSource audioSource;
 
-	public NewTimer newTimer;
+	NewTimer newTimer;
 
-	public GameObject timerConsole;
+	GameObject timerConsole;
 
 
 	public void Start()
 	{
-	//	gameObject.transform.rotation = Quaternion.Euler(90, 0, 0);
-		newTimer = timerConsole.GetComponent<NewTimer>();
-	}
+        partyOn = false;
+        newTimer = GameObject.FindGameObjectWithTag("Controller").GetComponent<NewTimer>();
+    }
 
 
     public void Update () {
@@ -49,10 +49,27 @@ public class NewTargetScript : MonoBehaviour {
 		//Generate random time based on min and max time values
 		randomTime = Random.Range (minTime, maxTime);
 
-		if (newTimer.gameStarted == true)
+		if (newTimer.gameStarted == true && partyOn == true)
 		{
-			Debug.Log("aweeee yeahhhhh");
-		}
+
+            gameObject.GetComponent<Animation>().Play("target_up");
+            //Set the upSound as current sound, and play it
+            audioSource.GetComponent<AudioSource>().clip = upSound;
+            audioSource.Play();
+            partyOn = false;
+
+        }
+        if (newTimer.gameStarted == false && partyOn == false)
+        {
+            //Animate the target "down"
+            gameObject.GetComponent<Animation>().Play("target_down");
+            //anim.SetBool("down", true);
+
+            //Set the downSound as current sound, and play it
+            audioSource.GetComponent<AudioSource>().clip = downSound;
+            audioSource.Play();
+            partyOn = true;
+        }
 
 		//If the target is hit
 		if (isHit == true) {

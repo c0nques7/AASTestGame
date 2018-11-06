@@ -28,8 +28,6 @@ public class PointCounter : MonoBehaviour {
     private void Update()
     {
         SetCountText();
-        
-
     }
 
 
