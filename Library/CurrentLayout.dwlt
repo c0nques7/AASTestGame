@@ -90,7 +90,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 31
+  controlID: 69
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -669,6 +669,7 @@ MonoBehaviour:
     height: 599
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -697,6 +698,12 @@ MonoBehaviour:
     m_LastClickedID: 47400
     m_ExpandedIDs: 1cd8ffffe6fbffff0000000028b9000062c20000
 >>>>>>> parent of c32a885a3... Merge branch 'master' of https://github.com/c0nques7/AASTestGame
+=======
+    scrollPos: {x: 0, y: 138}
+    m_SelectedIDs: 28b90000
+    m_LastClickedID: 47400
+    m_ExpandedIDs: e6fbffff0000000050c2000064c20000
+>>>>>>> parent of 9632975f3... local changes from JoeDESKTOP
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -748,7 +755,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 51030
+  m_LastSelectedObjectID: 47400
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -812,11 +819,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.07979666, y: 0.18655775, z: -0.015204072, w: -0.97907996}
     speed: 2
-    m_Value: {x: -0.07979665, y: 0.18655775, z: -0.015204071, w: -0.9790799}
+    m_Value: {x: -0.07979666, y: 0.18655775, z: -0.015204072, w: -0.97907996}
   m_Size:
-    m_Target: 11.409327
+    m_Target: 9.192618
     speed: 2
-    m_Value: 11.409327
+    m_Value: 9.192618
   m_Ortho:
     m_Target: 0
     speed: 2

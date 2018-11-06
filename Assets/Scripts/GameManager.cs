@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour {
     Renderer rend;
 
     [Header("Timer and Target")]
-    public TargetScript targetScript;
+    public NewTargetScript newTargetScript;
     public NewTimer newTimer;
 
     public GameObject gameTarget;
@@ -55,12 +55,12 @@ public class GameManager : MonoBehaviour {
 	Animator anim;
 
     // Use this for initialization
-    public void Start () {
+    void Start () {
 
         rend = GetComponent<Renderer>();
         rend.material.color = targetColor;
         newTimer = GameObject.FindGameObjectWithTag("Controller").GetComponent<NewTimer>();
-        targetScript = GameObject.FindGameObjectWithTag("Target").GetComponent<TargetScript>();
+        newTargetScript = GameObject.FindGameObjectWithTag("Target").GetComponent<NewTargetScript>();
         gameTarget = GameObject.FindGameObjectWithTag("Target");
 
         player = GameObject.FindGameObjectWithTag("Player");
@@ -75,20 +75,17 @@ public class GameManager : MonoBehaviour {
 	}
 
     // Update is called once per frame
-    public void Update () {
-        if (newTimer.gameStarted == false)
-        {
-            Debug.Log("Game has not started.");
-        }
-        else
-        {
-            Debug.Log("This event did not trigger");
-        }
+    void Update () {
+
         if (newTimer.gameStarted == true)
         {
             Debug.Log("Game started.");
         }
-        
+        if (newTimer.gameStarted == false)
+        {
+            gameObject.gameTarget.rend.material.color = targetColor;
+            Debug.Log("Game has not started.");
+        }
 
         if (state == SpawnState.waiting)
         {

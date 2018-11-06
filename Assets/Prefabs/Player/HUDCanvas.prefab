@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12f9581510dc37e4980bebfb3f886283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScript: {fileID: 0}
+  newTargetScript: {fileID: 0}
   newTimer: {fileID: 0}
   gameTarget: {fileID: 0}
   waves: []
