@@ -1,45 +1,24 @@
 ﻿ using UnityEngine;
  using System.Collections;
  using UnityEngine.UI;
+ 
+ public class NewTimer : MonoBehaviour {
+ 
+     private static NewTimer _instance ;
 
-public class NewTimer : MonoBehaviour {
+     public bool gameStarted = false;
+ 
+     public Text timerLabel;
+     public bool pauseTimer = true;
+     public bool resetTriggered;
+ 
+     public float time;
 
-    private static NewTimer _instance;
+     public Canvas hudCanvas;
 
-    public bool gameStarted = false;
+     public NewTargetScript newTargetScript;
 
-    public bool countdownStarted = false;
-
-    public Text timerLabel;
-    public bool pauseTimer = true;
-    public bool resetTriggered;
-
-    bool playSound1;
-    bool playSound2;
-    bool playSound3;
-    bool playSound4;
-
-    bool playedSound;
-
-    public float time;
-    public float bestTime;
-    public float currentTime;
-    
-
-    public Canvas hudCanvas;
-
-    public NewTargetScript newTargetScript;
-
-    public GameObject gameTarget;
-
-    //The Audio Source
-    public AudioSource chimeSource;
-
-    // The sound itself.
-    public AudioClip clipToPlay;
-    public AudioClip startClip;
-
-    Text[] hudText;
+     public GameObject gameTarget;
 
 	 Animator anim;
      Animator hudAnim;
@@ -53,72 +32,18 @@ public class NewTimer : MonoBehaviour {
      public void Awake()
      {
         
-        playedSound = false;
-        playSound1 = false;
-        playSound2 = false;
-        playSound3 = false;
-        playSound4 = false;
-        gameStarted = false;
         hudAnim = hudCanvas.GetComponent<Animator>();
 		anim = GetComponentInChildren<Animator>();
 		m_Renderer = GetComponent<MeshRenderer>();
 		m_OriginalColor = m_Renderer.material.color;
         pauseTimer = false;
-<<<<<<< HEAD
         gameStarted = false;
-=======
-        resetTriggered = false;
->>>>>>> 0e6b2e5ea048c76182f8c60786896ed7ee67927d
      }
      
      
      public void Update() {
-        
 
-        hudText = GameObject.Find("HUDObject").GetComponentsInChildren<Text>();
-  
-        if (hudText[9].color.a >= 0.95 && playedSound == false && playSound1 == false)
-        {
-            playSound1 = true;
-            if (playSound1 == true)
-            {
-                chimeSource.PlayOneShot(clipToPlay);
-                playedSound = false;
-            }
-            
-        }
-        if (hudText[10].color.a >= 0.95 && playSound2 == false && playedSound == false)
-        {
-            playSound2 = true;
-            playedSound = true;
-            if (playSound2 == true && playedSound == true)
-            {
-                chimeSource.PlayOneShot(clipToPlay);
-                playedSound = false;
-            }
-        }
-        if (hudText[11].color.a >= 0.95 && playSound3 == false && playedSound == false)
-        {
-            playSound3 = true;
-            playedSound = true;
-            if (playSound3 == true && playedSound == true)
-            {
-                chimeSource.PlayOneShot(clipToPlay);
-                playedSound = false;
-            }
-        }
-        if (hudText[12].color.a >= 0.95 && playSound4 == false && playedSound == false)
-        {
-            playSound4 = true;
-            playedSound = true;
-            if (playSound4 == true && playedSound == true)
-            {
-                chimeSource.PlayOneShot(startClip);
-                playedSound = false;
-            }
-        }
-
-        if (pauseTimer == true)
+         if(pauseTimer == true)
          time += Time.deltaTime;
  
          
@@ -128,8 +53,6 @@ public class NewTimer : MonoBehaviour {
          
          //update the label value
          timerLabel.text = string.Format ("{0:00} : {1:00} : {2:00}", minutes, seconds, fraction);
-
-
      }
 
 	 void OnMouseOver()
@@ -139,7 +62,7 @@ public class NewTimer : MonoBehaviour {
 
 		 if (Input.GetKeyDown(KeyCode.E))
 		 {
-            countdownStarted = true;
+			 
              StartCoroutine(Countdown(5));
 		 }
 		 if (pauseTimer == false && Input.GetKeyDown(KeyCode.T))
@@ -158,7 +81,6 @@ public class NewTimer : MonoBehaviour {
 		 m_Renderer.material.color = m_OriginalColor;
 	 }
 
-
      IEnumerator Countdown(int seconds)
      {
          int count = seconds;
@@ -166,11 +88,11 @@ public class NewTimer : MonoBehaviour {
          {
              //Display Countdown Here
              hudAnim.SetBool("Start", true);
-            yield return new WaitForSeconds(1);
+             yield return new WaitForSeconds(1);
              count --;
-        }
+         }
 
-        StartGame();
+         StartGame();
      }
 
      public void StartGame()
@@ -185,26 +107,15 @@ public class NewTimer : MonoBehaviour {
          Debug.Log("Timer Reset");
          resetTriggered = true;
          gameStarted = false;
-        //PlayerPrefs.DeleteKey("BestTime");
-        //Debug.Log("The best time has been reset");
      }
-
-    //Stop Timer
-    public void StopTimer()
-    {
-        float currentTime = time;
-        //Stop Timer Here
-        anim.SetBool("TimerStarted", false);
-        pauseTimer = false;
-        Debug.Log("Timer Stopped");
-        //Debug.Log("The fastest time is: " + PlayerPrefs.GetFloat("BestTime"));
-        if (currentTime < PlayerPrefs.GetFloat("BestTime", 0))
-        {
-            PlayerPrefs.SetFloat("BestTime", currentTime);
-            Debug.Log("");
-        }
-
-    }
+ 
+     //Stop Timer
+     public void  StopTimer(){
+         //Stop Timer Here
+         anim.SetBool("TimerStarted", false);
+         pauseTimer = false;
+         Debug.Log("Timer Stopped");
+     }
  
      //Start Timer
      public void  StartTimer(){
@@ -214,7 +125,7 @@ public class NewTimer : MonoBehaviour {
          hudAnim.SetBool("Start", false);
 		 anim.SetBool("TimerStarted", true);
          Debug.Log("Timer Started");
-         //gameStarted = true;
+         gameStarted = true;
      }
  }
  
