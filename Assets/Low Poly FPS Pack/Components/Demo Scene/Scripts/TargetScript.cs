@@ -34,7 +34,6 @@ public class TargetScript : MonoBehaviour {
 
 	void Start()
 	{
-        
         partyOn = false;
         newTimer = GameObject.FindGameObjectWithTag("Controller").GetComponent<NewTimer>();
     }

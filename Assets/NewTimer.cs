@@ -14,6 +14,7 @@ public class NewTimer : MonoBehaviour {
     public Text highScore;
     public bool pauseTimer = true;
     public bool resetTriggered;
+    public bool mouseOver;
     
     //Only enable this if you move something up on the HUDCanvas and stuff stops working
     //Jump to line 66
@@ -30,7 +31,8 @@ public class NewTimer : MonoBehaviour {
     public float time;
     public float bestTime;
     public float currentTime;
-    
+
+    GameManager gameManager;
 
     public Canvas hudCanvas;
 
@@ -64,6 +66,7 @@ public class NewTimer : MonoBehaviour {
      {
         //After this is enabled, jump to line 90
         //hudChecked = false;
+        mouseOver = false;
         playedSound = false;
         playSound1 = false;
         playSound2 = false;
@@ -77,21 +80,23 @@ public class NewTimer : MonoBehaviour {
 		m_OriginalColor = m_Renderer.material.color;
         pauseTimer = false;
         resetTriggered = false;
+
      }
      
      
      public void Update() {
 
-
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         hudText = GameObject.Find("HUDObject").GetComponentsInChildren<Text>();
         pointCounter = GameObject.Find("HUDObject").GetComponentInChildren<PointCounter>();
-        
+
         //Finally, enable lines 154-326
         /*if(hudText != null && hudChecked == false)
         {
             CheckForHUDObject();
             hudChecked = true;
         }*/
+
 
         if (hudText[12].color.a >= 0.9 && playedSound == false && playSound1 == false)
         {
@@ -328,6 +333,7 @@ public class NewTimer : MonoBehaviour {
 	 {
 		 m_Renderer.material.color = m_MouseOverColor;
 		 anim.SetBool("MouseOver", true);
+         mouseOver = true;
 
 		 if (Input.GetKeyDown(KeyCode.E))
 		 {
@@ -342,13 +348,16 @@ public class NewTimer : MonoBehaviour {
          {
              StopTimer();
          }
-	 }
+        
+    }
 
 	 void OnMouseExit()
 	 {
-		 anim.SetBool("MouseOver", false);
-		 m_Renderer.material.color = m_OriginalColor;
-	 }
+        
+        anim.SetBool("MouseOver", false);
+		m_Renderer.material.color = m_OriginalColor;
+        mouseOver = false;
+    }
 
 
      IEnumerator Countdown(int seconds)
