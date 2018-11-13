@@ -61,7 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraFocalPoint.cs" />
     <Compile Include="Assets\DynamicCrosshair\Scripts\_Demo\CameraController.cs" />
     <Compile Include="Assets\DynamicCrosshair\Scripts\_Demo\DemoCharacterController.cs" />
     <Compile Include="Assets\DynamicCrosshair\Scripts\_Demo\GunExample.cs" />
@@ -117,7 +116,6 @@
     <Compile Include="Assets\InventoryMaster\Scripts\Item\SlotCover.cs" />
     <Compile Include="Assets\InventoryMaster\Scripts\Item\SplitItem.cs" />
     <Compile Include="Assets\InventoryMaster\Scripts\Tooltip\Tooltip.cs" />
-    <Compile Include="Assets\LetsHaveAChat.cs" />
     <Compile Include="Assets\Low Poly FPS Pack\Components\Demo Scene\Scripts\AimScript.cs" />
     <Compile Include="Assets\Low Poly FPS Pack\Components\Demo Scene\Scripts\DebrisScript.cs" />
     <Compile Include="Assets\Low Poly FPS Pack\Components\Demo Scene\Scripts\ExplosiveBarrelScript.cs" />
@@ -135,8 +133,6 @@
     <Compile Include="Assets\Low Poly FPS Pack\Components\Scripts\Explosion &amp; Impact\ImpactScript.cs" />
     <Compile Include="Assets\Low Poly FPS Pack\Components\Scripts\Mecanim\PlaySoundScript.cs" />
     <Compile Include="Assets\Low Poly FPS Pack\Components\Third Person Character\Scripts\ThirdPersonCharacterControllerScript.cs" />
-    <Compile Include="Assets\NewTimer.cs" />
-    <Compile Include="Assets\PlaySoundAtInterval.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -199,21 +195,26 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\ArmControllerScript.cs" />
+    <Compile Include="Assets\Scripts\CameraFocalPoint.cs" />
     <Compile Include="Assets\Scripts\FloatingText.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\GunSwitchScript.cs" />
     <Compile Include="Assets\Scripts\HoverTextScript.cs" />
+    <Compile Include="Assets\Scripts\LetsHaveAChat.cs" />
     <Compile Include="Assets\Scripts\LevelRestart.cs" />
     <Compile Include="Assets\Scripts\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\MenuBehavior.cs" />
     <Compile Include="Assets\Scripts\NewLevelSelect.cs" />
     <Compile Include="Assets\Scripts\NewTargetScript.cs" />
+    <Compile Include="Assets\Scripts\NewTimer.cs" />
     <Compile Include="Assets\Scripts\PathFollow.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerShooting.cs" />
+    <Compile Include="Assets\Scripts\PlaySoundAtInterval.cs" />
     <Compile Include="Assets\Scripts\PointCounter.cs" />
     <Compile Include="Assets\Scripts\RoundWon.cs" />
+    <Compile Include="Assets\Scripts\TestShooting.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\WeaponInfoText.cs" />
     <Compile Include="Assets\Scripts\WeaponManager.cs" />
@@ -233,7 +234,6 @@
     <Compile Include="Assets\SmartSpawn\Scripts\SmartSpawnScriptDefaultNetworked.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
-    <Compile Include="Assets\TestShooting.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

@@ -317,20 +317,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12f9581510dc37e4980bebfb3f886283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemySettings:
+    name: 
+    enemy: {fileID: 0}
+    count: 0
+    rate: 0
   timerLabel: {fileID: 0}
-  timerText: {fileID: 0}
-  fastestTime: {fileID: 0}
-  clipToPlay: {fileID: 0}
-  startClip: {fileID: 0}
-  upSound: {fileID: 0}
-  downSound: {fileID: 0}
-  hitSound: {fileID: 0}
-  audioSource: {fileID: 0}
-  gameTarget: {fileID: 0}
-  FloatingHitPrefab: {fileID: 0}
-  pauseTimer: 1
-  resetTriggered: 0
-  mouseOver: 0
+  highScore: {fileID: 0}
+  pauseTimer: 0
+  time: 0
+  bestTime: 0
+  currentTime: 0
   waves: []
   timeBetweenWaves: 5
   spawnPoints: []

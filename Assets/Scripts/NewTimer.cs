@@ -4,15 +4,13 @@
 
 public class NewTimer : MonoBehaviour {
 
-    private static NewTimer _instance;
-
     public bool gameStarted = false;
 
     public bool countdownStarted = false;
 
     public Text timerLabel;
     public Text highScore;
-    public bool pauseTimer = true;
+    public bool pauseTimer;
     public bool resetTriggered;
     public bool mouseOver;
     
@@ -97,7 +95,6 @@ public class NewTimer : MonoBehaviour {
             hudChecked = true;
         }*/
 
-
         if (hudText[12].color.a >= 0.9 && playedSound == false && playSound1 == false)
         {
             playSound1 = true;
@@ -108,6 +105,7 @@ public class NewTimer : MonoBehaviour {
             }
             
         }
+
         if (hudText[13].color.a >= 0.9 && playSound2 == false && playedSound == false)
         {
             playSound2 = true;
@@ -118,6 +116,7 @@ public class NewTimer : MonoBehaviour {
                 playedSound = false;
             }
         }
+
         if (hudText[14].color.a >= 0.9 && playSound3 == false && playedSound == false)
         {
             playSound3 = true;
@@ -128,6 +127,7 @@ public class NewTimer : MonoBehaviour {
                 playedSound = false;
             }
         }
+
         if (hudText[15].color.a >= 0.9 && playSound4 == false && playedSound == false)
         {
             playSound4 = true;
@@ -338,7 +338,7 @@ public class NewTimer : MonoBehaviour {
 		 if (Input.GetKeyDown(KeyCode.E))
 		 {
             countdownStarted = true;
-             StartCoroutine(Countdown(5));
+            StartCoroutine(Countdown(5));
 		 }
 		 if (pauseTimer == false && Input.GetKeyDown(KeyCode.T))
 		 {
@@ -360,21 +360,22 @@ public class NewTimer : MonoBehaviour {
     }
 
 
-     IEnumerator Countdown(int seconds)
+     private IEnumerator Countdown(int seconds)
      {
-         int count = seconds;
+        countdownStarted = true;
+        int count = seconds;
          while (count > 0)
          {
              //Display Countdown Here
              hudAnim.SetBool("Start", true);
             yield return new WaitForSeconds(1);
              count --;
-        }
+         }
 
         StartGame();
      }
 
-     public void StartGame()
+    public void StartGame()
      {
          StartTimer();
      }
