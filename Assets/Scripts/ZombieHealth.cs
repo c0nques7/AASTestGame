@@ -17,10 +17,11 @@ public class ZombieHealth : MonoBehaviour
     public int scoreValue = 10;                      // The amount added to the player's score when the enemy dies.
     public AudioClip deathClip;                 // The sound to play when the enemy dies.
     public AudioClip damagedClip;
-
+    
     public GameObject thePlayer;
 
     private int gunDamage;
+    GameManager gameManager;
     
 
 
@@ -34,7 +35,7 @@ public class ZombieHealth : MonoBehaviour
 
     private void Start()
     {
-        PointCounter.enemies += 1;
+
     }
 
     void Awake()
@@ -48,6 +49,7 @@ public class ZombieHealth : MonoBehaviour
 
         // Setting the current health when the enemy first spawns.
         currentHealth = startingHealth;
+        
 
         gunDamage = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<ArmControllerScript>().ShootSettings.damagePerShot;
         

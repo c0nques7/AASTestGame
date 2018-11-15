@@ -4,28 +4,45 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-[System.Serializable]
-public class Wave
+
+
+public class GameManager : MonoBehaviour
 {
-    public string name;
-    public Transform enemy;
-    public int count;
-    public float rate;
-}
 
-public class GameManager : MonoBehaviour {
+    [System.Serializable]
+    public class Wave
+    {
+        public string name;
+        public Transform enemy;
+        public int count;
+        public float rate;
+    }
 
-	public enum SpawnState  { spawning, waiting, counting };
-    [Header("EnemySettings")]
-    public Wave enemySettings;
+    public enum SpawnState { spawning, waiting, counting };
+
 
     //Floats used to modify game speed
     float currentAmount = 0f;
     float maxAmount = 10f;
 
     //Timer Variables
-    public Text timerLabel;
+    [Header("HUD Elements")]
+    public Text stopWatch;
+    public Text fastestTime;
+    public Text currentScore;
     public Text highScore;
+    public Text currentWave;
+    public Text enemiesLeft;
+    public Text score;
+
+    [Header("Gameplay Variables")]
+    public static int points;
+    //public static int enemies;
+    public static float wave;
+    public int enemyCount;
+    private GameObject[] enemies;
+
+    [Header("Debug")]
     public bool pauseTimer;
     public float time;
     public float bestTime;
@@ -34,12 +51,12 @@ public class GameManager : MonoBehaviour {
 
 
     [Header("Wave Controls")]
-	public Wave[] waves;
-	private int nextWave = 0;
+    public Wave[] waves;
+    private int nextWave = 0;
 
-	public float timeBetweenWaves = 5f;
-	private float waveCountdown;
-	private SpawnState state = SpawnState.counting;
+    public float timeBetweenWaves = 5f;
+    private float waveCountdown;
+    private SpawnState state = SpawnState.counting;
 
     private float searchCountdown = 1f;
 
@@ -48,27 +65,31 @@ public class GameManager : MonoBehaviour {
 
 
     [Header("Entry and Exit Points")]
-    public GameObject endPortal; 
-	public GameObject spawnPortal;
+    public GameObject endPortal;
+    public GameObject spawnPortal;
     public GameObject entryPoint;
     public GameObject exitPoint;
 
-    
+
 
     [Header("Misc References")]
     public GameObject player;
-	public GameObject bow;
-	public GameObject primary;
+    public GameObject bow;
+    public GameObject primary;
     public GameObject celebration;
     Animator anim;
 
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         pauseTimer = false;
         
+        enemyCount = enemies.Length;
+        points = 0;
+        wave = 1;
 
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
         player = GameObject.FindGameObjectWithTag("Player");
 
         if (spawnPoints.Length == 0)
@@ -77,19 +98,21 @@ public class GameManager : MonoBehaviour {
         }
         anim = GetComponent<Animator>();
         waveCountdown = timeBetweenWaves;
-        
-	}
+
+    }
 
     // Update is called once per frame
-    public void Update ()
+    public void Update()
     {
+        
+        SetCountText();
         if (state == SpawnState.waiting)
         {
             //Check if enemies are still alive
             if (!EnemyIsAlive())
             {
                 WaveCompleted();
-                PointCounter.wave += 1;
+                wave += 1;
             }
             else
             {
@@ -97,7 +120,7 @@ public class GameManager : MonoBehaviour {
             }
         }
 
-		/*if (waveCountdown <= 0)
+        /*if (waveCountdown <= 0)
 		{
 			if (state != SpawnState.spawning)
 			{
@@ -138,21 +161,23 @@ public class GameManager : MonoBehaviour {
 
         }*/
 
-		//Check to see if the timescale has been modified
-		if (Time.timeScale == 0.7f)
-		{
-			currentAmount += Time.deltaTime;
-		}
-		//When currentAmount is greater than maxAmount, return the timescale to 1.0
-		if (currentAmount > maxAmount){
-			currentAmount = 0f;
-			Time.timeScale = 1.0f;
-		}
+        //Check to see if the timescale has been modified
+        if (Time.timeScale == 0.7f)
+        {
+            currentAmount += Time.deltaTime;
+        }
+        //When currentAmount is greater than maxAmount, return the timescale to 1.0
+        if (currentAmount > maxAmount)
+        {
+            currentAmount = 0f;
+            Time.timeScale = 1.0f;
+        }
 
         //Stopwatch Controls
 
         if (Input.GetKeyDown(KeyCode.E))
         {
+            Debug.Log("Starting countdown coroutine...");
             //countdownStarted = true;
             StartCoroutine(Countdown(5));
         }
@@ -175,9 +200,23 @@ public class GameManager : MonoBehaviour {
         var fraction = (time * 100) % 100;
 
         //update the label value
-        timerLabel.text = string.Format("{0:00} : {1:00} : {2:00}", minutes, seconds, fraction);
+        stopWatch.text = string.Format("{0:00} : {1:00} : {2:00}", minutes, seconds, fraction);
 
 
+
+
+    }
+
+    public void SetCountText()
+    {
+        currentWave.text = wave.ToString();
+        score.text = points.ToString();
+        enemiesLeft.text = enemyCount.ToString();
+        if (points > PlayerPrefs.GetInt("HighScore", 0))
+        {
+            PlayerPrefs.SetInt("HighScore", points);
+            highScore.text = "High Score: " + points.ToString();
+        }
 
 
     }
@@ -187,19 +226,19 @@ public class GameManager : MonoBehaviour {
         celebration.SetActive(true);
     }
 
-	void SpawnEnemy(Transform _enemy)
-		{
+    void SpawnEnemy(Transform _enemy)
+    {
         //Spawn Enemy
         if (spawnPoints.Length == 0)
         {
             Debug.LogError("No Spawn Points Referenced");
         }
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
-		Instantiate(spawnPortal, _sp.position, _sp.rotation);
+        Instantiate(spawnPortal, _sp.position, _sp.rotation);
         Instantiate(_enemy, _sp.position, _sp.rotation);
-		//Debug.Log("Spawning Enemy: " + _enemy.name);
+        //Debug.Log("Spawning Enemy: " + _enemy.name);
 
-		}
+    }
 
     void WaveCompleted()
     {
@@ -209,7 +248,7 @@ public class GameManager : MonoBehaviour {
         if (nextWave + 1 > waves.Length - 1)
         {
             nextWave = 0;
-			endPortal.SetActive(true);
+            endPortal.SetActive(true);
             Debug.Log("You win!");
         }
         nextWave++;
@@ -226,28 +265,28 @@ public class GameManager : MonoBehaviour {
                 return false;
             }
         }
-        
+
         return true;
     }
-		IEnumerator SpawnWave(Wave _wave)
-		{
-			state = SpawnState.spawning;
+    IEnumerator SpawnWave(Wave _wave)
+    {
+        Debug.Log("Spawning wave");
+        state = SpawnState.spawning;
+        for (int i = 0; i < _wave.count; i++)
+        {
+            SpawnEnemy(_wave.enemy);
+            yield return new WaitForSeconds(1f / _wave.rate);
+        }
+        state = SpawnState.waiting;
+        yield break;
+    }
 
-			for (int i = 0; i < _wave.count; i++)
-			{
-				SpawnEnemy(_wave.enemy);
-				yield return new WaitForSeconds( 1f/_wave.rate);
-			}
-			state = SpawnState.waiting;
-			yield break;
-		}
+    void SlowMoPower()
+    {
+        Time.timeScale = 0.7F;
+        PointCounter.points = 0;
 
-	void SlowMoPower()
-	{
-		Time.timeScale = 0.7F;
-		PointCounter.points = 0;
-		
-	}
+    }
 
     private IEnumerator Countdown(int seconds)
     {
@@ -260,24 +299,29 @@ public class GameManager : MonoBehaviour {
             yield return new WaitForSeconds(1);
             count--;
         }
-
-        if (waveCountdown <= 0)
+        Debug.Log("Starting spawn coroutine...");
+        yield return StartCoroutine(SpawnWave(waves[nextWave]));
+        /*if (waveCountdown <= 0)
         {
             if (state != SpawnState.spawning)
             {
+                Debug.Log("Starting spawn coroutine...");
                 StartCoroutine(SpawnWave(waves[nextWave]));
             }
         }
         else
         {
             waveCountdown -= Time.deltaTime;
-        }
+        }*/
+
+
         StartGame();
     }
 
     public void StartGame()
     {
         StartTimer();
+
     }
 
     //Reset Timer
@@ -338,4 +382,4 @@ public class GameManager : MonoBehaviour {
 
 }
 
-		//xjuice
+//xjuice

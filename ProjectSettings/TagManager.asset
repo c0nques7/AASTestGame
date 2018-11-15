@@ -30,6 +30,7 @@ TagManager:
   - FinishLine
   - Target
   - Controller
+  - GameManager
   layers:
   - Default
   - TransparentFX
