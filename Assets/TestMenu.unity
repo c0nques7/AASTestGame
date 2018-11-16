@@ -12277,10 +12277,10 @@ MonoBehaviour:
   audio:
   - {fileID: 433294462}
   - {fileID: 630511961}
-  currentTab: 1
-  currentTabTwo: -1
-  previousTab: 1
-  previousTabTwo: -1
+  currentTab: -1
+  currentTabTwo: 0
+  previousTab: -1
+  previousTabTwo: 0
   spaceMenu: 40
   xSpace: -450
   yAdjust: 0
@@ -14132,8 +14132,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d7b6e7adb391e0e4dad5d8ddb54e9cc4, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 008903335853f40beada598f4f0faad0, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1

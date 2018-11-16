@@ -48,6 +48,11 @@ public class GameManager : MonoBehaviour
     public float bestTime;
     public float currentTime;
 
+    [Header("Music and Sounds")]
+    public AudioSource musicSource;
+    public AudioClip idleMusic;
+    public AudioClip actionMusic;
+
 
 
     [Header("Wave Controls")]
@@ -84,7 +89,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         pauseTimer = false;
-        
+        musicSource.PlayOneShot(idleMusic);
         enemyCount = enemies.Length;
         points = 0;
         wave = 1;
@@ -178,6 +183,8 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Starting countdown coroutine...");
+            musicSource.Stop();
+            musicSource.PlayOneShot(actionMusic);
             //countdownStarted = true;
             StartCoroutine(Countdown(5));
         }

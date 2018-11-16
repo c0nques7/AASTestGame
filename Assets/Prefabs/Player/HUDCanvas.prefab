@@ -329,6 +329,9 @@ MonoBehaviour:
   time: 0
   bestTime: 0
   currentTime: 0
+  musicSource: {fileID: 0}
+  idleMusic: {fileID: 0}
+  actionMusic: {fileID: 0}
   waves: []
   timeBetweenWaves: 5
   spawnPoints: []
