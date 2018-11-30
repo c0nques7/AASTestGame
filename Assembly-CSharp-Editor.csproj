@@ -112,6 +112,10 @@
     <Compile Include="Assets\UIController\OverrideControllerTools\Editor\AnimatorOverrideControllerInspector.cs" />
     <Compile Include="Assets\UIController\OverrideControllerTools\Editor\DecoratorEditor.cs" />
     <Compile Include="Assets\UIController\OverrideControllerTools\Editor\OverrideControllerToolsSettings.cs" />
+    <Compile Include="Assets\Ultimate Game Tools\Fracturing\Editor\ExplosionSourceEditor.cs" />
+    <Compile Include="Assets\Ultimate Game Tools\Fracturing\Editor\FracturedChunkEditor.cs" />
+    <Compile Include="Assets\Ultimate Game Tools\Fracturing\Editor\FracturedObjectEditor.cs" />
+    <Compile Include="Assets\Ultimate Game Tools\MeshCombiner\Editor\CombinedMeshEditor.cs" />
     <Compile Include="Assets\WS_MenuKit\Editor\LanguageControlEditor.cs" />
     <Compile Include="Assets\WS_MenuKit\Editor\MenuControlEditor.cs" />
     <Compile Include="Assets\WS_MenuKit\Editor\OptionsControlEditor.cs" />

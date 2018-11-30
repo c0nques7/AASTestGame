@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/FirstGallery.unity
+- path: Assets/TestScene.unity
   isLoaded: 1
   isActive: 1
