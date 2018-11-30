@@ -800,11 +800,21 @@ public class ArmControllerScript : MonoBehaviour {
 
 		Temporary_RigidBody.AddForce(transform.forward * Bullet_Velocity);
 
+            
+
 		
 
 		Destroy(Temporary_Bullet_Handler, 10f);
+
+            if (Input.GetKeyDown(KeyCode.LeftControl) && Input.GetMouseButton(0))
+            {
+                Time.timeScale = 0.1f;
+            }
+		    if (Input.GetKeyDown(KeyCode.LeftControl) && Input.GetMouseButton(0) && Time.timeScale == 0.1f)
+            {
+                Time.timeScale = 1f;
+            }
 		
-		//Time.timeScale = 0.1f;
 
 		
 		}
@@ -828,7 +838,8 @@ public class ArmControllerScript : MonoBehaviour {
 		//Send out the raycast from the "bulletSpawnPoint" position
 		if (Physics.Raycast (Spawnpoints.bulletSpawnPoint.transform.position, 
 		                     Spawnpoints.bulletSpawnPoint.transform.forward, out hit, ShootSettings.bulletDistance)) {
-			            
+            Debug.DrawLine(transform.position, hit.point, Color.red, 15, false);
+
 						if (Physics.Raycast (ray, shootableMask))
             			{
                 		//Try and find a ZombieHealth Script
@@ -840,8 +851,8 @@ public class ArmControllerScript : MonoBehaviour {
                     		//Zombie Takes Damage Reflective to weapon settings
                     		zombieHealth.TakeDamage(ShootSettings.damagePerShot);
                 			}
-
             			}
+                        
 
 			//If a rigibody is hit, add bullet force to it
 			if (hit.rigidbody != null)

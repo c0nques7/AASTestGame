@@ -11,6 +11,8 @@ public class ZombieHealth : MonoBehaviour
     public GameObject FlaotingTextPrefab;
     public GameObject FloatingScorePrefab;
     public GameObject deathAnimation;
+    public GameObject headShotBox;
+    public GameObject zombieHead;
     public int startingHealth = 100;            // The amount of health the enemy starts the game with.
     public int currentHealth;                   // The current health the enemy has.
     public float sinkSpeed = 2.5f;              // The speed at which the enemy sinks through the floor when dead.
@@ -29,11 +31,13 @@ public class ZombieHealth : MonoBehaviour
     AudioSource enemyAudio;                     // Reference to the audio source.
     ParticleSystem hitParticles;                // Reference to the particle system that plays when the enemy is damaged.
     CapsuleCollider capsuleCollider;            // Reference to the capsule collider.
+    BoxCollider boxCollider;
+    
     bool isDead;                                // Whether the enemy is dead.
     bool isSinking;                             // Whether the enemy has started sinking through the floor.
     
 
-    private void Start()
+    void Start()
     {
 
     }
@@ -45,6 +49,7 @@ public class ZombieHealth : MonoBehaviour
         enemyAudio = GetComponent<AudioSource>();
         // hitParticles = GetComponentInChildren<ParticleSystem>();
         capsuleCollider = GetComponent<CapsuleCollider>();
+        boxCollider = GetComponentInChildren<BoxCollider>();
         
 
         // Setting the current health when the enemy first spawns.
@@ -59,15 +64,27 @@ public class ZombieHealth : MonoBehaviour
     {
         
 
+
         // If the enemy should be sinking...
         if (isSinking)
         {
             // ... move the enemy down by the sinkSpeed per second.
             transform.Translate(-Vector3.up * sinkSpeed * Time.deltaTime);
         }
+
     }
 
-   
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("GameObject Hit" + collision.gameObject.name);
+        if(collision.relativeVelocity.magnitude > 2)
+        {
+            zombieHead.transform.localScale = new Vector3(1, 1, 1);
+            Instantiate(zombieHead, transform.position, transform.rotation, transform);
+        }
+    }
+
+
 
     public void TakeDamage(int amount)
     {

@@ -66,7 +66,7 @@ public class ZombieAttack : MonoBehaviour
         {
             // ... tell the animator the player is dead.
             //anim.SetTrigger("PlayerDead");
-            Debug.Log("You're dead.");
+            //Debug.Log("You're dead.");
         }
     }
 

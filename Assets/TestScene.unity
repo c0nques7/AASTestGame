@@ -147,15 +147,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015624976
   Volume: 2390.7395
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.66793376, g: 0.4026093, b: 0.99110603, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 572751927}
     fArea: 0.03575892
@@ -180,7 +180,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 7766068}
   serializedVersion: 2
-  m_Mass: 0.15624976
+  m_Mass: 0.31249952
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -656,15 +656,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015624984
   Volume: 2390.7407
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.04863096, g: 0.14234413, b: 0.009795786, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 575284644}
     fArea: 0.044698603
@@ -687,7 +687,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20385829}
   serializedVersion: 2
-  m_Mass: 0.15624984
+  m_Mass: 0.31249967
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1105,75 +1105,6 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
---- !u!1 &44823540
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 44823541}
-  - component: {fileID: 44823543}
-  - component: {fileID: 44823542}
-  m_Layer: 5
-  m_Name: Segment Prefab(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &44823541
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44823540}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1482517937}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 3}
-  m_SizeDelta: {x: 10, y: 12}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &44823542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44823540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d434d09071dc04a68a692e64b6eb6528, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &44823543
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44823540}
-  m_CullTransparentMesh: 0
 --- !u!1001 &45286867
 Prefab:
   m_ObjectHideFlags: 0
@@ -1266,15 +1197,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.00781252
   Volume: 1195.3745
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.38883835, g: 0.538084, b: 0.54625255, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 914438929}
     fArea: 0.017879482
@@ -1297,7 +1228,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 48171856}
   serializedVersion: 2
-  m_Mass: 0.07812519
+  m_Mass: 0.15625039
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1547,15 +1478,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.007812504
   Volume: 1195.3722
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.7084052, g: 0.75934196, b: 0.15260722, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 411659634}
     fArea: 0.011174656
@@ -1578,7 +1509,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 65295160}
   serializedVersion: 2
-  m_Mass: 0.07812504
+  m_Mass: 0.15625007
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1690,15 +1621,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015624971
   Volume: 2390.7388
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.8125577, g: 0.866807, b: 0.24483588, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1842781846}
     fArea: 0.03575886
@@ -1719,7 +1650,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 82762189}
   serializedVersion: 2
-  m_Mass: 0.15624972
+  m_Mass: 0.31249943
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1797,6 +1728,75 @@ Transform:
   m_Father: {fileID: 1289011088}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &84070011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84070012}
+  - component: {fileID: 84070014}
+  - component: {fileID: 84070013}
+  m_Layer: 5
+  m_Name: Segment Prefab(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &84070012
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84070011}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071067, w: -0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1482517937}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3, y: 0}
+  m_SizeDelta: {x: 10, y: 12}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &84070013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84070011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: d434d09071dc04a68a692e64b6eb6528, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &84070014
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84070011}
+  m_CullTransparentMesh: 0
 --- !u!1 &86017614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,15 +1831,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015624965
   Volume: 2390.7378
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.7296936, g: 0.8595928, b: 0.7944219, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 575284644}
     fArea: 0.035758883
@@ -1862,7 +1862,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 86017614}
   serializedVersion: 2
-  m_Mass: 0.15624964
+  m_Mass: 0.31249928
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2466,7 +2466,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 138462870}
   serializedVersion: 2
-  m_Mass: 0.15624964
+  m_Mass: 0.31249928
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2854,15 +2854,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.00781251
   Volume: 1195.3732
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.3069177, g: 0.22747937, b: 0.85237944, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1736737411}
     fArea: 0.03575889
@@ -2885,7 +2885,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 160259681}
   serializedVersion: 2
-  m_Mass: 0.078125104
+  m_Mass: 0.15625021
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3120,7 +3120,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 180363487}
   serializedVersion: 2
-  m_Mass: 0.15624987
+  m_Mass: 0.31249973
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3259,7 +3259,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 188422436}
   serializedVersion: 2
-  m_Mass: 0.15624961
+  m_Mass: 0.31249923
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3400,7 +3400,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 196641434}
   serializedVersion: 2
-  m_Mass: 0.15624964
+  m_Mass: 0.31249928
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3708,7 +3708,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 214586033}
   serializedVersion: 2
-  m_Mass: 0.15624996
+  m_Mass: 0.3124999
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -4015,15 +4015,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.01562498
   Volume: 2390.7402
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.7975739, g: 0.35772172, b: 0.41035205, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 295613502}
     fArea: 0.03575888
@@ -4046,7 +4046,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 226898265}
   serializedVersion: 2
-  m_Mass: 0.1562498
+  m_Mass: 0.3124996
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -4222,7 +4222,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 228926677}
   serializedVersion: 2
-  m_Mass: 0.15624991
+  m_Mass: 0.31249982
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -4915,144 +4915,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 20985119526722494, guid: ed57e298a46a762469e9b80f658b90f9,
     type: 2}
   m_PrefabInternal: {fileID: 1315038398}
---- !u!1 &281032458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 281032459}
-  - component: {fileID: 281032461}
-  - component: {fileID: 281032460}
-  m_Layer: 5
-  m_Name: Segment Prefab(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &281032459
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 281032458}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1482517937}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -3}
-  m_SizeDelta: {x: 10, y: 12}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &281032460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 281032458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d434d09071dc04a68a692e64b6eb6528, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &281032461
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 281032458}
-  m_CullTransparentMesh: 0
---- !u!1 &281301178
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 281301179}
-  - component: {fileID: 281301181}
-  - component: {fileID: 281301180}
-  m_Layer: 5
-  m_Name: Segment Prefab(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &281301179
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 281301178}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1482517937}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: 0}
-  m_SizeDelta: {x: 10, y: 12}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &281301180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 281301178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d434d09071dc04a68a692e64b6eb6528, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &281301181
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 281301178}
-  m_CullTransparentMesh: 0
 --- !u!1001 &292367570
 Prefab:
   m_ObjectHideFlags: 0
@@ -5351,7 +5213,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 295613501}
   serializedVersion: 2
-  m_Mass: 0.15624972
+  m_Mass: 0.31249943
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -5494,7 +5356,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 304044498}
   serializedVersion: 2
-  m_Mass: 0.1562498
+  m_Mass: 0.3124996
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -5903,7 +5765,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 344596167}
   serializedVersion: 2
-  m_Mass: 0.15624984
+  m_Mass: 0.31249967
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -6222,15 +6084,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.0078125065
   Volume: 1195.3726
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.2741436, g: 0.6594761, b: 0.30083695, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1006058250}
     fArea: 0.006704801
@@ -6253,7 +6115,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 361718363}
   serializedVersion: 2
-  m_Mass: 0.07812507
+  m_Mass: 0.15625013
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -6365,15 +6227,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.00781252
   Volume: 1195.3745
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.7037321, g: 0.43841094, b: 0.5706634, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1006058250}
     fArea: 0.022349305
@@ -6396,7 +6258,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 364937927}
   serializedVersion: 2
-  m_Mass: 0.07812519
+  m_Mass: 0.15625039
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -6474,6 +6336,75 @@ Transform:
   m_Father: {fileID: 1289011088}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &365733309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365733310}
+  - component: {fileID: 365733312}
+  - component: {fileID: 365733311}
+  m_Layer: 5
+  m_Name: Segment Prefab(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &365733310
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365733309}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1482517937}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3, y: 0}
+  m_SizeDelta: {x: 10, y: 12}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &365733311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365733309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: d434d09071dc04a68a692e64b6eb6528, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &365733312
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365733309}
+  m_CullTransparentMesh: 0
 --- !u!1 &383042215
 GameObject:
   m_ObjectHideFlags: 0
@@ -6912,7 +6843,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 411659633}
   serializedVersion: 2
-  m_Mass: 0.078125164
+  m_Mass: 0.15625033
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -7960,15 +7891,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.007812503
   Volume: 1195.372
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.67071575, g: 0.5981714, b: 0.129815, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1171166785}
     fArea: 0.017879387
@@ -7993,7 +7924,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 498501325}
   serializedVersion: 2
-  m_Mass: 0.07812503
+  m_Mass: 0.15625006
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -8332,7 +8263,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 514471641}
   serializedVersion: 2
-  m_Mass: 0.15624957
+  m_Mass: 0.31249914
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -8506,7 +8437,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 520754768}
   serializedVersion: 2
-  m_Mass: 0.15625015
+  m_Mass: 0.3125003
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -9452,6 +9383,75 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
+--- !u!1 &572735226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 572735227}
+  - component: {fileID: 572735229}
+  - component: {fileID: 572735228}
+  m_Layer: 5
+  m_Name: Segment Prefab(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &572735227
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572735226}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1482517937}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -3}
+  m_SizeDelta: {x: 10, y: 12}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &572735228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572735226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: d434d09071dc04a68a692e64b6eb6528, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &572735229
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572735226}
+  m_CullTransparentMesh: 0
 --- !u!1 &572751926
 GameObject:
   m_ObjectHideFlags: 0
@@ -9486,15 +9486,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015624984
   Volume: 2390.7407
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.72253376, g: 0.69735247, b: 0.29653397, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1736737411}
     fArea: 0.035758898
@@ -9517,7 +9517,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 572751926}
   serializedVersion: 2
-  m_Mass: 0.15624984
+  m_Mass: 0.31249967
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -9659,15 +9659,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015624984
   Volume: 2390.7407
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.13852872, g: 0.03644431, b: 0.22748831, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1006058250}
     fArea: 0.017879434
@@ -9692,7 +9692,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 575284643}
   serializedVersion: 2
-  m_Mass: 0.15624984
+  m_Mass: 0.31249967
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -9770,6 +9770,161 @@ Transform:
   m_Father: {fileID: 1289011088}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &598552922
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 9
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: -0.00000017881393, y: -0.000000029802322, z: 0.00000004291532}
+      m_Extent: {x: 0.48661217, y: 0.48661226, z: 0.000000090599016}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200000002000300
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 3525f93e61ef8f3d245c0f34000000000000803f00000000000000000000000093ef8fbd3d25f93e88c2f533000000000000803f0000000000000000000000004125f9be61ef8fbdc6cc4cb3000000000000803f00000000000000000000000065ef8f3d3f25f9be05d723b3000000000000803f000000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -0.00000017881393, y: -0.000000029802322, z: 0.00000004291532}
+    m_Extent: {x: 0.48661217, y: 0.48661226, z: 0.000000090599016}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 0
 --- !u!1 &605111520
 GameObject:
   m_ObjectHideFlags: 0
@@ -9831,7 +9986,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 605111520}
   serializedVersion: 2
-  m_Mass: 0.15624969
+  m_Mass: 0.31249937
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -10431,7 +10586,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 656821169}
   serializedVersion: 2
-  m_Mass: 0.15624957
+  m_Mass: 0.31249914
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -15696,7 +15851,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 707409527}
   serializedVersion: 2
-  m_Mass: 0.07812487
+  m_Mass: 0.15624975
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -15903,7 +16058,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 737129652}
   serializedVersion: 2
-  m_Mass: 0.15624987
+  m_Mass: 0.31249973
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -16048,7 +16203,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 747434135}
   serializedVersion: 2
-  m_Mass: 0.15625033
+  m_Mass: 0.31250066
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -16382,15 +16537,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.007812523
   Volume: 1195.3751
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.38354713, g: 0.6118292, b: 0.5604815, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1006058250}
     fArea: 0.011174656
@@ -16413,7 +16568,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 795630822}
   serializedVersion: 2
-  m_Mass: 0.07812523
+  m_Mass: 0.15625046
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -18102,15 +18257,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015625022
   Volume: 2390.7466
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.7943852, g: 0.0277921, b: 0.8660933, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1502968075}
     fArea: 0.035758913
@@ -18137,7 +18292,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 914438928}
   serializedVersion: 2
-  m_Mass: 0.15625022
+  m_Mass: 0.31250045
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -18278,7 +18433,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 915568486}
   serializedVersion: 2
-  m_Mass: 0.15624952
+  m_Mass: 0.31249905
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -18677,7 +18832,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 933010889}
   serializedVersion: 2
-  m_Mass: 0.07812527
+  m_Mass: 0.15625054
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -19045,7 +19200,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 987183028}
   serializedVersion: 2
-  m_Mass: 0.078124955
+  m_Mass: 0.15624991
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -19216,7 +19371,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1000493200}
   serializedVersion: 2
-  m_Mass: 0.07812487
+  m_Mass: 0.15624975
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -19328,15 +19483,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.007812527
   Volume: 1195.3757
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.1118647, g: 0.4476735, b: 0.73792464, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1179931556}
     fArea: 0.03575895
@@ -19361,7 +19516,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1006058249}
   serializedVersion: 2
-  m_Mass: 0.07812527
+  m_Mass: 0.15625054
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -19910,7 +20065,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1021754316}
   serializedVersion: 2
-  m_Mass: 0.15624972
+  m_Mass: 0.31249943
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -20218,15 +20373,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.007812496
   Volume: 1195.371
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.011902573, g: 0.08853496, b: 0.26587692, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 226898266}
     fArea: 0.02681917
@@ -20247,7 +20402,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1033251479}
   serializedVersion: 2
-  m_Mass: 0.078124955
+  m_Mass: 0.15624991
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -20907,15 +21062,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 2
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015625011
   Volume: 2390.7449
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.26327208, g: 0.8523959, b: 0.59053665, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1179931556}
     fArea: 0.035758916
@@ -20942,7 +21097,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1067238312}
   serializedVersion: 2
-  m_Mass: 0.15625012
+  m_Mass: 0.31250024
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -21082,7 +21237,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1067609384}
   serializedVersion: 2
-  m_Mass: 0.07812492
+  m_Mass: 0.15624984
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -21731,7 +21886,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1097118852}
   serializedVersion: 2
-  m_Mass: 0.078125045
+  m_Mass: 0.15625009
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -22189,7 +22344,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1120749271}
   serializedVersion: 2
-  m_Mass: 0.078125075
+  m_Mass: 0.15625015
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -27287,7 +27442,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1152952542}
   serializedVersion: 2
-  m_Mass: 0.15624984
+  m_Mass: 0.31249967
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -27476,15 +27631,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.007812488
   Volume: 1195.3698
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.88274467, g: 0.23973599, b: 0.04070187, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 295613502}
     fArea: 0.017879445
@@ -27509,7 +27664,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1170218087}
   serializedVersion: 2
-  m_Mass: 0.07812488
+  m_Mass: 0.15624976
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -27621,15 +27776,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 2
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015625004
   Volume: 2390.7437
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.31378916, g: 0.0986705, b: 0.75734293, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1067238313}
     fArea: 0.062578075
@@ -27656,7 +27811,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1171166784}
   serializedVersion: 2
-  m_Mass: 0.15625003
+  m_Mass: 0.31250006
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -27777,15 +27932,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 2
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.007812528
   Volume: 1195.3759
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.11029519, g: 0.3631108, b: 0.37133685, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1006058250}
     fArea: 0.03575895
@@ -27812,7 +27967,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1179931555}
   serializedVersion: 2
-  m_Mass: 0.07812528
+  m_Mass: 0.15625057
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -28164,15 +28319,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.007812491
   Volume: 1195.3702
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.015407087, g: 0.92659354, b: 0.14130153, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 295613502}
     fArea: 0.017879462
@@ -28195,7 +28350,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1188013965}
   serializedVersion: 2
-  m_Mass: 0.07812491
+  m_Mass: 0.15624982
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -28854,7 +29009,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1272805839}
   serializedVersion: 2
-  m_Mass: 0.15624984
+  m_Mass: 0.31249967
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -29165,7 +29320,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1286530152}
   serializedVersion: 2
-  m_Mass: 0.15624957
+  m_Mass: 0.31249914
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -29280,7 +29435,7 @@ MonoBehaviour:
   ChunkHorizontalRadiusSupportStrength: 0.5
   SupportChunksAreIndestructible: 1
   ChunkIslandConnectionMaxDistance: 0.02
-  TotalMass: 10
+  TotalMass: 20
   ChunkPhysicMaterial: {fileID: 0}
   MinColliderVolumeForBox: 0.00001
   CapPrecisionFix: 0
@@ -29313,13 +29468,13 @@ MonoBehaviour:
   GUIExpandEvents: 1
   EventDetachMinMass: 0.5
   EventDetachMinVelocity: 0.5
-  EventDetachExitForce: 15
-  EventDetachUpwardsModifier: 5
-  EventDetachSound: {fileID: 8300000, guid: 01f7ba58cf5258647813c9d953000be9, type: 3}
+  EventDetachExitForce: 10
+  EventDetachUpwardsModifier: 2
+  EventDetachSound: {fileID: 8300000, guid: ef5ff571a5ca2134a96079b18d44d31c, type: 3}
   EventDetachPrefabsArray:
   - MinLifeTime: 0
-    MaxLifeTime: 0
-    GameObject: {fileID: 182876, guid: b69cacae8a5b6f24ea06ba15a8bb910e, type: 2}
+    MaxLifeTime: 2
+    GameObject: {fileID: 195864, guid: 760c52d3ecd5c27449429eab2a5a8c7f, type: 2}
   EventDetachCollisionCallMethod: 
   EventDetachCollisionCallGameObject: {fileID: 0}
   EventDetachedMinLifeTime: Infinity
@@ -29340,7 +29495,7 @@ MonoBehaviour:
   EventImpactPrefabsArray: []
   EventDetachedAnyCallMethod: 
   EventDetachedAnyCallGameObject: {fileID: 0}
-  GUIExpandSupportPlanes: 0
+  GUIExpandSupportPlanes: 1
   RandomSeed: 0
   DecomposePreview: 0
   AlwaysComputeColliders: 1
@@ -29355,7 +29510,15 @@ MonoBehaviour:
   ConcaveColliderMaxHulls: 1
   ConcaveColliderMaxHullVertices: 64
   ConcaveColliderLegacySteps: 1
-  ListSupportPlanes: []
+  ListSupportPlanes:
+  - GUIExpanded: 1
+    GUIName: New Support Plane
+    GUIShowInScene: 1
+    v3PlanePosition: {x: 0.0018605893, y: -0.00000030517594, z: 1.3344239}
+    qPlaneRotation: {x: 0, y: 0.4493969, z: 0, w: -0.8933322}
+    v3PlaneScale: {x: 1, y: 1, z: 1}
+    planeMesh: {fileID: 598552922}
+    fracturedObject: {fileID: 1289011087}
   ListFracturedChunks:
   - {fileID: 1790277273}
   - {fileID: 1792222323}
@@ -29568,15 +29731,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.0078124986
   Volume: 1195.3713
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.6196931, g: 0.38567382, b: 0.5780776, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 411659634}
     fArea: 0.022349294
@@ -29603,7 +29766,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1295745920}
   serializedVersion: 2
-  m_Mass: 0.078124985
+  m_Mass: 0.15624997
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -30702,7 +30865,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1344689578}
   serializedVersion: 2
-  m_Mass: 0.07812504
+  m_Mass: 0.15625007
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -31015,15 +31178,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.0078125065
   Volume: 1195.3726
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.8888562, g: 0.75846565, b: 0.40088123, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 411659634}
     fArea: 0.006704814
@@ -31048,7 +31211,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1354847137}
   serializedVersion: 2
-  m_Mass: 0.07812507
+  m_Mass: 0.15625013
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -31237,15 +31400,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.007812531
   Volume: 1195.3762
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.46340233, g: 0.03285897, b: 0.5895379, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1067238313}
     fArea: 0.017879484
@@ -31268,7 +31431,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1368565655}
   serializedVersion: 2
-  m_Mass: 0.078125305
+  m_Mass: 0.15625061
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -31471,7 +31634,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1381114753}
   serializedVersion: 2
-  m_Mass: 0.07812508
+  m_Mass: 0.15625016
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -37656,10 +37819,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 281301179}
-  - {fileID: 281032459}
-  - {fileID: 1648927068}
-  - {fileID: 44823541}
+  - {fileID: 365733310}
+  - {fileID: 572735227}
+  - {fileID: 84070012}
+  - {fileID: 1888815326}
   m_Father: {fileID: 1197394502}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37902,7 +38065,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1502968074}
   serializedVersion: 2
-  m_Mass: 0.15625009
+  m_Mass: 0.31250018
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -38013,15 +38176,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015624965
   Volume: 2390.7378
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.060089834, g: 0.49523002, b: 0.9212545, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 226898266}
     fArea: 0.03575886
@@ -38046,7 +38209,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1508862818}
   serializedVersion: 2
-  m_Mass: 0.15624964
+  m_Mass: 0.31249928
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -43871,15 +44034,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015624964
   Volume: 2390.7375
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.63221127, g: 0.49161404, b: 0.27630213, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 20385830}
     fArea: 0.035758875
@@ -43902,7 +44065,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1586352647}
   serializedVersion: 2
-  m_Mass: 0.15624964
+  m_Mass: 0.31249928
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -44014,15 +44177,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 2
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.007812517
   Volume: 1195.3741
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.6260763, g: 0.1256044, b: 0.48882252, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1179931556}
     fArea: 0.022349332
@@ -44047,7 +44210,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1594909132}
   serializedVersion: 2
-  m_Mass: 0.078125164
+  m_Mass: 0.15625033
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -44219,7 +44382,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1606906585}
   serializedVersion: 2
-  m_Mass: 0.15624969
+  m_Mass: 0.31249937
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -44331,15 +44494,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.00781251
   Volume: 1195.3732
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.7759, g: 0.029915933, b: 0.6325354, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 575284644}
     fArea: 0.017879482
@@ -44360,7 +44523,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1608621070}
   serializedVersion: 2
-  m_Mass: 0.078125104
+  m_Mass: 0.15625021
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -44673,7 +44836,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1643929236}
   serializedVersion: 2
-  m_Mass: 0.15624975
+  m_Mass: 0.3124995
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -44751,75 +44914,6 @@ Transform:
   m_Father: {fileID: 1289011088}
   m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1648927067
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1648927068}
-  - component: {fileID: 1648927070}
-  - component: {fileID: 1648927069}
-  m_Layer: 5
-  m_Name: Segment Prefab(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1648927068
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1648927067}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071067, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1482517937}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 0}
-  m_SizeDelta: {x: 10, y: 12}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &1648927069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1648927067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d434d09071dc04a68a692e64b6eb6528, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1648927070
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1648927067}
-  m_CullTransparentMesh: 0
 --- !u!1 &1650153070
 GameObject:
   m_ObjectHideFlags: 0
@@ -44916,7 +45010,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1658707034}
   serializedVersion: 2
-  m_Mass: 0.15624984
+  m_Mass: 0.31249967
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -45801,15 +45895,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015624991
   Volume: 2390.7417
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.87475777, g: 0.09372414, b: 0.0129689, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 572751927}
     fArea: 0.035758898
@@ -45832,7 +45926,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1736737410}
   serializedVersion: 2
-  m_Mass: 0.15624991
+  m_Mass: 0.31249982
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -46332,7 +46426,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1756860600}
   serializedVersion: 2
-  m_Mass: 0.15625006
+  m_Mass: 0.31250012
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -46711,7 +46805,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1773111057}
   serializedVersion: 2
-  m_Mass: 0.15625003
+  m_Mass: 0.31250006
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -46855,7 +46949,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1790277272}
   serializedVersion: 2
-  m_Mass: 0.15625039
+  m_Mass: 0.31250077
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -47000,7 +47094,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1792222322}
   serializedVersion: 2
-  m_Mass: 0.15625057
+  m_Mass: 0.31250113
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -48116,15 +48210,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.015625002
   Volume: 2390.7434
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.05193997, g: 0.09552051, b: 0.590643, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1006058250}
     fArea: 0.031289034
@@ -48149,7 +48243,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1842781845}
   serializedVersion: 2
-  m_Mass: 0.15625001
+  m_Mass: 0.31250003
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -48632,6 +48726,75 @@ Transform:
   m_Father: {fileID: 1988832147}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 6.768, z: 17.807001}
+--- !u!1 &1888815325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1888815326}
+  - component: {fileID: 1888815328}
+  - component: {fileID: 1888815327}
+  m_Layer: 5
+  m_Name: Segment Prefab(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1888815326
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1888815325}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1482517937}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 3}
+  m_SizeDelta: {x: 10, y: 12}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1888815327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1888815325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: d434d09071dc04a68a692e64b6eb6528, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1888815328
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1888815325}
+  m_CullTransparentMesh: 0
 --- !u!1 &1891558896
 GameObject:
   m_ObjectHideFlags: 0
@@ -48699,7 +48862,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1891558896}
   serializedVersion: 2
-  m_Mass: 0.15624976
+  m_Mass: 0.31249952
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -49005,7 +49168,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1906910094}
   serializedVersion: 2
-  m_Mass: 0.078125045
+  m_Mass: 0.15625009
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -49242,7 +49405,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1936271281}
   serializedVersion: 2
-  m_Mass: 0.15624955
+  m_Mass: 0.3124991
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -49416,7 +49579,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1959656365}
   serializedVersion: 2
-  m_Mass: 0.15625006
+  m_Mass: 0.31250012
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -54490,15 +54653,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.0078125065
   Volume: 1195.3726
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.6288784, g: 0.71890706, b: 0.8870343, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1171166785}
     fArea: 0.017879462
@@ -54523,7 +54686,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1999612772}
   serializedVersion: 2
-  m_Mass: 0.07812507
+  m_Mass: 0.15625013
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -54668,7 +54831,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1999991362}
   serializedVersion: 2
-  m_Mass: 0.15625015
+  m_Mass: 0.3125003
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -54780,15 +54943,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.007812493
   Volume: 1195.3705
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.8225063, g: 0.5891734, b: 0.2551202, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 575284644}
     fArea: 0.017879434
@@ -54807,7 +54970,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2006440666}
   serializedVersion: 2
-  m_Mass: 0.07812493
+  m_Mass: 0.15624987
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -55209,7 +55372,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2037235574}
   serializedVersion: 2
-  m_Mass: 0.15624996
+  m_Mass: 0.3124999
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -60028,7 +60191,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2083989158}
   serializedVersion: 2
-  m_Mass: 0.15624984
+  m_Mass: 0.31249967
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -60357,7 +60520,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2100217897}
   serializedVersion: 2
-  m_Mass: 0.07812493
+  m_Mass: 0.15624987
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -61148,15 +61311,15 @@ MonoBehaviour:
   FracturedObjectSource: {fileID: 1289011087}
   SplitSubMeshIndex: 1
   DontDeleteAfterBroken: 0
-  IsSupportChunk: 0
-  IsNonSupportedChunk: 1
+  IsSupportChunk: 1
+  IsNonSupportedChunk: 0
   IsDetachedChunk: 0
   RelativeVolume: 0.0078124874
   Volume: 1195.3696
   HasConcaveCollider: 0
   PreviewDecompositionValue: 0
   RandomMaterialColor: {r: 0.5543496, g: 0.42889994, b: 0.42548615, a: 0.7}
-  Visited: 1
+  Visited: 0
   ListAdjacentChunks:
   - chunk: {fileID: 1999612773}
     fArea: 0.0067047914
@@ -61181,7 +61344,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2130305138}
   serializedVersion: 2
-  m_Mass: 0.07812487
+  m_Mass: 0.15624975
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
