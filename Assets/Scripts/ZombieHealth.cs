@@ -50,7 +50,6 @@ public class ZombieHealth : MonoBehaviour
         // hitParticles = GetComponentInChildren<ParticleSystem>();
         capsuleCollider = GetComponent<CapsuleCollider>();
         boxCollider = GetComponentInChildren<BoxCollider>();
-        
 
         // Setting the current health when the enemy first spawns.
         currentHealth = startingHealth;

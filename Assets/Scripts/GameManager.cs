@@ -90,10 +90,11 @@ public class GameManager : MonoBehaviour
     {
         pauseTimer = false;
         musicSource.PlayOneShot(idleMusic);
-        enemyCount = enemies.Length;
+        
         points = 0;
         wave = 1;
-
+        enemyCount = 0;
+        SetCountText();
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         player = GameObject.FindGameObjectWithTag("Player");
 
@@ -103,14 +104,13 @@ public class GameManager : MonoBehaviour
         }
         anim = GetComponent<Animator>();
         waveCountdown = timeBetweenWaves;
-
     }
 
     // Update is called once per frame
     public void Update()
-    {
-        
+    {        
         SetCountText();
+
         if (state == SpawnState.waiting)
         {
             //Check if enemies are still alive
@@ -183,8 +183,6 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Starting countdown coroutine...");
-            musicSource.Stop();
-            musicSource.PlayOneShot(actionMusic);
             //countdownStarted = true;
             StartCoroutine(Countdown(5));
         }
@@ -209,7 +207,7 @@ public class GameManager : MonoBehaviour
         //update the label value
         stopWatch.text = string.Format("{0:00} : {1:00} : {2:00}", minutes, seconds, fraction);
 
-
+        
 
 
     }
@@ -219,8 +217,10 @@ public class GameManager : MonoBehaviour
         currentWave.text = wave.ToString();
         score.text = points.ToString();
         enemiesLeft.text = enemyCount.ToString();
+
         if (points > PlayerPrefs.GetInt("HighScore", 0))
         {
+
             PlayerPrefs.SetInt("HighScore", points);
             highScore.text = "High Score: " + points.ToString();
         }
@@ -308,7 +308,7 @@ public class GameManager : MonoBehaviour
         }
         Debug.Log("Starting spawn coroutine...");
         yield return StartCoroutine(SpawnWave(waves[nextWave]));
-        /*if (waveCountdown <= 0)
+        if (waveCountdown <= 0)
         {
             if (state != SpawnState.spawning)
             {
@@ -319,7 +319,7 @@ public class GameManager : MonoBehaviour
         else
         {
             waveCountdown -= Time.deltaTime;
-        }*/
+        }
 
 
         StartGame();

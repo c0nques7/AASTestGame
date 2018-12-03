@@ -6,21 +6,22 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class PlayerHealth : MonoBehaviour
 {
     
-    public Image healthFill;
-    public int startingSheild = 100;
-    public int currentShield;
+    
     public GameObject celebration;
     public GameManager gameManager;
     public GameObject gameOverCamera;
     NewTimer newTimer;
 
-    public Slider shieldSlider;
+   
 
     public int startingHealth = 100;                            // The amount of health the player starts the game with.
     public int currentHealth;                                   // The current health the player has.
-    
+    public int startingSheild = 100;
+    public int currentShield;
+
     public Text health;                                         // Reference to the UI's health amount.
     public Slider healthSlider;                                 // Reference to the UI's health bar.
+    public Slider shieldSlider;
     public Image damageImage;                                   // Reference to an image to flash on the screen on being hurt.
     public AudioClip deathClip;                                 // The audio clip to play when the player dies.
     public float flashSpeed = 5f;                               // The speed the damageImage will fade at.
@@ -36,7 +37,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Awake()
     {
-        newTimer = GameObject.FindGameObjectWithTag("Controller").GetComponent<NewTimer>();
+        //newTimer = GameObject.FindGameObjectWithTag("Controller").GetComponent<NewTimer>();
         // Setting up the references.
         anim = GetComponent<Animator>();
         //playerAudio = GetComponent<AudioSource>();
@@ -46,22 +47,11 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = startingHealth;
         currentShield = startingSheild;
 
-        SetHealthText();
-
     }
 
     private void Start()
     {
-        StartCoroutine(WaitForGo());
         currentHealth = startingHealth;
-        SetHealthText();
-    }
-
-    IEnumerator WaitForGo()
-    {
-        firstPersonController.enabled = false;
-        yield return new WaitForSeconds(5);
-        firstPersonController.enabled = true;
     }
 
 
@@ -85,12 +75,12 @@ public class PlayerHealth : MonoBehaviour
         damaged = false;
     }
 
-    //Set up trigger events
+    /*//Set up trigger events
     void OnTriggerEnter(Collider collider)
     {
         Debug.Log("Collision Detected" + collider.gameObject.tag);
 
-        if (collider.gameObject.tag == "FinishLine" /*&& PointCounter.enemies == 0*/) 
+        if (collider.gameObject.tag == "FinishLine" && PointCounter.enemies == 0) 
         {
             Debug.Log("Game Over Event Triggered!");
             Time.timeScale = 0.5f;
@@ -100,7 +90,7 @@ public class PlayerHealth : MonoBehaviour
 
             //gameManager.GameOver();
         }
-    }
+    }*/
 
     public void TakeDamage(int amount)
     {
@@ -109,8 +99,6 @@ public class PlayerHealth : MonoBehaviour
 
         // Reduce the current health by the damage amount.
         currentHealth -= amount;
-
-        SetHealthText();
 
         // Set the health bar's value to the current health.
         healthSlider.value = currentHealth;
@@ -149,8 +137,4 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-    void SetHealthText()
-    {
-       health.text = currentHealth.ToString() + "/" + startingHealth;
-    }
 }

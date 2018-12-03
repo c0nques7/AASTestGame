@@ -237,7 +237,6 @@ GameObject:
   - component: {fileID: 54925126017740874}
   - component: {fileID: 136563098594130974}
   - component: {fileID: 195482800909967260}
-  - component: {fileID: 114096942621478050}
   - component: {fileID: 82229634678884614}
   m_Layer: 9
   m_Name: zombie_00
@@ -890,19 +889,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 0.5
   attackDamage: 10
---- !u!114 &114096942621478050
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1743151940906784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c6f84d8aec5eb14aa239cf11cfd25bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawner: {fileID: 0}
-  incrementSpawnsOnDeath: 1
 --- !u!114 &114376920048626748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -920,12 +906,15 @@ MonoBehaviour:
   FloatingScorePrefab: {fileID: 1697274913223764, guid: 8c1fe6088bf3f914bae0bbb0ae4ab118,
     type: 2}
   deathAnimation: {fileID: 119968, guid: e73000b12fb76244cbffd6abbf8bb6e4, type: 2}
+  headShotBox: {fileID: 0}
+  zombieHead: {fileID: 0}
   startingHealth: 100
   currentHealth: 0
   sinkSpeed: 5
   scoreValue: 10
   deathClip: {fileID: 8300000, guid: b60d4d186119ff341ad674aea9bd8c6d, type: 3}
   damagedClip: {fileID: 8300000, guid: fda97e4be59b392459eacf284fd6cfb5, type: 3}
+  thePlayer: {fileID: 0}
 --- !u!114 &114760751952639348
 MonoBehaviour:
   m_ObjectHideFlags: 1
