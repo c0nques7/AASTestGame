@@ -123,6 +123,8 @@ public class MenuControl : CustomInput {
 		reportErrors ();
         if(inGame == true)
             Canvas.SetActive (isActiveCanvas);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
     }
 

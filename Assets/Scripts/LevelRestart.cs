@@ -29,13 +29,16 @@ public class LevelRestart : MonoBehaviour {
 
     public void ResumeGame()
     {
-        hudCanvas.gameObject.SetActive(true);
-        pauseMenuCanvas.gameObject.SetActive(false);
         Time.timeScale = 1f;
+        pauseMenuCanvas.gameObject.SetActive(false);
+        hudCanvas.gameObject.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
     }
 
+
+        
 	// Use this for initialization
 	void Start () {
         
@@ -53,6 +56,5 @@ public class LevelRestart : MonoBehaviour {
             Cursor.visible = true;
         }
 
-        
     }
 }
