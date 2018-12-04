@@ -900,7 +900,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb2fa380b9633249a34f273ccff759d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loot: []
+  loot:
+  - {fileID: 100000, guid: 30c31b458493078429544252593e4f1e, type: 2}
+  - {fileID: 100002, guid: 677918b78218c5b41b47dc5c83a41a01, type: 2}
+  - {fileID: 0}
   FlaotingTextPrefab: {fileID: 1697274913223764, guid: 6a42eb9566725cf408f06e505c293f20,
     type: 2}
   FloatingScorePrefab: {fileID: 1697274913223764, guid: 8c1fe6088bf3f914bae0bbb0ae4ab118,

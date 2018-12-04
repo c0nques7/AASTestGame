@@ -158,13 +158,14 @@ public class ZombieHealth : MonoBehaviour
         anim.SetTrigger("Dead");
 
         // Change the audio clip of the audio source to the death clip and play it (this will stop the hurt clip playing).
-        enemyAudio.clip = deathClip;
-        enemyAudio.Play();
+        //enemyAudio.clip = deathClip;
+        //enemyAudio.Play();
 
+        Instantiate(deathAnimation, gameObject.transform.position, gameObject.transform.rotation);
         LootDrop();
         StartSinking();
 
-        Instantiate(deathAnimation, gameObject.transform.position, gameObject.transform.rotation);
+        
 
 
         Debug.Log("Zombie Killed!");
@@ -180,7 +181,9 @@ public class ZombieHealth : MonoBehaviour
     {
         foreach (GameObject i in loot)
         {
+            
             Instantiate(i, transform.position, transform.rotation);
+            i.AddComponent<Rigidbody>().AddForce(transform.up * 4000f);
             Destroy(gameObject, 10f);
             
         }
