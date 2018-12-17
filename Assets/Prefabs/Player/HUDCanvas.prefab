@@ -317,32 +317,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12f9581510dc37e4980bebfb3f886283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopWatch: {fileID: 0}
-  fastestTime: {fileID: 0}
-  currentScore: {fileID: 0}
-  highScore: {fileID: 0}
-  currentWave: {fileID: 0}
-  enemiesLeft: {fileID: 0}
-  score: {fileID: 0}
-  enemyCount: 0
-  pauseTimer: 0
-  time: 0
-  bestTime: 0
-  currentTime: 0
-  musicSource: {fileID: 0}
-  idleMusic: {fileID: 0}
-  actionMusic: {fileID: 0}
-  waves: []
-  timeBetweenWaves: 5
-  spawnPoints: []
-  endPortal: {fileID: 0}
-  spawnPortal: {fileID: 0}
-  entryPoint: {fileID: 0}
-  exitPoint: {fileID: 0}
+  gameOverCanvas: {fileID: 0}
+  gameOverCamera: {fileID: 0}
   player: {fileID: 0}
-  bow: {fileID: 0}
-  primary: {fileID: 0}
-  celebration: {fileID: 0}
+  enemyCount: 0
+  waves: []
+  waveNumber: 0
+  timeBetweenWaves: 5
+  waveCountdown: 0
+  spawnPoints: []
 --- !u!114 &114119636524411240
 MonoBehaviour:
   m_ObjectHideFlags: 1

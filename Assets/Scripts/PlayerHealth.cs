@@ -30,13 +30,14 @@ public class PlayerHealth : MonoBehaviour
     Animator anim;                                              // Reference to the Animator component.
     AudioSource playerAudio;                                    // Reference to the AudioSource component.
     PlayerShooting playerShooting;                              // Reference to the PlayerShooting script.
-    bool isDead;                                                // Whether the player is dead.
+    public bool isDead;                                                // Whether the player is dead.
     bool damaged;                                               // True when the player gets damaged.
 
 
 
-    void Awake()
+    public void Awake()
     {
+        isDead = false;
         //newTimer = GameObject.FindGameObjectWithTag("Controller").GetComponent<NewTimer>();
         // Setting up the references.
         anim = GetComponent<Animator>();
@@ -115,7 +116,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
 
-    void Death()
+    public void Death()
     {
         // Set the death flag so this function won't be called again.
         isDead = true;

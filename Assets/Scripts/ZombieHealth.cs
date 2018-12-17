@@ -162,7 +162,7 @@ public class ZombieHealth : MonoBehaviour
         //enemyAudio.Play();
 
         Instantiate(deathAnimation, gameObject.transform.position, gameObject.transform.rotation);
-        LootDrop();
+        
         StartSinking();
 
         
@@ -206,6 +206,7 @@ public class ZombieHealth : MonoBehaviour
 
         // After 2 seconds destory the enemy.
         Destroy(gameObject, 2f);
+        LootDrop();
     }
 
 }

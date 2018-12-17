@@ -214,6 +214,7 @@
     <Compile Include="Assets\Scripts\PlaySoundAtInterval.cs" />
     <Compile Include="Assets\Scripts\PointCounter.cs" />
     <Compile Include="Assets\Scripts\RoundWon.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\TestShooting.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\WeaponInfoText.cs" />
