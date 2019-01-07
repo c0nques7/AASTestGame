@@ -61,9 +61,6 @@ public class ZombieHealth : MonoBehaviour
 
     void Update()
     {
-        
-
-
         // If the enemy should be sinking...
         if (isSinking)
         {
@@ -73,7 +70,7 @@ public class ZombieHealth : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("GameObject Hit" + collision.gameObject.name);
         if(collision.relativeVelocity.magnitude > 2)
@@ -81,7 +78,7 @@ public class ZombieHealth : MonoBehaviour
             zombieHead.transform.localScale = new Vector3(1, 1, 1);
             Instantiate(zombieHead, transform.position, transform.rotation, transform);
         }
-    }
+    }*/
 
 
 
@@ -101,7 +98,7 @@ public class ZombieHealth : MonoBehaviour
 
         // Set the position of the particle system to where the hit was sustained.
         //hitParticles.transform.position = hitPoint;
-
+        
         // And play the particles.
         //hitParticles.Play();
 
