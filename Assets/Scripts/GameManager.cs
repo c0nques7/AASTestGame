@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
         public float rate;
     }
 
-    public GameObject playerCanvas;
     public GameObject gameOverCanvas;
     public GameObject gameOverCamera;
     public GameObject player;
@@ -60,6 +59,7 @@ public class GameManager : MonoBehaviour
                
                 //Increase the waves
                 WaveCompleted();
+                
             }
             else
             {
@@ -78,24 +78,9 @@ public class GameManager : MonoBehaviour
         {
             waveCountdown -= Time.deltaTime;
         }
-        if (playerHealth.isDead == true)
-        {
-            GameOver();
-        }
+        
         
     }
-
-
-    public void GameOver()
-    {
-        playerCanvas.SetActive(false);
-        player.SetActive(false);
-        gameOverCanvas.SetActive(true);
-        gameOverCamera.SetActive(true);
-        
-
-    }
-
 
     void WaveCompleted()
     {
