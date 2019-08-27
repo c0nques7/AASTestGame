@@ -4,9 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class ArmControllerScript : MonoBehaviour {
-        	
-	public GameObject FloatingTextPrefab;
-
+	
 	public GameObject Bullet;
 
 	public float Bullet_Velocity;
@@ -37,10 +35,11 @@ public class ArmControllerScript : MonoBehaviour {
 	//attack animation for melee
 	int randomAttackAnim;
 	
-	//Used for fire rate
+	//Used for fire rate, creates a float value after the last shot is fired.
+	//Modifying this value will increase or decrease the rate of fire on the selected weapon.
 	float lastFired;
 	
-	//Ammo left
+	//Total ammo remaining for ammo type
 	public int currentAmmo;
 
 	//A layer mask for items that can be damaged
@@ -50,8 +49,9 @@ public class ArmControllerScript : MonoBehaviour {
 	public class meleeSettings
 	{  
 		[Header("Melee Weapons")]
-		//If the current weapon is a melee weapon
+		//If the current weapon is a melee weapon...
 		public bool isMeleeWeapon;
+		//...Do damage reflective of value in inspector.
 		public int damagePerHit;
 
 	}
@@ -65,7 +65,9 @@ public class ArmControllerScript : MonoBehaviour {
 		public int ammo;
 		
 		[Header("Fire Rate & Bullet Settings")]
+		//Is the weapon automatic?
 		public bool automaticFire;
+		//What is the rate of fire?
 		public float fireRate;
 
         [Space(10)]
@@ -76,7 +78,10 @@ public class ArmControllerScript : MonoBehaviour {
 		public float bulletDistance = 500.0f;
 		//How much force will be applied to rigidbodies 
 		//by the bullet raycast
+
+		//This will need some work. The force applied to the bullet seems significant, but the mass of the bullet appears to not be enough to trigger a physics event.
 		public float bulletForce = 500.0f;
+
 		//How much damage the shot does to anything in the "Shootable" layer
 		public int damagePerShot;
 		
@@ -131,11 +136,15 @@ public class ArmControllerScript : MonoBehaviour {
 	public class reloadSettings
 	{  
 		[Header("Reload Settings")]
+		//Does the weapon have a casing appear on reload event?
 		public bool casingOnReload;
+		//What is the delay between the reload event occurring and the casing appearing?
 		public float casingDelay;
 		
 		[Header("Bullet In Mag")]
+		//Does the weapon have a bullet in the mag?
 		public bool hasBulletInMag;
+		//...if yes, how many are in the mag?
 		public Transform[] bulletInMag;
 		public float enableBulletTimer = 1.0f;
 
@@ -254,6 +263,7 @@ public class ArmControllerScript : MonoBehaviour {
 		//Set the ammo count
 		RefillAmmo ();
 
+		//Find the rarity tag and set the damage according to rarity
         if(gameObject.tag == "CommonRifle" && ShootSettings.damagePerShot == 0)
         {
             ShootSettings.damagePerShot = Random.Range(20, 35);
