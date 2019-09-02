@@ -10,7 +10,7 @@ public class WeaponManager : MonoBehaviour {
 
 	public static string textstatus="off";
 
-	public string weaponName;								//The Name of the weapon
+	public string weaponName;						//The Name of the weapon
 	public int maxDamage;							//Maximum damage of the weapon
 	public int minDamage;							//Minimum damage of the weapon
 	public static int newDamage;

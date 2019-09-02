@@ -155,7 +155,7 @@ public class GunSwitchScript : MonoBehaviour {
 			//Set the current gun text
 			currentGunText.text = gun3Text;
 			//Highlight active slot in inventory
-			;
+			
 			
 			
 			

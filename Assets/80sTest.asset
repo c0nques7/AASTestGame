@@ -50,7 +50,7 @@ MonoBehaviour:
       ambientOnly: 0
       highPrecision: 0
   screenSpaceReflection:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       reflection:
         blendType: 0
@@ -134,9 +134,9 @@ MonoBehaviour:
       colorWheels:
         mode: 1
         log:
-          slope: {r: 1, g: 0.57123005, b: 0.8394137, a: 0}
-          power: {r: 0.91496384, g: 0.7447855, b: 1, a: 0}
-          offset: {r: 1, g: 0.9473901, b: 0.76293963, a: 0}
+          slope: {r: 1, g: 0.935263, b: 0.8142073, a: 0}
+          power: {r: 1, g: 0.6825048, b: 0.56919867, a: 0}
+          offset: {r: 1, g: 0.9098787, b: 0.71259505, a: 0}
         linear:
           lift: {r: 1, g: 1, b: 1, a: 0}
           gamma: {r: 1, g: 1, b: 1, a: 0}
@@ -313,11 +313,11 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       colored: 1
-      intensity: 0.245
+      intensity: 0.091
       size: 0.85
-      luminanceContribution: 0.8
+      luminanceContribution: 0.791
   vignette:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
