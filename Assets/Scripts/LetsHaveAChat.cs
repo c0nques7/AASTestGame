@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class LetsHaveAChat : MonoBehaviour {
 
 	public bool MouseOver;
-	Animator anim;
+	public Animator anim;
+
+	public Canvas hudCanvas;
 
 	// Use this for initialization
 	void Start () {
-		
+	
 	}
 	
 	// Update is called once per frame
